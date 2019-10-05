@@ -12,4 +12,11 @@ As for hackuarium and I could see the possibility to make continious monitoring 
 
 # Can we do a Ion Mobility Spectrometer our self ?
 
+Main parts of the IMS :
+
+- Ionization
+- Shutter
+- Acceleration
+- Detection 
+
 
