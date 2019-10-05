@@ -9,5 +9,6 @@ Shutter time augmente => résolution diminue
 
 BN : TB mais compliqué à faire (2 grilles entremêlées avec un potentiel différent à chaque grille dévie les ions)
 TP : + Facile à faire (2 grilles espacées qui n'ont pas besoin d'être bien alignées). 
--> Bcp moins précis car l'espace entre les grilles forme une zone de déplétion que les ions les plus lourds n'ont pas le temps de traverser si le shutter time est petit (càd à grande résolution). 
-=> VOIR chen2017.pdf POUR SOLUTION POSSIBLE : Augmenter la diff de potentiel afin d'accélérer les ions et donc les + lourds arrivent à passer. 
+-> Bcp moins précis car l'espace entre les grilles forme une zone de déplétion (sans charge) que les ions les plus lourds n'ont pas le temps de traverser si le shutter time est petit (càd à grande résolution). Les ions les + lourds sont dont anihilés à la fermeture du gate, avant d'avoir pu traverser la zone. 
+
+=> VOIR chen2017.pdf POUR SOLUTION POSSIBLE : Augmenter la diff de potentiel afin d'accélérer + les ions entre les deux grilles et donc les + lourds arrivent à passer. 
