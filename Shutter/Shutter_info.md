@@ -12,3 +12,6 @@ TP : + Facile à faire (2 grilles espacées qui n'ont pas besoin d'être bien al
 -> Bcp moins précis car l'espace entre les grilles forme une zone de déplétion (sans charge) que les ions les plus lourds n'ont pas le temps de traverser si le shutter time est petit (càd à grande résolution). Les ions les + lourds sont dont anihilés à la fermeture du gate, avant d'avoir pu traverser la zone. 
 
 => VOIR chen2017.pdf POUR SOLUTION POSSIBLE : Augmenter la diff de potentiel afin d'accélérer + les ions entre les deux grilles et donc les + lourds arrivent à passer. 
+
+
+Note : \textbf{GPV} stands for the gate penetration voltage defined as the voltage difference between the two grids of the TPG at open status, while GCV stands for the gate closing voltage defined as the extra voltage superposed on the original potential of Grid 2 for closing the TPG.
