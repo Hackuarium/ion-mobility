@@ -6,6 +6,7 @@ Shutter time augmente => résolution diminue
 2 Types de Shutter : 
 -  Bradbury-Nielsen [https://en.wikipedia.org/wiki/Bradbury%E2%80%93Nielsen_shutter]
 -  Tyndall−Powell [chen2017.pdf]
+- Field-switching shutter [Bradbury-NielsenVSField-switching.pdf]
 
 BN : TB mais compliqué à faire (2 grilles entremêlées avec un potentiel différent à chaque grille dévie les ions)
 TP : + Facile à faire (2 grilles espacées qui n'ont pas besoin d'être bien alignées). 
