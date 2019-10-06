@@ -14,4 +14,6 @@ TP : + Facile à faire (2 grilles espacées qui n'ont pas besoin d'être bien al
 => VOIR chen2017.pdf POUR SOLUTION POSSIBLE : Augmenter la diff de potentiel afin d'accélérer + les ions entre les deux grilles et donc les + lourds arrivent à passer. 
 
 
-Note : \textbf{GPV} stands for the gate penetration voltage defined as the voltage difference between the two grids of the TPG at open status, while GCV stands for the gate closing voltage defined as the extra voltage superposed on the original potential of Grid 2 for closing the TPG.
+Note : GPV stands for the gate penetration voltage defined as the voltage difference between the two grids of the TPG at open status, while GCV stands for the gate closing voltage defined as the extra voltage superposed on the original potential of Grid 2 for closing the TPG.
+
+-> Increase GPV to smaller the depletion zone width. 
