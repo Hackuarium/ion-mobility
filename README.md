@@ -18,7 +18,7 @@ Main parts of the IMS :
 - Shutter
 - Acceleration
 - Detection 
-
+m
 
 - Link to full project already made : [https://github.com/bhclowers/OS-IMS]
 - Home made pulser (Garcia2017): [https://link.springer.com/article/10.1007%2Fs12127-017-0223-x]
