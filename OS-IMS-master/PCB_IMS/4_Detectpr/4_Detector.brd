@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.0">
+<eagle version="9.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.00393700787" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.0999999999" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -37,8 +37,8 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
@@ -63,31 +63,31 @@
 </layers>
 <board>
 <plain>
-<hole x="14.5996" y="14.83111875" drill="6.985"/>
-<hole x="-14.6104" y="14.83111875" drill="6.985"/>
-<hole x="-14.6104" y="-14.37888125" drill="6.985"/>
-<hole x="14.5996" y="-14.37888125" drill="6.985"/>
-<rectangle x1="-0.7677875" y1="-0.757640625" x2="0.7522125" y2="0.762359375" layer="16"/>
-<rectangle x1="-3.3377875" y1="-3.327640625" x2="-1.4277875" y2="-1.417640625" layer="16"/>
-<rectangle x1="-3.3377875" y1="1.422359375" x2="-1.4277875" y2="3.332359375" layer="16"/>
-<rectangle x1="1.4122125" y1="-3.327640625" x2="3.3222125" y2="-1.417640625" layer="16"/>
-<rectangle x1="1.4122125" y1="1.422359375" x2="3.3222125" y2="3.332359375" layer="16"/>
-<wire x1="-20.701" y1="-20.701" x2="-20.701" y2="20.701" width="0.1524" layer="20"/>
-<wire x1="-20.701" y1="20.701" x2="20.701" y2="20.701" width="0.1524" layer="20"/>
-<wire x1="20.701" y1="20.701" x2="20.701" y2="-20.701" width="0.1524" layer="20"/>
-<wire x1="-20.7" y1="-20.7" x2="20.7" y2="-20.7" width="0.1524" layer="20"/>
-<circle x="0" y="0" radius="14.008925" width="2.54" layer="29"/>
-<circle x="0" y="0" radius="11.5767" width="2.54" layer="29"/>
-<circle x="0.1" y="0" radius="9.3230875" width="2.54" layer="29"/>
-<circle x="0" y="-0.1" radius="7.2013875" width="2.54" layer="29"/>
-<circle x="0" y="0" radius="4.7927" width="2.54" layer="29"/>
-<circle x="0" y="0" radius="2.451528125" width="2.54" layer="29"/>
-<circle x="0" y="0" radius="0.1" width="2.54" layer="29"/>
-<rectangle x1="-3.4" y1="1.4" x2="-1.4" y2="3.4" layer="30"/>
-<rectangle x1="1.4" y1="1.4" x2="3.3" y2="3.3" layer="30"/>
-<rectangle x1="-0.8" y1="-0.8" x2="0.8" y2="0.8" layer="30"/>
-<rectangle x1="1.4" y1="-3.3" x2="3.3" y2="-1.4" layer="30"/>
-<rectangle x1="-3.3" y1="-3.3" x2="-1.4" y2="-1.4" layer="30"/>
+<hole x="35.2996" y="35.53111875" drill="6.985"/>
+<hole x="6.0896" y="35.53111875" drill="6.985"/>
+<hole x="6.0896" y="6.32111875" drill="6.985"/>
+<hole x="35.2996" y="6.32111875" drill="6.985"/>
+<rectangle x1="19.9322125" y1="19.942359375" x2="21.4522125" y2="21.462359375" layer="16"/>
+<rectangle x1="17.3622125" y1="17.372359375" x2="19.2722125" y2="19.282359375" layer="16"/>
+<rectangle x1="17.3622125" y1="22.122359375" x2="19.2722125" y2="24.032359375" layer="16"/>
+<rectangle x1="22.1122125" y1="17.372359375" x2="24.0222125" y2="19.282359375" layer="16"/>
+<rectangle x1="22.1122125" y1="22.122359375" x2="24.0222125" y2="24.032359375" layer="16"/>
+<wire x1="0" y1="0" x2="0" y2="41.4" width="0.1524" layer="20"/>
+<wire x1="0" y1="41.4" x2="41.4" y2="41.4" width="0.1524" layer="20"/>
+<wire x1="41.4" y1="41.4" x2="41.4" y2="0" width="0.1524" layer="20"/>
+<wire x1="0" y1="0" x2="41.4" y2="0" width="0.1524" layer="20"/>
+<circle x="20.7" y="20.7" radius="14.008925" width="2.54" layer="29"/>
+<circle x="20.7" y="20.7" radius="11.5767" width="2.54" layer="29"/>
+<circle x="20.8" y="20.7" radius="9.3230875" width="2.54" layer="29"/>
+<circle x="20.7" y="20.6" radius="7.2013875" width="2.54" layer="29"/>
+<circle x="20.7" y="20.7" radius="4.7927" width="2.54" layer="29"/>
+<circle x="20.7" y="20.7" radius="2.451528125" width="2.54" layer="29"/>
+<circle x="20.7" y="20.7" radius="0.1" width="2.54" layer="29"/>
+<rectangle x1="17.3" y1="22.1" x2="19.3" y2="24.1" layer="30"/>
+<rectangle x1="22.1" y1="22.1" x2="24" y2="24" layer="30"/>
+<rectangle x1="19.9" y1="19.9" x2="21.5" y2="21.5" layer="30"/>
+<rectangle x1="22.1" y1="17.4" x2="24" y2="19.3" layer="30"/>
+<rectangle x1="17.4" y1="17.4" x2="19.3" y2="19.3" layer="30"/>
 </plain>
 <libraries>
 </libraries>
@@ -175,10 +175,14 @@ design rules under a new name.</description>
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
-<param name="checkGrid" value="0"/>
 <param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
+<param name="checkStop" value="0"/>
+<param name="checkValues" value="0"/>
+<param name="checkNames" value="1"/>
+<param name="checkWireStubs" value="1"/>
+<param name="checkPolygonWidth" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -282,37 +286,44 @@ design rules under a new name.</description>
 </elements>
 <signals>
 <signal name="S$4">
-<via x="-10.668" y="0" extent="1-16" drill="0.635"/>
-<wire x1="-10.668" y1="0" x2="-6.1" y2="-2.4" width="0.254" layer="16"/>
-<wire x1="-6.1" y1="-2.4" x2="-2.3" y2="-2.4" width="0.254" layer="16"/>
+<via x="10.032" y="20.7" extent="1-16" drill="0.635"/>
+<wire x1="10.032" y1="20.7" x2="14.6" y2="18.3" width="0.254" layer="16"/>
+<wire x1="14.6" y1="18.3" x2="18.4" y2="18.3" width="0.254" layer="16"/>
 <polygon width="0.1524" layer="1" rank="2">
-<vertex x="0" y="15" curve="90"/>
-<vertex x="-15" y="0" curve="90"/>
-<vertex x="0" y="-15" curve="90"/>
-<vertex x="15" y="0" curve="90"/>
+<vertex x="20.7" y="35.7" curve="90"/>
+<vertex x="5.7" y="20.7" curve="90"/>
+<vertex x="20.7" y="5.7" curve="90"/>
+<vertex x="35.7" y="20.7" curve="90"/>
 </polygon>
-<via x="9.2456" y="5.334" extent="1-16" drill="0.635"/>
-<via x="10.668" y="0" extent="1-16" drill="0.635"/>
-<via x="-9.2456" y="-5.334" extent="1-16" drill="0.635"/>
-<via x="0" y="-10.668" extent="1-16" drill="0.635"/>
-<via x="0" y="10.668" extent="1-16" drill="0.635"/>
-<via x="5.334" y="9.2456" extent="1-16" drill="0.635"/>
-<via x="9.144" y="-5.334" extent="1-16" drill="0.635"/>
-<via x="5.334" y="-9.2456" extent="1-16" drill="0.635"/>
-<via x="-5.334" y="-9.2456" extent="1-16" drill="0.635"/>
-<via x="-9.2456" y="5.334" extent="1-16" drill="0.635"/>
-<via x="-5.334" y="9.2456" extent="1-16" drill="0.635"/>
+<via x="29.9456" y="26.034" extent="1-16" drill="0.635"/>
+<via x="31.368" y="20.7" extent="1-16" drill="0.635"/>
+<via x="11.4544" y="15.366" extent="1-16" drill="0.635"/>
+<via x="20.7" y="10.032" extent="1-16" drill="0.635"/>
+<via x="20.7" y="31.368" extent="1-16" drill="0.635"/>
+<via x="26.034" y="29.9456" extent="1-16" drill="0.635"/>
+<via x="29.844" y="15.366" extent="1-16" drill="0.635"/>
+<via x="26.034" y="11.4544" extent="1-16" drill="0.635"/>
+<via x="15.366" y="11.4544" extent="1-16" drill="0.635"/>
+<via x="11.4544" y="26.034" extent="1-16" drill="0.635"/>
+<via x="15.366" y="29.9456" extent="1-16" drill="0.635"/>
 </signal>
 <signal name="S$3">
-<via x="0" y="0" extent="1-16" drill="0.2"/>
+<via x="20.7" y="20.7" extent="1-16" drill="0.2"/>
 <polygon width="0.1524" layer="1" orphans="yes">
-<vertex x="0" y="9.75" curve="90"/>
-<vertex x="-9.75" y="0" curve="90"/>
-<vertex x="0" y="-9.75" curve="90"/>
-<vertex x="9.75" y="0" curve="90"/>
+<vertex x="20.7" y="30.45" curve="90"/>
+<vertex x="10.95" y="20.7" curve="90"/>
+<vertex x="20.7" y="10.95" curve="90"/>
+<vertex x="30.45" y="20.7" curve="90"/>
 </polygon>
 </signal>
 </signals>
+<mfgpreviewcolors>
+<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
+<mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
+<mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
+<mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
+<mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
+</mfgpreviewcolors>
 </board>
 </drawing>
 </eagle>
