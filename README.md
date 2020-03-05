@@ -33,7 +33,4 @@ Limitation : The current-to-tension AOP must be with very low bias current, and 
 - Monitoring : A/D converter. 
 
 
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-
-
-- Link to full project already made : [https://github.com/bhclowers/OS-IMS]
+Link to full project already made : [https://github.com/bhclowers/OS-IMS]
