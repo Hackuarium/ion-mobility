@@ -15,10 +15,25 @@ We see the possibility to make continious monitoring of the bioreactor made by H
 
 Main parts of the IMS :
 
-- Ionization
-- Shutter
-- Acceleration
-- Detection 
+- Desolvation zone : Insert and ionization of sample. 
+Electrospray ionisation (ESI). Advantage : one can insert the liquid sample and ionize it through the same needle. 
+Limitation : 5kV voltage source, 100uL/min flow rate through the needle. 
+
+- Shutter : Let the ions pass on command.
+Three grid Shutter. Advantage : easy to built and to command. 
+
+- Drift zone : Acceleration of ions.
+Made by multiple electrodes connected to different voltages with the aid of a voltage divider. 
+Limitation : 10kV voltage source. 
+
+- Detection : Faraday plate.
+Transconductance amplifier converts the tiny ion current into a reasonable tension.
+Limitation : The current-to-tension AOP must be with very low bias current, and low noise (hence expensive). 
+
+- Monitoring : A/D converter. 
+
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 
 - Link to full project already made : [https://github.com/bhclowers/OS-IMS]
