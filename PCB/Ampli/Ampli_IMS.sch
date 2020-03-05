@@ -58,17 +58,6 @@ F 3 "~" H 3650 5600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Ampli_IMS-rescue:AD8001AR-Amplifier_Operational U2
-U 1 1 5E63EDD1
-P 4200 4250
-F 0 "U2" H 4544 4296 50  0000 L CNN
-F 1 "LMP7721" H 4544 4205 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4100 4050 50  0001 L CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ad8001.pdf" H 4350 4400 50  0001 C CNN
-	1    4200 4250
-	1    0    0    -1  
-$EndComp
-$Comp
 L Ampli_IMS-rescue:SW_Push_DPDT-Switch SW1
 U 1 1 5E64481D
 P 5800 3950
@@ -583,4 +572,15 @@ Wire Notes Line
 	4500 5150 3450 5150
 Text Notes 3550 5100 0    50   ~ 0
 Capacités de découplage\n
+$Comp
+L Amplifier_Operational:ADA4625-1 U?
+U 1 1 5E61DA9C
+P 4200 4250
+F 0 "U?" H 4544 4296 50  0000 L CNN
+F 1 "ADA4625-1" H 4544 4205 50  0000 L CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 4100 4050 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21314g.pdf" H 4350 4400 50  0001 C CNN
+	1    4200 4250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
