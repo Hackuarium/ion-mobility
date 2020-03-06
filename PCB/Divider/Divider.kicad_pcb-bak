@@ -3,7 +3,7 @@
   (general
     (thickness 1.6)
     (drawings 13)
-    (tracks 1)
+    (tracks 0)
     (zones 0)
     (modules 71)
     (nets 69)
@@ -2917,7 +2917,7 @@
     (arrow2b (pts (xy 49 48.5) (xy 50.126504 47.913579)))
   )
   (dimension 48 (width 0.15) (layer Dwgs.User)
-    (gr_text "48,000 mm" (at 44.2 76 90) (layer Dwgs.User)
+    (gr_text "48,000 mm" (at 44.2 76 90) (layer Dwgs.User) (tstamp 5E6380B4)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (feature1 (pts (xy 47.5 52) (xy 44.913579 52)))
@@ -2941,7 +2941,5 @@
     (arrow2b (pts (xy 29.434179 52.129268) (xy 30.035768 53.247745)))
   )
   (gr_line (start 152.8 52) (end 49 52) (layer Edge.Cuts) (width 0.05))
-
-  (via (at 240 69) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 0))
 
 )
