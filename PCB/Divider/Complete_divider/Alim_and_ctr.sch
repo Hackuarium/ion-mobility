@@ -1,0 +1,221 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 3250 2400 0    50   Input ~ 0
+TRI-STATE
+Text Label 5200 2900 0    50   ~ 0
+Grid1
+Text Label 8500 1650 0    50   ~ 0
+ApertureGrid
+$Comp
+L Device:R_Small R59
+U 1 1 5E75A654
+P 8900 1800
+F 0 "R59" H 8959 1846 50  0000 L CNN
+F 1 "500K" H 8959 1755 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" H 8900 1800 50  0001 C CNN
+F 3 "~" H 8900 1800 50  0001 C CNN
+	1    8900 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5E760172
+P 8200 1800
+F 0 "C3" H 8315 1846 50  0000 L CNN
+F 1 "4700pF 10kV" H 8315 1755 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L13.0mm_W8.0mm_P10.00mm_FKS3_FKP3_MKS4" H 8238 1650 50  0001 C CNN
+F 3 "~" H 8200 1800 50  0001 C CNN
+	1    8200 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV1
+U 1 1 5E6EEFD6
+P 3450 2650
+F 0 "RV1" H 3380 2696 50  0000 R CNN
+F 1 "100M" H 3380 2605 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_ACP_CA14-H4_Horizontal" H 3450 2650 50  0001 C CNN
+F 3 "~" H 3450 2650 50  0001 C CNN
+	1    3450 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 2800 3450 2900
+Wire Wire Line
+	3450 2500 3450 2400
+Wire Wire Line
+	3450 2400 3250 2400
+Wire Notes Line
+	5450 2250 2750 2250
+Connection ~ 3450 2900
+NoConn ~ 4000 3800
+$Comp
+L power:GND #PWR03
+U 1 1 5E6BA6FC
+P 4200 3800
+F 0 "#PWR03" H 4200 3550 50  0001 C CNN
+F 1 "GND" H 4205 3627 50  0000 C CNN
+F 2 "" H 4200 3800 50  0001 C CNN
+F 3 "" H 4200 3800 50  0001 C CNN
+	1    4200 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 3200 4000 3200
+Wire Wire Line
+	3600 2650 3600 3200
+Wire Wire Line
+	3450 2900 3450 3600
+Wire Wire Line
+	3450 3800 3450 4300
+Connection ~ 3450 4700
+Wire Wire Line
+	3250 4700 3450 4700
+Text GLabel 3250 4700 0    50   Output ~ 0
+DRIFTTUBE
+Connection ~ 4950 3200
+Wire Wire Line
+	4950 3200 5200 3200
+Wire Wire Line
+	4950 3200 4950 4300
+Wire Wire Line
+	4200 3200 4950 3200
+Wire Wire Line
+	4350 4300 4950 4300
+Wire Wire Line
+	3450 4300 3450 4400
+Connection ~ 3450 4300
+$Comp
+L Device:R_Small R61
+U 1 1 5E66ED4D
+P 4250 4300
+F 0 "R61" V 4350 4200 50  0000 L CNN
+F 1 "100M" V 4150 4200 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 4250 4300 50  0001 C CNN
+F 3 "~" H 4250 4300 50  0001 C CNN
+	1    4250 4300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Isolator:SFH617A-1 U1
+U 1 1 5E652B1B
+P 4100 3500
+F 0 "U1" V 4146 3320 50  0000 R CNN
+F 1 "SFH617A-1" V 4055 3320 50  0000 R CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 3900 3300 50  0001 L CIN
+F 3 "http://www.vishay.com/docs/83740/sfh617a.pdf" H 4100 3500 50  0001 L CNN
+	1    4100 3500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3450 4700 3450 4600
+Text Label 5200 4700 0    50   ~ 0
+Grid3
+Text Label 5200 3200 0    50   ~ 0
+Grid2
+$Comp
+L Device:R_Small R62
+U 1 1 5E5CFF76
+P 3450 4500
+F 0 "R62" H 3250 4550 50  0000 L CNN
+F 1 "1.5M" H 3200 4450 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 3450 4500 50  0001 C CNN
+F 3 "~" H 3450 4500 50  0001 C CNN
+	1    3450 4500
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	5450 2250 5450 4800
+Wire Notes Line
+	5450 4800 2750 4800
+Wire Notes Line
+	2750 2250 2750 4800
+Text Notes 5200 2800 0    50   ~ 0
+5kV
+Text Notes 750  2750 0    50   ~ 0
+INFO : \n\n10M par résistance, soit un courant total de \n10kV/580M = 0.001724A = 17.24uA\n\n
+$Comp
+L Device:R_Small R60
+U 1 1 5EAAC19A
+P 3450 3700
+F 0 "R60" H 3250 3750 50  0000 L CNN
+F 1 "1.5M" H 3200 3650 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 3450 3700 50  0001 C CNN
+F 3 "~" H 3450 3700 50  0001 C CNN
+	1    3450 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5EA25A25
+P 6700 1800
+F 0 "C1" H 6815 1846 50  0000 L CNN
+F 1 "4700pF 10kV" H 6815 1755 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L13.0mm_W8.0mm_P10.00mm_FKS3_FKP3_MKS4" H 6738 1650 50  0001 C CNN
+F 3 "~" H 6700 1800 50  0001 C CNN
+	1    6700 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5EA2712D
+P 7400 1800
+F 0 "C2" H 7515 1846 50  0000 L CNN
+F 1 "4700pF 10kV" H 7515 1755 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L13.0mm_W8.0mm_P10.00mm_FKS3_FKP3_MKS4" H 7438 1650 50  0001 C CNN
+F 3 "~" H 7400 1800 50  0001 C CNN
+	1    7400 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 1950 7400 1950
+Text Label 6700 1650 0    50   ~ 0
+Grid1
+Text Label 7400 1650 0    50   ~ 0
+Grid3
+$Comp
+L power:GND #PWR01
+U 1 1 5EE321EA
+P 7850 1950
+F 0 "#PWR01" H 7850 1700 50  0001 C CNN
+F 1 "GND" H 7855 1777 50  0000 C CNN
+F 2 "" H 7850 1950 50  0001 C CNN
+F 3 "" H 7850 1950 50  0001 C CNN
+	1    7850 1950
+	1    0    0    -1  
+$EndComp
+Connection ~ 7850 1950
+Wire Wire Line
+	7850 1950 7400 1950
+Wire Wire Line
+	8200 1950 7850 1950
+Connection ~ 7400 1950
+Wire Wire Line
+	8900 1700 8900 1650
+Wire Wire Line
+	8900 1650 8200 1650
+Wire Wire Line
+	8200 1950 8900 1950
+Wire Wire Line
+	8900 1950 8900 1900
+Connection ~ 8200 1950
+Wire Wire Line
+	3450 2900 5200 2900
+Wire Wire Line
+	3450 4300 4150 4300
+Wire Wire Line
+	3450 4700 5200 4700
+$EndSCHEMATC
