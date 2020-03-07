@@ -1123,12 +1123,12 @@ Wire Wire Line
 Wire Wire Line
 	2600 6150 2750 6150
 $Comp
-L Connector:Conn_01x01_Female J?
+L Connector:Conn_01x01_Female J2
 U 1 1 5F9A8D86
 P 8850 3050
-AR Path="/5F9A8D86" Ref="J?"  Part="1" 
+AR Path="/5F9A8D86" Ref="J2"  Part="1" 
 AR Path="/5F465EFE/5F9A8D86" Ref="J?"  Part="1" 
-F 0 "J?" H 8878 3076 50  0000 L CNN
+F 0 "J2" H 8878 3076 50  0000 L CNN
 F 1 "10kV" H 8878 2985 50  0000 L CNN
 F 2 "Connector_Pin:Pin_D1.4mm_L8.5mm_W2.8mm_FlatFork" H 8850 3050 50  0001 C CNN
 F 3 "~" H 8850 3050 50  0001 C CNN
@@ -1136,12 +1136,12 @@ F 3 "~" H 8850 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x01_Female J?
+L Connector:Conn_01x01_Female J3
 U 1 1 5F9A8D8C
 P 8850 3400
-AR Path="/5F9A8D8C" Ref="J?"  Part="1" 
+AR Path="/5F9A8D8C" Ref="J3"  Part="1" 
 AR Path="/5F465EFE/5F9A8D8C" Ref="J?"  Part="1" 
-F 0 "J?" H 8878 3426 50  0000 L CNN
+F 0 "J3" H 8878 3426 50  0000 L CNN
 F 1 "0V" H 8878 3335 50  0000 L CNN
 F 2 "Connector_Pin:Pin_D1.4mm_L8.5mm_W2.8mm_FlatFork" H 8850 3400 50  0001 C CNN
 F 3 "~" H 8850 3400 50  0001 C CNN
@@ -1149,12 +1149,12 @@ F 3 "~" H 8850 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0101
 U 1 1 5F9A8D92
 P 8450 3400
-AR Path="/5F9A8D92" Ref="#PWR?"  Part="1" 
+AR Path="/5F9A8D92" Ref="#PWR0101"  Part="1" 
 AR Path="/5F465EFE/5F9A8D92" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 8450 3150 50  0001 C CNN
+F 0 "#PWR0101" H 8450 3150 50  0001 C CNN
 F 1 "GND" H 8455 3227 50  0000 C CNN
 F 2 "" H 8450 3400 50  0001 C CNN
 F 3 "" H 8450 3400 50  0001 C CNN
@@ -1162,12 +1162,12 @@ F 3 "" H 8450 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x01_Female J?
+L Connector:Conn_01x01_Female J1
 U 1 1 5F9A8D98
 P 7700 3050
-AR Path="/5F9A8D98" Ref="J?"  Part="1" 
+AR Path="/5F9A8D98" Ref="J1"  Part="1" 
 AR Path="/5F465EFE/5F9A8D98" Ref="J?"  Part="1" 
-F 0 "J?" H 7728 3076 50  0000 L CNN
+F 0 "J1" H 7728 3076 50  0000 L CNN
 F 1 "15kV" H 7728 2985 50  0000 L CNN
 F 2 "Connector_Pin:Pin_D1.4mm_L8.5mm_W2.8mm_FlatFork" H 7700 3050 50  0001 C CNN
 F 3 "~" H 7700 3050 50  0001 C CNN
@@ -1175,12 +1175,12 @@ F 3 "~" H 7700 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x01_Female J?
+L Connector:Conn_01x01_Female J4
 U 1 1 5F9A8D9E
 P 7700 3500
-AR Path="/5F9A8D9E" Ref="J?"  Part="1" 
+AR Path="/5F9A8D9E" Ref="J4"  Part="1" 
 AR Path="/5F465EFE/5F9A8D9E" Ref="J?"  Part="1" 
-F 0 "J?" H 7728 3526 50  0000 L CNN
+F 0 "J4" H 7728 3526 50  0000 L CNN
 F 1 "10kV" H 7728 3435 50  0000 L CNN
 F 2 "Connector_Pin:Pin_D1.4mm_L8.5mm_W2.8mm_FlatFork" H 7700 3500 50  0001 C CNN
 F 3 "~" H 7700 3500 50  0001 C CNN
