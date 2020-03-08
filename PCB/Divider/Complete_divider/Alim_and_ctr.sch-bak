@@ -39,19 +39,6 @@ F 3 "~" H 7900 1900 50  0001 C CNN
 	1    7900 1900
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R_POT RV11
-U 1 1 5E6EEFD6
-P 3450 2650
-F 0 "RV11" H 3380 2696 50  0000 R CNN
-F 1 "100M" H 3380 2605 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_ACP_CA14-H4_Horizontal" H 3450 2650 50  0001 C CNN
-F 3 "~" H 3450 2650 50  0001 C CNN
-	1    3450 2650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3450 2800 3450 2900
 Connection ~ 3450 2900
 NoConn ~ 4000 3800
 $Comp
@@ -68,13 +55,9 @@ $EndComp
 Wire Wire Line
 	3600 3200 4000 3200
 Wire Wire Line
-	3600 2650 3600 3200
-Wire Wire Line
 	3450 2900 3450 3600
 Wire Wire Line
 	3450 3800 3450 4300
-Text GLabel 4550 5350 2    50   Output ~ 0
-DRIFTTUBE
 Connection ~ 4950 3200
 Wire Wire Line
 	4950 3200 5200 3200
@@ -201,84 +184,23 @@ Wire Wire Line
 	3450 4300 4150 4300
 Wire Wire Line
 	3450 4700 5200 4700
-$Comp
-L Device:R R30
-U 1 1 5E6A649D
-P 3800 5350
-F 0 "R30" V 3593 5350 50  0000 C CNN
-F 1 "10M" V 3684 5350 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 3730 5350 50  0001 C CNN
-F 3 "~" H 3800 5350 50  0001 C CNN
-	1    3800 5350
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3450 4700 3450 5350
-Wire Wire Line
-	3450 5350 3650 5350
 Connection ~ 3450 4700
 Wire Wire Line
-	3950 5350 4200 5350
-$Comp
-L Connector:Conn_01x01_Female E30
-U 1 1 5E6A87F4
-P 4200 5550
-F 0 "E30" V 4200 5750 50  0000 R CNN
-F 1 "Electrode" V 4100 5950 50  0000 R CNN
-F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 4200 5550 50  0001 C CNN
-F 3 "~" H 4200 5550 50  0001 C CNN
-	1    4200 5550
-	0    1    1    0   
-$EndComp
-Connection ~ 4200 5350
-Wire Wire Line
-	4200 5350 4550 5350
-Wire Wire Line
 	2750 2300 2750 2350
-Wire Wire Line
-	2750 2350 3150 2350
 Connection ~ 2750 2350
 $Comp
 L Connector:Conn_01x01_Female E29
 U 1 1 5E6A298B
 P 2750 2100
 F 0 "E29" V 2700 2050 50  0000 R CNN
-F 1 "Electrode" V 2600 2050 50  0000 R CNN
+F 1 "Electrode in" V 2600 2050 50  0000 R CNN
 F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 2750 2100 50  0001 C CNN
 F 3 "~" H 2750 2100 50  0001 C CNN
 	1    2750 2100
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	2600 2350 2750 2350
-$Comp
-L Device:R R29
-U 1 1 5E6A197B
-P 3300 2350
-F 0 "R29" V 3093 2350 50  0000 C CNN
-F 1 "10M" V 3184 2350 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 3230 2350 50  0001 C CNN
-F 3 "~" H 3300 2350 50  0001 C CNN
-	1    3300 2350
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R28
-U 1 1 5E6A0CFA
-P 2450 2350
-F 0 "R28" V 2243 2350 50  0000 C CNN
-F 1 "10M" V 2334 2350 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 2380 2350 50  0001 C CNN
-F 3 "~" H 2450 2350 50  0001 C CNN
-	1    2450 2350
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2050 2350 2300 2350
 Text GLabel 2050 2350 0    50   Input ~ 0
 TRI-STATE
-Wire Wire Line
-	3450 2350 3450 2500
 $Comp
 L Connector:Conn_01x01_Female J1
 U 1 1 5E6F68FC
@@ -463,14 +385,102 @@ Wire Wire Line
 Wire Wire Line
 	7400 5250 7400 5200
 Text GLabel 8650 4400 0    50   Input ~ 0
-DRIFTTUBE
+DESOLVATION
 Wire Wire Line
 	8650 4400 8800 4400
 Text GLabel 7500 5500 2    50   Output ~ 0
-DRIFTTUBE
+DESOLVATION
 Wire Wire Line
 	7400 5250 7400 5500
 Wire Wire Line
 	7400 5500 7500 5500
 Connection ~ 7400 5250
+Wire Wire Line
+	2750 2350 3450 2350
+Text GLabel 3600 6250 2    50   Output ~ 0
+DRIFTTUBE
+Wire Wire Line
+	3450 6250 3600 6250
+$Comp
+L Connector:Conn_01x01_Female E31
+U 1 1 5E686FBB
+P 3850 5950
+F 0 "E31" H 3850 6050 50  0000 R CNN
+F 1 "Electrode out" H 4050 5900 50  0000 R CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 3850 5950 50  0001 C CNN
+F 3 "~" H 3850 5950 50  0001 C CNN
+	1    3850 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 5950 3450 5950
+Connection ~ 3450 5950
+Wire Wire Line
+	3450 5950 3450 6250
+Wire Wire Line
+	2050 2350 2750 2350
+Wire Wire Line
+	3450 2700 3450 2750
+Wire Wire Line
+	3600 2550 3600 3200
+Wire Wire Line
+	3450 2350 3450 2400
+$Comp
+L Device:R_POT R29
+U 1 1 5E6EEFD6
+P 3450 2550
+F 0 "R29" H 3380 2596 50  0000 R CNN
+F 1 "100M" H 3380 2505 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_ACP_CA14-H4_Horizontal" H 3450 2550 50  0001 C CNN
+F 3 "~" H 3450 2550 50  0001 C CNN
+	1    3450 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female E30
+U 1 1 5E65A357
+P 3850 2750
+F 0 "E30" H 3850 2850 50  0000 R CNN
+F 1 "Electrode out" H 4200 2700 50  0000 R CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 3850 2750 50  0001 C CNN
+F 3 "~" H 3850 2750 50  0001 C CNN
+	1    3850 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 2750 3650 2750
+Connection ~ 3450 2750
+Wire Wire Line
+	3450 2750 3450 2900
+Wire Wire Line
+	3450 4700 3450 5150
+$Comp
+L Connector:Conn_01x01_Female E31
+U 1 1 5E6A87F4
+P 3900 5150
+F 0 "E31" H 3900 5250 50  0000 R CNN
+F 1 "Electrode out" H 4100 5100 50  0000 R CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 3900 5150 50  0001 C CNN
+F 3 "~" H 3900 5150 50  0001 C CNN
+	1    3900 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 5150 3450 5150
+Wire Wire Line
+	3450 5650 3450 5950
+$Comp
+L Device:R R30
+U 1 1 5E6A197B
+P 3450 5500
+F 0 "R30" H 3300 5550 50  0000 C CNN
+F 1 "10M" H 3300 5450 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 3380 5500 50  0001 C CNN
+F 3 "~" H 3450 5500 50  0001 C CNN
+	1    3450 5500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3450 5350 3450 5150
+Connection ~ 3450 5150
 $EndSCHEMATC
