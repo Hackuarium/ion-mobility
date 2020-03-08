@@ -1,0 +1,3 @@
+rule of thumb: in air limit is 1000V/mm
+
+in PLA 40 to 60 KV/mm is the limit
