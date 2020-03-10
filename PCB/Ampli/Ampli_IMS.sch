@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Ampli_IMS-rescue:CP1-Device C4
+L Ampli_IMS-rescue:CP1-Device C2
 U 1 1 5E635FA5
 P 2600 5850
-F 0 "C4" H 2715 5896 50  0000 L CNN
+F 0 "C2" H 2715 5896 50  0000 L CNN
 F 1 "47uF Tant" H 2715 5805 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_Tantal_D5.0mm_P5.00mm" H 2600 5850 50  0001 C CNN
 F 3 "~" H 2600 5850 50  0001 C CNN
@@ -36,23 +36,12 @@ F 3 "~" H 2600 5450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Ampli_IMS-rescue:C_Small-Device C5
-U 1 1 5E637A1E
-P 7050 5950
-F 0 "C5" V 6821 5950 50  0000 C CNN
-F 1 "C_Small" V 6912 5950 50  0000 C CNN
-F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 7050 5950 50  0001 C CNN
-F 3 "~" H 7050 5950 50  0001 C CNN
-	1    7050 5950
-	0    1    1    0   
-$EndComp
-$Comp
-L Ampli_IMS-rescue:C_Small-Device C2
+L Ampli_IMS-rescue:C_Small-Device C3
 U 1 1 5E637D4F
 P 3650 5600
-F 0 "C2" H 3742 5646 50  0000 L CNN
+F 0 "C3" H 3742 5646 50  0000 L CNN
 F 1 "0.1uF" H 3742 5555 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 3650 5600 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3650 5600 50  0001 C CNN
 F 3 "~" H 3650 5600 50  0001 C CNN
 	1    3650 5600
 	1    0    0    -1  
@@ -69,21 +58,21 @@ F 3 "~" H 5800 4150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Ampli_IMS-rescue:Conn_Coaxial_Power-Connector J1
+L Ampli_IMS-rescue:Conn_Coaxial_Power-Connector J2
 U 1 1 5E64687A
-P 2300 3750
-F 0 "J1" V 2083 3700 50  0000 C CNN
-F 1 "5227161-3" V 2174 3700 50  0000 C CNN
-F 2 "Connector_Coaxial:BNC_Amphenol_B6252HB-NPP3G-50_Horizontal" H 2300 3700 50  0001 C CNN
-F 3 "~" H 2300 3700 50  0001 C CNN
-	1    2300 3750
+P 3350 3650
+F 0 "J2" V 3133 3600 50  0000 C CNN
+F 1 "5227161-3" V 3224 3600 50  0000 C CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132203-12_Horizontal" H 3350 3600 50  0001 C CNN
+F 3 "~" H 3350 3600 50  0001 C CNN
+	1    3350 3650
 	0    1    1    0   
 $EndComp
 $Comp
-L Ampli_IMS-rescue:Conn_Coaxial_Power-Connector J2
+L Ampli_IMS-rescue:Conn_Coaxial_Power-Connector J3
 U 1 1 5E646F59
 P 8200 4600
-F 0 "J2" V 8425 4550 50  0000 C CNN
+F 0 "J3" V 8425 4550 50  0000 C CNN
 F 1 "5227161-3" V 8334 4550 50  0000 C CNN
 F 2 "Connector_Coaxial:BNC_Amphenol_B6252HB-NPP3G-50_Horizontal" H 8200 4550 50  0001 C CNN
 F 3 "~" H 8200 4550 50  0001 C CNN
@@ -91,23 +80,23 @@ F 3 "~" H 8200 4550 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Ampli_IMS-rescue:R-Device R1
+L Ampli_IMS-rescue:R-Device R2
 U 1 1 5E64D0E4
 P 5800 3050
-F 0 "R1" V 5593 3050 50  0000 C CNN
+F 0 "R2" V 5593 3050 50  0000 C CNN
 F 1 "10K MF 1/4W" V 5684 3050 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5730 3050 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" V 5730 3050 50  0001 C CNN
 F 3 "~" H 5800 3050 50  0001 C CNN
 	1    5800 3050
 	0    1    1    0   
 $EndComp
 $Comp
-L Ampli_IMS-rescue:R-Device R4
+L Ampli_IMS-rescue:R-Device R3
 U 1 1 5E64E5D8
 P 5950 4950
-F 0 "R4" V 5743 4950 50  0000 C CNN
+F 0 "R3" V 5743 4950 50  0000 C CNN
 F 1 "10K MF 1/4W" V 5834 4950 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5880 4950 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" V 5880 4950 50  0001 C CNN
 F 3 "~" H 5950 4950 50  0001 C CNN
 	1    5950 4950
 	0    1    1    0   
@@ -118,110 +107,70 @@ U 1 1 5E64E869
 P 6850 5600
 F 0 "R5" V 6643 5600 50  0000 C CNN
 F 1 "9.09K MF 0.6W" V 6734 5600 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6780 5600 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" V 6780 5600 50  0001 C CNN
 F 3 "~" H 6850 5600 50  0001 C CNN
 	1    6850 5600
 	0    1    1    0   
 $EndComp
 $Comp
-L Ampli_IMS-rescue:R-Device R7
-U 1 1 5E64E980
-P 6750 6200
-F 0 "R7" V 6650 6150 50  0000 L CNN
-F 1 "6.65K MF 1/2W" V 6850 5950 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6680 6200 50  0001 C CNN
-F 3 "~" H 6750 6200 50  0001 C CNN
-	1    6750 6200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Ampli_IMS-rescue:R-Device R6
-U 1 1 5E64EC65
-P 6450 6200
-F 0 "R6" V 6350 6150 50  0000 L CNN
-F 1 "1.13K MF 1/4W" V 6550 5950 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6380 6200 50  0001 C CNN
-F 3 "~" H 6450 6200 50  0001 C CNN
-	1    6450 6200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Ampli_IMS-rescue:R-Device R3
+L Ampli_IMS-rescue:R-Device R1
 U 1 1 5E64EECC
-P 4250 3750
-F 0 "R3" V 4043 3750 50  0000 C CNN
-F 1 "100M 1/4W" V 4134 3750 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 4180 3750 50  0001 C CNN
-F 3 "~" H 4250 3750 50  0001 C CNN
-F 4 "R" H 4250 3750 50  0001 C CNN "Spice_Primitive"
-F 5 "100M 1/4W" H 4250 3750 50  0001 C CNN "Spice_Model"
-F 6 "Y" H 4250 3750 50  0001 C CNN "Spice_Netlist_Enabled"
-	1    4250 3750
-	0    1    1    0   
-$EndComp
-$Comp
-L Ampli_IMS-rescue:R-Device R2
-U 1 1 5E64F0DF
-P 3200 3750
-F 0 "R2" V 2993 3750 50  0000 C CNN
-F 1 "10K MF 1/4W" V 3084 3750 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3130 3750 50  0001 C CNN
-F 3 "~" H 3200 3750 50  0001 C CNN
-	1    3200 3750
+P 4250 3250
+F 0 "R1" V 4043 3250 50  0000 C CNN
+F 1 "100M 1/4W" V 4134 3250 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" V 4180 3250 50  0001 C CNN
+F 3 "~" H 4250 3250 50  0001 C CNN
+F 4 "R" H 4250 3250 50  0001 C CNN "Spice_Primitive"
+F 5 "100M 1/4W" H 4250 3250 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4250 3250 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    4250 3250
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3350 3750 3750 3750
+	3900 3650 3750 3650
 Wire Wire Line
-	3900 4150 3750 4150
+	3750 3650 3750 3250
 Wire Wire Line
-	3750 4150 3750 3750
-Connection ~ 3750 3750
+	3750 3250 4100 3250
 Wire Wire Line
-	3750 3750 4100 3750
+	4500 3750 4750 3750
 Wire Wire Line
-	4500 4250 4750 4250
+	4750 3750 4750 3250
 Wire Wire Line
-	4750 4250 4750 3750
-Wire Wire Line
-	4750 3750 4400 3750
+	4750 3250 4400 3250
 $Comp
-L Ampli_IMS-rescue:GND-power #PWR02
+L Ampli_IMS-rescue:GND-power #PWR01
 U 1 1 5E656038
-P 1900 3750
-F 0 "#PWR02" H 1900 3500 50  0001 C CNN
-F 1 "GND" H 1905 3577 50  0000 C CNN
-F 2 "" H 1900 3750 50  0001 C CNN
-F 3 "" H 1900 3750 50  0001 C CNN
-	1    1900 3750
+P 2800 3650
+F 0 "#PWR01" H 2800 3400 50  0001 C CNN
+F 1 "GND" H 2805 3477 50  0000 C CNN
+F 2 "" H 2800 3650 50  0001 C CNN
+F 3 "" H 2800 3650 50  0001 C CNN
+	1    2800 3650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1900 3750 2100 3750
+	2800 3650 3150 3650
 $Comp
 L Ampli_IMS-rescue:GND-power #PWR03
 U 1 1 5E656992
-P 3750 4350
-F 0 "#PWR03" H 3750 4100 50  0001 C CNN
-F 1 "GND" H 3755 4177 50  0000 C CNN
-F 2 "" H 3750 4350 50  0001 C CNN
-F 3 "" H 3750 4350 50  0001 C CNN
-	1    3750 4350
+P 3750 3850
+F 0 "#PWR03" H 3750 3600 50  0001 C CNN
+F 1 "GND" H 3755 3677 50  0000 C CNN
+F 2 "" H 3750 3850 50  0001 C CNN
+F 3 "" H 3750 3850 50  0001 C CNN
+	1    3750 3850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3750 4350 3900 4350
-Wire Wire Line
-	6000 3850 6200 3850
-Wire Wire Line
-	6200 3850 6200 3050
+	3750 3850 3900 3850
 Wire Wire Line
 	6200 3050 5950 3050
 $Comp
-L Ampli_IMS-rescue:GND-power #PWR01
+L Ampli_IMS-rescue:GND-power #PWR06
 U 1 1 5E657CAA
 P 5450 3050
-F 0 "#PWR01" H 5450 2800 50  0001 C CNN
+F 0 "#PWR06" H 5450 2800 50  0001 C CNN
 F 1 "GND" H 5455 2877 50  0000 C CNN
 F 2 "" H 5450 3050 50  0001 C CNN
 F 3 "" H 5450 3050 50  0001 C CNN
@@ -239,19 +188,15 @@ Wire Wire Line
 Wire Wire Line
 	5600 4600 8100 4600
 Wire Wire Line
-	6000 4250 7350 4250
-Wire Wire Line
 	7350 2450 7350 2950
 Wire Wire Line
 	7050 2950 7350 2950
 Connection ~ 7350 2950
-Wire Wire Line
-	7350 2950 7350 4250
 $Comp
-L Ampli_IMS-rescue:GND-power #PWR04
+L Ampli_IMS-rescue:GND-power #PWR09
 U 1 1 5E65D011
 P 8600 4600
-F 0 "#PWR04" H 8600 4350 50  0001 C CNN
+F 0 "#PWR09" H 8600 4350 50  0001 C CNN
 F 1 "GND" H 8605 4427 50  0000 C CNN
 F 2 "" H 8600 4600 50  0001 C CNN
 F 3 "" H 8600 4600 50  0001 C CNN
@@ -288,10 +233,10 @@ F 3 "~" H 2150 6000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Ampli_IMS-rescue:Conn_01x03_Male-Connector J3
+L Ampli_IMS-rescue:Conn_01x03_Male-Connector J1
 U 1 1 5E662FAC
 P 1100 5650
-F 0 "J3" H 1208 5839 50  0000 C CNN
+F 0 "J1" H 1208 5839 50  0000 C CNN
 F 1 "Conn_01x03_Male" H 1208 5840 50  0001 C CNN
 F 2 "Connector_JST:JST_EH_B3B-EH-A_1x03_P2.50mm_Vertical" H 1100 5650 50  0001 C CNN
 F 3 "~" H 1100 5650 50  0001 C CNN
@@ -315,10 +260,10 @@ Wire Wire Line
 Wire Wire Line
 	2300 5300 2600 5300
 $Comp
-L Ampli_IMS-rescue:GND-power #PWR06
+L Ampli_IMS-rescue:GND-power #PWR02
 U 1 1 5E6689B9
 P 2950 5650
-F 0 "#PWR06" H 2950 5400 50  0001 C CNN
+F 0 "#PWR02" H 2950 5400 50  0001 C CNN
 F 1 "GND" H 2955 5477 50  0000 C CNN
 F 2 "" H 2950 5650 50  0001 C CNN
 F 3 "" H 2950 5650 50  0001 C CNN
@@ -335,17 +280,17 @@ Wire Wire Line
 Wire Wire Line
 	2600 5700 2600 5650
 Text Label 2600 6200 0    50   ~ 10
--15V
+-5V
 Wire Wire Line
 	2600 6000 2600 6200
 Connection ~ 2600 6000
 Text Label 2600 5200 0    50   ~ 10
-+15V
++5V
 Wire Wire Line
 	2600 5200 2600 5300
 Connection ~ 2600 5300
 Text Label 3650 5350 0    50   ~ 10
-+15V
++5V
 Wire Wire Line
 	3650 5750 3900 5750
 Wire Wire Line
@@ -362,10 +307,10 @@ Wire Wire Line
 Wire Wire Line
 	4150 5750 4150 5700
 $Comp
-L Ampli_IMS-rescue:GND-power #PWR07
+L Ampli_IMS-rescue:GND-power #PWR04
 U 1 1 5E67CE1A
 P 3900 5750
-F 0 "#PWR07" H 3900 5500 50  0001 C CNN
+F 0 "#PWR04" H 3900 5500 50  0001 C CNN
 F 1 "GND" H 3905 5577 50  0000 C CNN
 F 2 "" H 3900 5750 50  0001 C CNN
 F 3 "" H 3900 5750 50  0001 C CNN
@@ -376,7 +321,7 @@ Connection ~ 3900 5750
 Wire Wire Line
 	3900 5750 4150 5750
 Text Label 3650 6200 0    50   ~ 10
--15V
+-5V
 Wire Wire Line
 	3650 6600 3900 6600
 Wire Wire Line
@@ -393,10 +338,10 @@ Wire Wire Line
 Wire Wire Line
 	4150 6600 4150 6550
 $Comp
-L Ampli_IMS-rescue:GND-power #PWR09
+L Ampli_IMS-rescue:GND-power #PWR05
 U 1 1 5E67E967
 P 3900 6600
-F 0 "#PWR09" H 3900 6350 50  0001 C CNN
+F 0 "#PWR05" H 3900 6350 50  0001 C CNN
 F 1 "GND" H 3905 6427 50  0000 C CNN
 F 2 "" H 3900 6600 50  0001 C CNN
 F 3 "" H 3900 6600 50  0001 C CNN
@@ -406,10 +351,10 @@ $EndComp
 Connection ~ 3900 6600
 Wire Wire Line
 	3900 6600 4150 6600
-Text Label 4100 3950 0    50   ~ 10
-+15V
-Text Label 4100 4550 0    50   ~ 10
--15V
+Text Label 4100 3450 0    50   ~ 10
++5V
+Text Label 4100 4050 0    50   ~ 10
+-5V
 $Comp
 L Ampli_IMS-rescue:Opamp_Dual_Generic-Device U2
 U 1 1 5E681D04
@@ -446,10 +391,10 @@ $EndComp
 Wire Wire Line
 	6100 4950 6350 4950
 $Comp
-L Ampli_IMS-rescue:GND-power #PWR05
+L Ampli_IMS-rescue:GND-power #PWR07
 U 1 1 5E6910BB
 P 5600 4950
-F 0 "#PWR05" H 5600 4700 50  0001 C CNN
+F 0 "#PWR07" H 5600 4700 50  0001 C CNN
 F 1 "GND" H 5605 4777 50  0000 C CNN
 F 2 "" H 5600 4950 50  0001 C CNN
 F 3 "" H 5600 4950 50  0001 C CNN
@@ -470,94 +415,43 @@ Wire Wire Line
 	7250 5050 7250 5600
 Wire Wire Line
 	7250 5600 7000 5600
-Wire Wire Line
-	7250 5050 7250 4050
-Wire Wire Line
-	7250 4050 6000 4050
 Connection ~ 7250 5050
-Wire Wire Line
-	6000 3650 6350 3650
-Wire Wire Line
-	6350 3650 6350 4950
 Connection ~ 6350 4950
 Wire Wire Line
 	6350 4950 6500 4950
-Wire Wire Line
-	6450 5600 6450 5950
-Connection ~ 6450 5600
-Wire Wire Line
-	7150 5950 7250 5950
-Wire Wire Line
-	7250 5950 7250 5600
-Connection ~ 7250 5600
-Wire Wire Line
-	6450 5950 6750 5950
-Wire Wire Line
-	6450 6050 6450 5950
-Connection ~ 6450 5950
-Wire Wire Line
-	6750 6050 6750 5950
-Connection ~ 6750 5950
-Wire Wire Line
-	6750 5950 6950 5950
-Wire Wire Line
-	6450 6350 6450 6450
-Wire Wire Line
-	6450 6450 6600 6450
-Wire Wire Line
-	6750 6450 6750 6350
-$Comp
-L Ampli_IMS-rescue:GND-power #PWR08
-U 1 1 5E6AC4E9
-P 6600 6450
-F 0 "#PWR08" H 6600 6200 50  0001 C CNN
-F 1 "GND" H 6605 6277 50  0000 C CNN
-F 2 "" H 6600 6450 50  0001 C CNN
-F 3 "" H 6600 6450 50  0001 C CNN
-	1    6600 6450
-	1    0    0    -1  
-$EndComp
-Connection ~ 6600 6450
-Wire Wire Line
-	6600 6450 6750 6450
 Text Label 1650 6500 0    50   ~ 10
-+15V
++5V
 Text Label 1650 7100 0    50   ~ 10
--15V
-Wire Wire Line
-	4750 3750 5600 3750
-Connection ~ 4750 3750
-Wire Wire Line
-	2400 3750 3050 3750
+-5V
 $Comp
-L Ampli_IMS-rescue:C_Small-Device C3
+L Ampli_IMS-rescue:C_Small-Device C5
 U 1 1 5E6E3A81
 P 4150 5600
-F 0 "C3" H 4242 5646 50  0000 L CNN
+F 0 "C5" H 4242 5646 50  0000 L CNN
 F 1 "0.1uF" H 4242 5555 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 4150 5600 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4150 5600 50  0001 C CNN
 F 3 "~" H 4150 5600 50  0001 C CNN
 	1    4150 5600
 	1    0    0    -1  
 $EndComp
 $Comp
-L Ampli_IMS-rescue:C_Small-Device C6
+L Ampli_IMS-rescue:C_Small-Device C4
 U 1 1 5E6E3F4A
 P 3650 6450
-F 0 "C6" H 3742 6496 50  0000 L CNN
+F 0 "C4" H 3742 6496 50  0000 L CNN
 F 1 "0.1uF" H 3742 6405 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 3650 6450 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3650 6450 50  0001 C CNN
 F 3 "~" H 3650 6450 50  0001 C CNN
 	1    3650 6450
 	1    0    0    -1  
 $EndComp
 $Comp
-L Ampli_IMS-rescue:C_Small-Device C7
+L Ampli_IMS-rescue:C_Small-Device C6
 U 1 1 5E6E4441
 P 4150 6450
-F 0 "C7" H 4242 6496 50  0000 L CNN
+F 0 "C6" H 4242 6496 50  0000 L CNN
 F 1 "0.1uF" H 4242 6405 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 4150 6450 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4150 6450 50  0001 C CNN
 F 3 "~" H 4150 6450 50  0001 C CNN
 	1    4150 6450
 	1    0    0    -1  
@@ -572,15 +466,87 @@ Wire Notes Line
 	4500 5150 3450 5150
 Text Notes 3550 5100 0    50   ~ 0
 Capacités de découplage\n
+Connection ~ 7250 5600
+Connection ~ 6450 5600
+Wire Wire Line
+	7250 5950 7250 5600
+Wire Wire Line
+	6950 5950 7250 5950
+Wire Wire Line
+	6450 5600 6450 5950
 $Comp
-L Amplifier_Operational:ADA4625-1 U1
-U 1 1 5E61DA9C
-P 4200 4250
-F 0 "U1" H 4544 4296 50  0000 L CNN
-F 1 "ADA4625-1" H 4544 4205 50  0000 L CNN
-F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 4100 4050 50  0001 L CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21314g.pdf" H 4350 4400 50  0001 C CNN
-	1    4200 4250
+L Ampli_IMS-rescue:C_Small-Device C7
+U 1 1 5E637A1E
+P 6850 5950
+F 0 "C7" V 6621 5950 50  0000 C CNN
+F 1 "100pF" V 6712 5950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6850 5950 50  0001 C CNN
+F 3 "~" H 6850 5950 50  0001 C CNN
+	1    6850 5950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6400 5150 6450 5150
+$Comp
+L Ampli_IMS-rescue:R-Device R4
+U 1 1 5E64EC65
+P 6250 5150
+F 0 "R4" V 6150 5100 50  0000 L CNN
+F 1 "1K" V 6350 5100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" V 6180 5150 50  0001 C CNN
+F 3 "~" H 6250 5150 50  0001 C CNN
+	1    6250 5150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6450 5950 6750 5950
+Connection ~ 6450 5150
+$Comp
+L Ampli_IMS-rescue:GND-power #PWR08
+U 1 1 5E6C7495
+P 5900 5200
+F 0 "#PWR08" H 5900 4950 50  0001 C CNN
+F 1 "GND" H 5905 5027 50  0000 C CNN
+F 2 "" H 5900 5200 50  0001 C CNN
+F 3 "" H 5900 5200 50  0001 C CNN
+	1    5900 5200
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	5900 5200 5900 5150
+Wire Wire Line
+	5900 5150 6100 5150
+$Comp
+L Amplifier_Operational:LMC6081 U1
+U 1 1 5E683AF2
+P 4200 3750
+F 0 "U1" H 4544 3796 50  0000 L CNN
+F 1 "LMC6081" H 4400 3650 50  0000 L CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 4200 3750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm321.pdf" H 4200 3750 50  0001 C CNN
+	1    4200 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 3650 3750 3650
+Connection ~ 3750 3650
+Wire Wire Line
+	4750 3750 5600 3750
+Connection ~ 4750 3750
+Wire Wire Line
+	6000 3850 6200 3850
+Wire Wire Line
+	6200 3050 6200 3850
+Wire Wire Line
+	6000 3650 6350 3650
+Wire Wire Line
+	6350 3650 6350 4950
+Wire Wire Line
+	6000 4050 7250 4050
+Wire Wire Line
+	7250 4050 7250 5050
+Wire Wire Line
+	6000 4250 7350 4250
+Wire Wire Line
+	7350 2950 7350 4250
 $EndSCHEMATC
