@@ -189,10 +189,10 @@ Wire Wire Line
 	2750 2300 2750 2350
 Connection ~ 2750 2350
 $Comp
-L Connector:Conn_01x01_Female E29
+L Connector:Conn_01x01_Female E28
 U 1 1 5E6A298B
 P 2750 2100
-F 0 "E29" V 2700 2050 50  0000 R CNN
+F 0 "E28" V 2700 2050 50  0000 R CNN
 F 1 "Electrode in" V 2600 2050 50  0000 R CNN
 F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 2750 2100 50  0001 C CNN
 F 3 "~" H 2750 2100 50  0001 C CNN
@@ -437,10 +437,10 @@ F 3 "~" H 3450 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x01_Female E30
+L Connector:Conn_01x01_Female E29
 U 1 1 5E65A357
 P 3850 2750
-F 0 "E30" H 3850 2850 50  0000 R CNN
+F 0 "E29" H 3850 2850 50  0000 R CNN
 F 1 "Electrode out" H 4200 2700 50  0000 R CNN
 F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 3850 2750 50  0001 C CNN
 F 3 "~" H 3850 2750 50  0001 C CNN
@@ -455,10 +455,10 @@ Wire Wire Line
 Wire Wire Line
 	3450 4700 3450 5150
 $Comp
-L Connector:Conn_01x01_Female E31
+L Connector:Conn_01x01_Female E30
 U 1 1 5E6A87F4
 P 3900 5150
-F 0 "E31" H 3900 5250 50  0000 R CNN
+F 0 "E30" H 3900 5250 50  0000 R CNN
 F 1 "Electrode out" H 4100 5100 50  0000 R CNN
 F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 3900 5150 50  0001 C CNN
 F 3 "~" H 3900 5150 50  0001 C CNN
