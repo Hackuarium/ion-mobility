@@ -71,15 +71,15 @@ $EndComp
 $Comp
 L Ampli_IMS-rescue:R-Device R1
 U 1 1 5E64EECC
-P 4200 3200
-F 0 "R1" V 3993 3200 50  0000 C CNN
-F 1 "100M 1/4W" V 4084 3200 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" V 4130 3200 50  0001 C CNN
-F 3 "~" H 4200 3200 50  0001 C CNN
-F 4 "R" H 4200 3200 50  0001 C CNN "Spice_Primitive"
-F 5 "100M 1/4W" H 4200 3200 50  0001 C CNN "Spice_Model"
-F 6 "Y" H 4200 3200 50  0001 C CNN "Spice_Netlist_Enabled"
-	1    4200 3200
+P 4250 3200
+F 0 "R1" V 4043 3200 50  0000 C CNN
+F 1 "100M 1/4W" V 4134 3200 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" V 4180 3200 50  0001 C CNN
+F 3 "~" H 4250 3200 50  0001 C CNN
+F 4 "R" H 4250 3200 50  0001 C CNN "Spice_Primitive"
+F 5 "100M 1/4W" H 4250 3200 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4250 3200 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    4250 3200
 	0    1    1    0   
 $EndComp
 $Comp
@@ -299,20 +299,18 @@ Wire Notes Line
 Text Notes 5750 4650 0    50   ~ 0
 Decoupling capacitors
 Wire Wire Line
-	6500 2450 6800 2450
+	4350 2650 4700 2650
 $Comp
 L Ampli_IMS-rescue:C_Small-Device C1
 U 1 1 5E637A1E
-P 6400 2450
-F 0 "C1" V 6171 2450 50  0000 C CNN
-F 1 "100pF" V 6262 2450 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 6400 2450 50  0001 C CNN
-F 3 "~" H 6400 2450 50  0001 C CNN
-	1    6400 2450
+P 4250 2650
+F 0 "C1" V 4021 2650 50  0000 C CNN
+F 1 "0.01pF" V 4112 2650 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4250 2650 50  0001 C CNN
+F 3 "~" H 4250 2650 50  0001 C CNN
+	1    4250 2650
 	0    1    -1   0   
 $EndComp
-Wire Wire Line
-	6000 2450 6300 2450
 $Comp
 L Ampli_IMS-rescue:GND-power #PWR04
 U 1 1 5E6C7495
@@ -371,12 +369,12 @@ Wire Wire Line
 Wire Wire Line
 	3800 3650 3800 3200
 Wire Wire Line
-	3800 3200 4050 3200
+	3800 3200 4100 3200
 Connection ~ 3800 3650
 Wire Wire Line
 	3800 3650 3900 3650
 Wire Wire Line
-	4350 3200 4700 3200
+	4400 3200 4700 3200
 Wire Wire Line
 	4700 3200 4700 3750
 Connection ~ 4700 3750
@@ -445,17 +443,13 @@ Wire Wire Line
 Wire Wire Line
 	5500 3550 6000 3550
 Wire Wire Line
-	6000 2450 6000 3000
-Wire Wire Line
-	6800 2450 6800 2850
+	4700 2650 4700 3200
 Wire Wire Line
 	6250 3000 6000 3000
-Connection ~ 6000 3000
 Wire Wire Line
 	6000 3000 6000 3550
 Wire Wire Line
 	6400 2850 6800 2850
-Connection ~ 6800 2850
 Wire Wire Line
 	6800 2850 6800 3650
 NoConn ~ 6550 3000
@@ -470,14 +464,14 @@ Wire Notes Line
 Text Notes 3750 4850 0    50   ~ 0
 Alimentation\n
 Wire Notes Line
-	3550 2900 3550 4100
+	3550 2450 3550 4100
 Wire Notes Line
 	3550 4100 4800 4100
 Wire Notes Line
-	4800 4100 4800 2900
+	4800 4100 4800 2450
 Wire Notes Line
-	4800 2900 3550 2900
-Text Notes 3550 2850 0    50   ~ 0
+	4800 2450 3550 2450
+Text Notes 3550 2350 0    50   ~ 0
 Stage 1 : Transimpedance amplifier\n(Critical part)
 Wire Notes Line
 	5200 2300 5200 4400
@@ -490,5 +484,13 @@ Wire Notes Line
 Text Notes 5500 2250 0    50   ~ 0
 Stage 2 : custom gain amplifier
 Text Notes 6950 2900 0    50   ~ 0
-Gain=1 when P1=0\nGain=30 when P1=300K
+Gain=1 when P1=0\nGain=30 when P1=300K\nAOP is the same than stage 1.
+Connection ~ 4700 3200
+Wire Wire Line
+	3800 2650 3800 3200
+Wire Wire Line
+	3800 2650 4150 2650
+Connection ~ 3800 3200
+Text Notes 2700 2700 0    50   ~ 0
+Cutoff freq : 150kHZ\nGain : 10e8
 $EndSCHEMATC
