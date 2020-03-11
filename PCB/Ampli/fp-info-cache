@@ -1,4 +1,4 @@
-16933640630133372
+16935233688415372
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -73902,6 +73902,13 @@ TestPoint
 TestPoint_THTPad_D4.0mm_Drill2.0mm
 THT pad as test Point, diameter 4.0mm, hole diameter 2.0mm
 test point THT pad
+0
+1
+1
+TestPoint
+Via-GND
+
+
 0
 1
 1
