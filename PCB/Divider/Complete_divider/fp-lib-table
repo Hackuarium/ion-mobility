@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name Complete_divider)(type KiCad)(uri ${KIPRJMOD}/Complete_divider.pretty)(options "")(descr ""))
+  (lib (name HV_source)(type KiCad)(uri ${KIPRJMOD}/HV_source.pretty)(options "")(descr ""))
+)

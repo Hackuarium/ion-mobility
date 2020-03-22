@@ -18,6 +18,26 @@ X Pin_1 1 -200 0 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Connector_Conn_01x02_Male
+#
+DEF Connector_Conn_01x02_Male J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Connector_Conn_01x02_Male" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S 34 -95 0 -105 1 1 6 F
+S 34 5 0 -5 1 1 6 F
+P 2 1 1 6 50 -100 34 -100 N
+P 2 1 1 6 50 0 34 0 N
+X Pin_1 1 200 0 150 L 50 50 1 1 P
+X Pin_2 2 200 -100 150 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Device_C
 #
 DEF Device_C C 0 10 N Y 1 F N
@@ -87,6 +107,45 @@ DRAW
 S -30 70 30 -70 0 1 8 N
 X ~ 1 0 100 30 D 50 50 1 1 P
 X ~ 2 0 -100 30 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# HV_source_15A
+#
+DEF HV_source_15A HV 0 40 Y Y 1 F P
+F0 "HV" -650 450 50 H V C CNN
+F1 "HV_source_15A" -650 -400 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+T 0 0 -300 50 0 0 0 "15kV HV source" Normal 0 C C
+S -800 400 800 -350 0 1 0 f
+X Vin- 1 -900 -250 100 R 50 50 1 1 I
+X HV 10 900 150 100 L 50 50 1 1 O
+X Vin+ 2 -900 -150 100 R 50 50 1 1 I
+X Iout_monitor 3 -900 -50 100 R 50 50 1 1 I
+X En/Dis 4 -900 50 100 R 50 50 1 1 I
+X Signal_GND 6 -900 150 100 R 50 50 1 1 I
+X +5V_Ref 7 -900 250 100 R 50 50 1 1 I
+X HV_GND 8 900 -150 100 L 50 50 1 1 O
+X Eout_monitor 9 350 -450 100 U 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# HV_source_G40
+#
+DEF HV_source_G40 HV 0 40 Y Y 1 F P
+F0 "HV" -350 350 50 H V C CNN
+F1 "HV_source_G40" -350 -350 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+T 0 0 -250 50 0 0 0 "4kV HV source" Normal 0 C C
+S -450 300 450 -300 0 1 0 f
+X In+ 1 -550 50 100 R 50 50 1 1 I
+X In- 2 -550 -50 100 R 50 50 1 1 I
+X HV+ 3 550 200 100 L 50 50 1 1 O
+X HV- 4 550 -200 100 L 50 50 1 1 O
 ENDDRAW
 ENDDEF
 #

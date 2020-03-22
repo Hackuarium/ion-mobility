@@ -838,15 +838,15 @@ $EndComp
 $Comp
 L Connector:Conn_01x01_Female J?
 U 1 1 5E7464A5
-P 3600 3300
+P 3600 2900
 AR Path="/5E6FA86A/5E7464A5" Ref="J?"  Part="1" 
 AR Path="/5E63EFA9/5E7464A5" Ref="J31"  Part="1" 
 AR Path="/5E7464A5" Ref="J31"  Part="1" 
-F 0 "J31" V 3538 3212 50  0000 R CNN
-F 1 "Electr." V 3447 3212 50  0000 R CNN
-F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 3600 3300 50  0001 C CNN
-F 3 "~" H 3600 3300 50  0001 C CNN
-	1    3600 3300
+F 0 "J31" V 3538 2812 50  0000 R CNN
+F 1 "Electr." V 3447 2812 50  0000 R CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 3600 2900 50  0001 C CNN
+F 3 "~" H 3600 2900 50  0001 C CNN
+	1    3600 2900
 	0    -1   -1   0   
 $EndComp
 Connection ~ 3600 3500
@@ -854,7 +854,7 @@ Wire Wire Line
 	3600 3500 3800 3500
 Wire Wire Line
 	3800 3500 3800 4200
-Text Notes 2850 3250 0    50   ~ 0
+Text Notes 3150 2850 0    50   ~ 0
 Only a pin not electrode
 $Comp
 L Connector:Conn_01x01_Female E?
@@ -871,4 +871,6 @@ F 3 "~" H 3800 4400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Connection ~ 3800 4200
+Wire Wire Line
+	3600 3100 3600 3500
 $EndSCHEMATC
