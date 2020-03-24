@@ -738,10 +738,10 @@ Connection ~ 3100 3950
 Wire Wire Line
 	3100 3950 3250 3950
 $Comp
-L Connector:Conn_01x01_Female J1
+L Connector:Conn_01x01_Female J?
 U 1 1 5E64177D
 P 3300 3000
-AR Path="/5E64177D" Ref="J1"  Part="1" 
+AR Path="/5E64177D" Ref="J?"  Part="1" 
 AR Path="/5F465EFE/5E64177D" Ref="J?"  Part="1" 
 AR Path="/5E63F098/5E64177D" Ref="J?"  Part="1" 
 AR Path="/5E6FA86A/5E64177D" Ref="J1"  Part="1" 
