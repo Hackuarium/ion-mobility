@@ -671,137 +671,6 @@ Wire Wire Line
 Wire Wire Line
 	10550 3000 10400 3000
 $Comp
-L Regulator_Switching:TPS562200 U?
-U 1 1 5EA52D20
-P 8600 5700
-F 0 "U?" H 8600 6067 50  0000 C CNN
-F 1 "TPS561208" H 8600 5976 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 8650 5450 50  0001 L CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tps563200.pdf" H 8600 5700 50  0001 C CNN
-	1    8600 5700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7800 5800 7800 5600
-Wire Wire Line
-	8200 5800 8150 5800
-Wire Wire Line
-	8150 5800 8150 5600
-Connection ~ 8150 5600
-Wire Wire Line
-	8150 5600 8200 5600
-$Comp
-L power:+15V #PWR?
-U 1 1 5EA9D284
-P 7600 5550
-F 0 "#PWR?" H 7600 5400 50  0001 C CNN
-F 1 "+15V" H 7615 5723 50  0000 C CNN
-F 2 "" H 7600 5550 50  0001 C CNN
-F 3 "" H 7600 5550 50  0001 C CNN
-	1    7600 5550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7600 5550 7600 5600
-$Comp
-L Device:C_Small Cboost
-U 1 1 5EABD013
-P 9150 5600
-F 0 "Cboost" V 8921 5600 50  0000 C CNN
-F 1 "100nF" V 9012 5600 50  0000 C CNN
-F 2 "" H 9150 5600 50  0001 C CNN
-F 3 "~" H 9150 5600 50  0001 C CNN
-	1    9150 5600
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:L_Small L1
-U 1 1 5EACACD4
-P 9500 5600
-F 0 "L1" V 9450 5600 50  0000 C CNN
-F 1 "4.7uH" V 9550 5600 50  0000 C CNN
-F 2 "" H 9500 5600 50  0001 C CNN
-F 3 "~" H 9500 5600 50  0001 C CNN
-	1    9500 5600
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small Rfbt
-U 1 1 5EAE71C6
-P 9750 5700
-F 0 "Rfbt" H 9800 5750 50  0000 L CNN
-F 1 "73.2k" H 9800 5650 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" H 9750 5700 50  0001 C CNN
-F 3 "~" H 9750 5700 50  0001 C CNN
-	1    9750 5700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small Rfbb
-U 1 1 5EB02F4B
-P 9750 5950
-F 0 "Rfbb" H 9800 6000 50  0000 L CNN
-F 1 "10k" H 9800 5900 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" H 9750 5950 50  0001 C CNN
-F 3 "~" H 9750 5950 50  0001 C CNN
-	1    9750 5950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9600 5600 9750 5600
-Wire Wire Line
-	9750 5850 9750 5800
-Connection ~ 9750 5800
-$Comp
-L Device:C_Small Cout
-U 1 1 5EB208ED
-P 10200 5800
-F 0 "Cout" H 10292 5846 50  0000 L CNN
-F 1 "47uF" H 10292 5755 50  0000 L CNN
-F 2 "" H 10200 5800 50  0001 C CNN
-F 3 "~" H 10200 5800 50  0001 C CNN
-	1    10200 5800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10200 5700 10200 5600
-Wire Wire Line
-	10200 5600 9750 5600
-Connection ~ 9750 5600
-Wire Wire Line
-	9750 6050 10200 6050
-Wire Wire Line
-	10200 6050 10200 5900
-Wire Wire Line
-	9050 5600 9000 5600
-Wire Wire Line
-	9300 5600 9300 5700
-Wire Wire Line
-	9300 5700 9000 5700
-Wire Wire Line
-	9000 5800 9750 5800
-Wire Wire Line
-	9300 5600 9400 5600
-Wire Wire Line
-	9250 5600 9300 5600
-Connection ~ 9300 5600
-Wire Wire Line
-	7600 5600 7800 5600
-$Comp
-L Device:CP1_Small Cin
-U 1 1 5EB883F8
-P 7800 5900
-F 0 "Cin" H 7891 5946 50  0000 L CNN
-F 1 "22uF" H 7891 5855 50  0000 L CNN
-F 2 "" H 7800 5900 50  0001 C CNN
-F 3 "~" H 7800 5900 50  0001 C CNN
-	1    7800 5900
-	1    0    0    -1  
-$EndComp
-Connection ~ 7800 5600
-Wire Wire Line
-	7800 5600 8150 5600
-$Comp
 L Device:R R?
 U 1 1 5E901094
 P 4100 2750
@@ -812,20 +681,6 @@ F 3 "~" H 4100 2750 50  0001 C CNN
 	1    4100 2750
 	0    1    1    0   
 $EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 5E8F6A23
-P 10200 5550
-F 0 "#PWR?" H 10200 5400 50  0001 C CNN
-F 1 "+5V" H 10215 5723 50  0000 C CNN
-F 2 "" H 10200 5550 50  0001 C CNN
-F 3 "" H 10200 5550 50  0001 C CNN
-	1    10200 5550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10200 5550 10200 5600
-Connection ~ 10200 5600
 $Comp
 L power:+5V #PWR?
 U 1 1 5E8FE284
@@ -886,46 +741,6 @@ F 3 "" H 10550 3050 50  0001 C CNN
 	1    10550 3050
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GNDA #PWR?
-U 1 1 5E98CF21
-P 9750 6100
-F 0 "#PWR?" H 9750 5850 50  0001 C CNN
-F 1 "GNDA" H 9750 5950 50  0000 C CNN
-F 2 "" H 9750 6100 50  0001 C CNN
-F 3 "" H 9750 6100 50  0001 C CNN
-	1    9750 6100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9750 6100 9750 6050
-Connection ~ 9750 6050
-$Comp
-L power:GNDA #PWR?
-U 1 1 5E9945EB
-P 8600 6100
-F 0 "#PWR?" H 8600 5850 50  0001 C CNN
-F 1 "GNDA" H 8600 5950 50  0000 C CNN
-F 2 "" H 8600 6100 50  0001 C CNN
-F 3 "" H 8600 6100 50  0001 C CNN
-	1    8600 6100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8600 6000 8600 6100
-$Comp
-L power:GNDA #PWR?
-U 1 1 5E99BB27
-P 7800 6100
-F 0 "#PWR?" H 7800 5850 50  0001 C CNN
-F 1 "GNDA" H 7800 5950 50  0000 C CNN
-F 2 "" H 7800 6100 50  0001 C CNN
-F 3 "" H 7800 6100 50  0001 C CNN
-	1    7800 6100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7800 6000 7800 6100
 $Comp
 L power:GNDA #PWR?
 U 1 1 5E9B1BBA
@@ -1040,14 +855,6 @@ Text GLabel 5800 5250 2    50   Output ~ 0
 ALIMHV-
 Wire Wire Line
 	4400 5050 4650 5050
-Wire Notes Line
-	7400 5250 7400 6500
-Wire Notes Line
-	7400 6500 10500 6500
-Wire Notes Line
-	10500 6500 10500 5250
-Wire Notes Line
-	10500 5250 7400 5250
 Wire Notes Line
 	6250 4250 2950 4250
 Wire Wire Line
