@@ -44,7 +44,7 @@ Wire Wire Line
 Wire Wire Line
 	7100 3100 6850 3100
 Wire Wire Line
-	6850 3500 6900 3500
+	6850 3450 6900 3450
 Wire Wire Line
 	6900 4950 7050 4950
 $Sheet
@@ -79,11 +79,12 @@ F2 "Grid1" O R 6850 2700 50
 F3 "Grid2" O R 6850 2900 50 
 F4 "Grid3" O R 6850 3100 50 
 F5 "Electrode_in" I L 4800 3400 50 
-F6 "Electrode_out" O R 6850 3500 50 
+F6 "Electrode_out" O R 6850 3450 50 
 F7 "Pwr_out" O R 6850 2350 50 
 F8 "Middle_electrode1" O R 6850 2550 50 
 F9 "Middle_electrode2" O R 6850 3250 50 
 F10 "Needle" O R 6850 2450 50 
+F11 "Aperture_Grid" I R 6850 3600 50 
 $EndSheet
 Wire Wire Line
 	7150 4000 6300 4000
@@ -112,10 +113,10 @@ Wire Wire Line
 Wire Wire Line
 	6300 4850 6300 4000
 Wire Wire Line
-	6900 3500 6900 4950
+	6900 3450 6900 4950
 NoConn ~ 10200 4950
 Wire Wire Line
-	9500 4950 10200 4950
+	9500 4950 9650 4950
 Wire Wire Line
 	6850 2450 7050 2450
 Wire Wire Line
@@ -127,4 +128,11 @@ Wire Wire Line
 Wire Wire Line
 	1500 5000 1550 5000
 NoConn ~ 1550 5000
+Wire Wire Line
+	6850 3600 9650 3600
+Wire Wire Line
+	9650 3600 9650 4950
+Connection ~ 9650 4950
+Wire Wire Line
+	9650 4950 10200 4950
 $EndSCHEMATC

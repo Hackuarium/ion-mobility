@@ -47,10 +47,8 @@ Text Label 5100 3250 0    50   ~ 0
 Grid3
 Text Label 5100 1650 0    50   ~ 0
 Grid2
-Text Notes 5350 1350 0    50   ~ 0
-5kV
-Text Notes 950  3200 0    50   ~ 0
-INFO : \n\n10M par résistance, soit un courant total de \n10kV/580M = 0.001724A = 17.24uA\n\n
+Text Notes 850  4100 0    50   ~ 0
+INFO : \n\n- For HV1 : no load \nP1 = 12V*110mA = 1.32W\n\n- For HV2 : \n10M per resistor, hence in total :  \n10kV/580M = 17.24uA\n12kV/580M = 20.6uA \n=> P2= 0.25W\n\n
 Wire Wire Line
 	3350 1350 5100 1350
 Wire Wire Line
@@ -99,12 +97,12 @@ $EndComp
 $Comp
 L Connector:Conn_01x01_Female E?
 U 1 1 5E65A357
-P 5700 6850
-F 0 "E?" H 5700 6950 50  0000 R CNN
-F 1 "Electrode out" H 6050 6800 50  0000 R CNN
-F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 5700 6850 50  0001 C CNN
-F 3 "~" H 5700 6850 50  0001 C CNN
-	1    5700 6850
+P 6000 7150
+F 0 "E?" H 6000 7250 50  0000 R CNN
+F 1 "Electrode out" H 6350 7100 50  0000 R CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 6000 7150 50  0001 C CNN
+F 3 "~" H 6000 7150 50  0001 C CNN
+	1    6000 7150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -132,30 +130,24 @@ $EndComp
 $Comp
 L Connector:Conn_01x02_Male J?
 U 1 1 5E7A267D
-P 7100 2200
-F 0 "J?" H 7200 1950 50  0000 C CNN
-F 1 "Alim2" H 7200 2050 50  0000 C CNN
-F 2 "" H 7100 2200 50  0001 C CNN
-F 3 "~" H 7100 2200 50  0001 C CNN
-	1    7100 2200
+P 7100 2250
+F 0 "J?" H 7200 2000 50  0000 C CNN
+F 1 "Alim2" H 7200 2100 50  0000 C CNN
+F 2 "" H 7100 2250 50  0001 C CNN
+F 3 "~" H 7100 2250 50  0001 C CNN
+	1    7100 2250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7300 2200 7550 2200
-Wire Wire Line
-	7300 2300 7550 2300
+	7300 2350 7550 2350
 Wire Wire Line
 	9450 1900 9350 1900
 Wire Wire Line
 	10250 950  10100 950 
 Text GLabel 10250 950  2    50   Output ~ 0
 NEEDLE
-Text GLabel 10250 1600 2    50   Output ~ 0
+Text GLabel 10250 1350 2    50   Output ~ 0
 COUNTER_ELECTRODE
-Wire Wire Line
-	9450 1600 9850 1600
-Wire Wire Line
-	9450 1600 9450 1900
 $Comp
 L power:GND #PWR?
 U 1 1 5E7BC084
@@ -177,49 +169,22 @@ Wire Wire Line
 	9450 2200 9850 2200
 Connection ~ 9450 2200
 Wire Wire Line
-	7550 2050 7550 2000
-Wire Wire Line
-	7550 1750 7550 1800
-Wire Wire Line
-	7250 2050 7550 2050
-Wire Wire Line
-	7400 1900 7550 1900
-Wire Wire Line
-	7250 1750 7550 1750
+	7500 1750 7550 1750
 $Comp
 L Device:R_POT POT?
 U 1 1 5E7C337A
-P 7250 1900
-F 0 "POT?" H 7181 1946 50  0000 R CNN
-F 1 "50K" V 7250 1950 50  0000 R CNN
-F 2 "" H 7250 1900 50  0001 C CNN
-F 3 "~" H 7250 1900 50  0001 C CNN
-	1    7250 1900
-	1    0    0    -1  
+P 7350 1750
+F 0 "POT?" V 7250 1850 50  0000 R CNN
+F 1 "50K" V 7350 1800 50  0000 R CNN
+F 2 "" H 7350 1750 50  0001 C CNN
+F 3 "~" H 7350 1750 50  0001 C CNN
+	1    7350 1750
+	0    1    1    0   
 $EndComp
 Wire Wire Line
-	9850 1350 9850 1300
+	9850 1350 10100 1350
 Wire Wire Line
-	9850 1000 9850 950 
-Connection ~ 9850 950 
-$Comp
-L Device:C C?
-U 1 1 5E7E1B4C
-P 9850 1900
-F 0 "C?" H 9965 1946 50  0000 L CNN
-F 1 "2500pF 15 kV" H 9965 1855 50  0000 L CNN
-F 2 "Capacitor_THT:C_Rect_L13.0mm_W8.0mm_P10.00mm_FKS3_FKP3_MKS4" H 9888 1750 50  0001 C CNN
-F 3 "~" H 9850 1900 50  0001 C CNN
-	1    9850 1900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9850 1750 9850 1600
-Connection ~ 9850 1600
-Wire Wire Line
-	9850 1600 10100 1600
-Wire Wire Line
-	9850 2050 9850 2200
+	9850 1900 9850 2200
 Connection ~ 9850 2200
 Wire Wire Line
 	9850 2200 10250 2200
@@ -267,33 +232,20 @@ $EndComp
 Text Label 3300 6900 0    50   ~ 0
 Grid2
 Wire Notes Line
-	2100 7650 6250 7650
+	2100 7650 6950 7650
 Text Notes 3100 7550 0    118  ~ 0
 Pinouts for Electrodes\n
 Text HLabel 2700 650  0    50   Input ~ 0
 Electrode_in
-Text HLabel 10250 1450 2    50   Output ~ 0
+Text HLabel 10250 1200 2    50   Output ~ 0
 Pwr_out
 Wire Wire Line
-	10100 1600 10100 1450
+	10100 1350 10100 1200
 Wire Wire Line
-	10100 1450 10250 1450
-Connection ~ 10100 1600
+	10100 1200 10250 1200
+Connection ~ 10100 1350
 Wire Wire Line
-	10100 1600 10250 1600
-$Comp
-L Device:C C?
-U 1 1 5E7D6D13
-P 9850 1150
-F 0 "C?" H 9965 1196 50  0000 L CNN
-F 1 "4700pF 10kV" H 9965 1105 50  0000 L CNN
-F 2 "Capacitor_THT:C_Rect_L13.0mm_W8.0mm_P10.00mm_FKS3_FKP3_MKS4" H 9888 1000 50  0001 C CNN
-F 3 "~" H 9850 1150 50  0001 C CNN
-	1    9850 1150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9350 950  9850 950 
+	10100 1350 10250 1350
 Wire Wire Line
 	900  6150 900  6200
 Connection ~ 900  6150
@@ -306,7 +258,7 @@ NEEDLE
 Text Label 1600 6000 0    50   ~ 10
 15kV
 Text Label 900  5950 0    50   ~ 10
-19kV
+4kV
 Wire Notes Line
 	1950 5650 1950 7650
 Wire Wire Line
@@ -334,17 +286,15 @@ F 3 "~" H 900 6400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text Label 10100 900  0    50   ~ 10
-19kV
-Text Label 10100 1400 0    50   ~ 10
+4kV
+Text Label 10100 1150 0    50   ~ 10
 15kV
 Wire Wire Line
-	10100 1450 10100 1400
-Connection ~ 10100 1450
+	10100 1200 10100 1150
+Connection ~ 10100 1200
 Wire Wire Line
 	10100 950  10100 900 
 Connection ~ 10100 950 
-Wire Wire Line
-	10100 950  9850 950 
 $Comp
 L power:GND #PWR?
 U 1 1 5E7FF61E
@@ -382,17 +332,17 @@ Pinouts for \npower HV\n
 Wire Notes Line
 	2100 7650 2100 5650
 Wire Notes Line
-	2100 5650 6250 5650
+	2100 5650 6950 5650
 Wire Notes Line
-	6250 5650 6250 7650
-Text HLabel 5400 6700 2    50   Output ~ 0
+	6950 5650 6950 7650
+Text HLabel 5700 7300 2    50   Output ~ 0
 Middle_electrode2
 Wire Wire Line
-	5300 6700 5300 6850
+	5600 7300 5600 7150
 Wire Wire Line
-	5300 6850 5500 6850
+	5600 7150 5800 7150
 Wire Wire Line
-	5400 6700 5300 6700
+	5700 7300 5600 7300
 Wire Wire Line
 	3350 4100 3650 4100
 Text HLabel 3800 6350 2    50   Output ~ 0
@@ -411,22 +361,22 @@ Connection ~ 3650 4100
 Wire Wire Line
 	3650 4100 3800 4100
 Wire Wire Line
-	5300 6250 5400 6250
+	5600 6650 5700 6650
 Wire Wire Line
-	5300 6100 5300 6250
-Text HLabel 5400 6250 2    50   Output ~ 0
+	5600 6500 5600 6650
+Text HLabel 5700 6650 2    50   Output ~ 0
 Middle_electrode1
 Wire Wire Line
-	5500 6100 5300 6100
+	5800 6500 5600 6500
 $Comp
 L Connector:Conn_01x01_Female E?
 U 1 1 5E6A87F4
-P 5700 6100
-F 0 "E?" H 5700 6200 50  0000 R CNN
-F 1 "Electrode out" H 5900 6050 50  0000 R CNN
-F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 5700 6100 50  0001 C CNN
-F 3 "~" H 5700 6100 50  0001 C CNN
-	1    5700 6100
+P 6000 6500
+F 0 "E?" H 6000 6600 50  0000 R CNN
+F 1 "Electrode out" H 6200 6450 50  0000 R CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 6000 6500 50  0001 C CNN
+F 3 "~" H 6000 6500 50  0001 C CNN
+	1    6000 6500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -454,7 +404,7 @@ Middle_electrode2
 Connection ~ 3350 3350
 Wire Wire Line
 	3350 3350 3350 3450
-Text Label 5300 6100 2    50   ~ 0
+Text Label 5600 6500 2    50   ~ 0
 Middle_electrode2
 Text Label 5100 1250 0    50   ~ 0
 Middle_electrode1
@@ -467,7 +417,7 @@ Wire Wire Line
 	3350 3350 5100 3350
 Wire Wire Line
 	3350 1250 5100 1250
-Text Label 5300 6850 2    50   ~ 0
+Text Label 5600 7150 2    50   ~ 0
 Middle_electrode1
 Wire Notes Line
 	4450 5650 4450 7200
@@ -497,30 +447,21 @@ Wire Wire Line
 	8800 2500 8800 2600
 Wire Wire Line
 	8800 2600 8850 2600
-Text GLabel 6950 2100 0    50   Output ~ 0
+Text GLabel 7200 2150 0    50   Output ~ 0
 IOUT
 Wire Wire Line
-	6950 2100 7550 2100
+	9350 1350 9450 1350
 Wire Wire Line
-	9850 1350 9850 1600
-Connection ~ 9850 1350
+	2650 2350 2650 2300
 Wire Wire Line
-	9350 1350 9850 1350
-Connection ~ 2150 2350
+	2200 2350 2650 2350
 Wire Wire Line
-	2850 2350 2850 2300
+	2650 2050 2200 2050
 Wire Wire Line
-	2150 2350 2850 2350
-Wire Wire Line
-	2850 2050 2150 2050
-Wire Wire Line
-	2850 2100 2850 2050
+	2650 2100 2650 2050
 Connection ~ 1350 2350
 Wire Wire Line
-	2150 2350 1800 2350
-Wire Wire Line
 	1800 2350 1350 2350
-Connection ~ 1800 2350
 $Comp
 L power:GND #PWR?
 U 1 1 5EE321EA
@@ -552,27 +493,27 @@ $EndComp
 $Comp
 L Device:C C?
 U 1 1 5E760172
-P 2150 2200
-F 0 "C?" H 2265 2246 50  0000 L CNN
-F 1 "4700pF 10kV" H 2265 2155 50  0000 L CNN
-F 2 "Capacitor_THT:C_Rect_L13.0mm_W8.0mm_P10.00mm_FKS3_FKP3_MKS4" H 2188 2050 50  0001 C CNN
-F 3 "~" H 2150 2200 50  0001 C CNN
-	1    2150 2200
+P 2200 2200
+F 0 "C?" H 2315 2246 50  0000 L CNN
+F 1 "0.22uF" H 2315 2155 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L13.0mm_W8.0mm_P10.00mm_FKS3_FKP3_MKS4" H 2238 2050 50  0001 C CNN
+F 3 "~" H 2200 2200 50  0001 C CNN
+	1    2200 2200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 5E75A654
-P 2850 2200
-F 0 "R?" H 2909 2246 50  0000 L CNN
-F 1 "500K" H 2909 2155 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" H 2850 2200 50  0001 C CNN
-F 3 "~" H 2850 2200 50  0001 C CNN
-	1    2850 2200
+P 2650 2200
+F 0 "R?" H 2709 2246 50  0000 L CNN
+F 1 "500K" H 2709 2155 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" H 2650 2200 50  0001 C CNN
+F 3 "~" H 2650 2200 50  0001 C CNN
+	1    2650 2200
 	1    0    0    -1  
 $EndComp
-Text Label 2450 2050 0    50   ~ 0
-ApertureGrid
+Text Label 2250 2050 0    50   ~ 0
+Aperture_Grid
 Text GLabel 7950 4100 0    50   Input ~ 0
 IOUT
 Text GLabel 8550 3700 0    50   Input ~ 0
@@ -641,8 +582,6 @@ Wire Notes Line
 	2950 5550 6250 5550
 Wire Notes Line
 	6250 5550 6250 4250
-Wire Notes Line
-	6250 4250 2950 4250
 $Comp
 L Device:C C?
 U 1 1 5EA25A25
@@ -655,15 +594,15 @@ F 3 "~" H 650 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
-	6600 550  6600 2700
+	6100 550  6100 2700
 Wire Notes Line
-	6600 2700 11150 2700
+	6100 2700 11150 2700
 Wire Notes Line
 	11150 2700 11150 550 
-Text Notes 6900 1100 0    118  ~ 0
-POWER
+Text Notes 6550 1000 0    118  ~ 0
+POWER HV
 Wire Notes Line
-	6600 550  11150 550 
+	6100 550  11150 550 
 Wire Notes Line
 	7250 2750 7250 5200
 Wire Notes Line
@@ -674,10 +613,6 @@ Wire Notes Line
 	11150 2750 7250 2750
 Text Notes 7800 3100 2    118  ~ 0
 MCU\n
-Wire Notes Line
-	550  550  550  4200
-Wire Notes Line
-	550  4200 5800 4200
 Wire Notes Line
 	5800 4200 5800 550 
 Wire Notes Line
@@ -1099,85 +1034,12 @@ Wire Wire Line
 	3950 4650 4050 4650
 Wire Wire Line
 	4750 5350 5200 5350
-Wire Wire Line
-	5200 5450 5200 5350
-Text GLabel 4050 4550 1    50   Input ~ 0
-Visol+
-Text GLabel 5200 5450 0    50   Input ~ 0
-Visol-
 Text GLabel 5800 5050 2    50   Output ~ 0
 ALIMHV+
 Text GLabel 5800 5250 2    50   Output ~ 0
 ALIMHV-
 Wire Wire Line
 	4400 5050 4650 5050
-Text GLabel 2200 4900 2    50   Output ~ 0
-Visol-
-Text GLabel 2200 4700 2    50   Output ~ 0
-Visol+
-Wire Wire Line
-	1200 4900 1200 5000
-Connection ~ 1200 4900
-Wire Wire Line
-	1300 4900 1200 4900
-Wire Wire Line
-	1200 4700 1200 4550
-Connection ~ 1200 4700
-Wire Wire Line
-	1300 4700 1200 4700
-$Comp
-L Converter_DCDC:ITX0503SA-H PS?
-U 1 1 5E91C369
-P 1700 4800
-F 0 "PS?" H 1700 5150 50  0000 C CNN
-F 1 "DC/DC isolated conv." H 1700 5050 50  0000 C CNN
-F 2 "Converter_DCDC:Converter_DCDC_XP_POWER-ITXxxxxSA_THT" H 650 4550 50  0001 L CNN
-F 3 "https://www.xppower.com/pdfs/SF_ITX.pdf" H 2750 4500 50  0001 L CNN
-	1    1700 4800
-	1    0    0    -1  
-$EndComp
-Text Notes 950  5400 0    118  ~ 0
-ISOLATED ALIM\n
-Wire Wire Line
-	1200 4750 1200 4700
-Wire Wire Line
-	1100 4750 1200 4750
-Wire Wire Line
-	1200 4850 1200 4900
-Wire Wire Line
-	1100 4850 1200 4850
-$Comp
-L Connector:Conn_01x02_Male J?
-U 1 1 5E976839
-P 900 4750
-F 0 "J?" H 800 4700 50  0000 C CNN
-F 1 "Low voltage in" H 1000 4550 50  0000 C CNN
-F 2 "" H 900 4750 50  0001 C CNN
-F 3 "~" H 900 4750 50  0001 C CNN
-	1    900  4750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDA #PWR?
-U 1 1 5E9756C9
-P 1200 5000
-F 0 "#PWR?" H 1200 4750 50  0001 C CNN
-F 1 "GNDA" H 1200 4850 50  0000 C CNN
-F 2 "" H 1200 5000 50  0001 C CNN
-F 3 "" H 1200 5000 50  0001 C CNN
-	1    1200 5000
-	1    0    0    -1  
-$EndComp
-Wire Notes Line
-	550  4250 550  5550
-Wire Notes Line
-	550  5550 2600 5550
-Wire Notes Line
-	2600 5550 2600 4250
-Wire Notes Line
-	2600 4250 550  4250
-Text Notes 7900 6500 0    118  ~ 0
-15V-5V CONVERTER\n
 Wire Notes Line
 	7400 5250 7400 6500
 Wire Notes Line
@@ -1186,6 +1048,14 @@ Wire Notes Line
 	10500 6500 10500 5250
 Wire Notes Line
 	10500 5250 7400 5250
+Wire Notes Line
+	6250 4250 2950 4250
+Wire Wire Line
+	2150 4550 2150 4700
+Wire Wire Line
+	2100 4900 2150 4900
+Wire Wire Line
+	2100 4700 2150 4700
 $Comp
 L power:+5V #PWR?
 U 1 1 5EAC47CB
@@ -1197,24 +1067,241 @@ F 3 "" H 1200 4550 50  0001 C CNN
 	1    1200 4550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2100 4700 2150 4700
-Wire Wire Line
-	2100 4900 2200 4900
+Wire Notes Line
+	2600 4250 550  4250
+Wire Notes Line
+	2600 5550 2600 4250
+Wire Notes Line
+	550  5550 2600 5550
+Wire Notes Line
+	550  4250 550  5550
 $Comp
-L power:+15V #PWR?
-U 1 1 5EAD5860
+L power:GNDA #PWR?
+U 1 1 5E9756C9
+P 1200 5000
+F 0 "#PWR?" H 1200 4750 50  0001 C CNN
+F 1 "GNDA" H 1200 4850 50  0000 C CNN
+F 2 "" H 1200 5000 50  0001 C CNN
+F 3 "" H 1200 5000 50  0001 C CNN
+	1    1200 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5E976839
+P 900 4750
+F 0 "J?" H 800 4700 50  0000 C CNN
+F 1 "Low voltage in" H 1000 4550 50  0000 C CNN
+F 2 "" H 900 4750 50  0001 C CNN
+F 3 "~" H 900 4750 50  0001 C CNN
+	1    900  4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 4850 1200 4850
+Wire Wire Line
+	1200 4850 1200 4900
+Wire Wire Line
+	1100 4750 1200 4750
+Wire Wire Line
+	1200 4750 1200 4700
+Text Notes 950  5400 0    118  ~ 0
+ISOLATED ALIM\n
+$Comp
+L Converter_DCDC:ITX0503SA-H PS?
+U 1 1 5E91C369
+P 1700 4800
+F 0 "PS?" H 1700 5150 50  0000 C CNN
+F 1 "RHV3-0512S/R20" H 1700 5050 50  0000 C CNN
+F 2 "Converter_DCDC:Converter_DCDC_XP_POWER-ITXxxxxSA_THT" H 650 4550 50  0001 L CNN
+F 3 "https://www.xppower.com/pdfs/SF_ITX.pdf" H 2750 4500 50  0001 L CNN
+	1    1700 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 4700 1200 4700
+Connection ~ 1200 4700
+Wire Wire Line
+	1200 4700 1200 4550
+Wire Wire Line
+	1300 4900 1200 4900
+Connection ~ 1200 4900
+Wire Wire Line
+	1200 4900 1200 5000
+Wire Notes Line
+	550  4200 5800 4200
+Wire Notes Line
+	550  550  550  4200
+$Comp
+L power:+12V #PWR?
+U 1 1 5EAE95C2
 P 2150 4550
 F 0 "#PWR?" H 2150 4400 50  0001 C CNN
-F 1 "+15V" H 2165 4723 50  0000 C CNN
+F 1 "+12V" H 2165 4723 50  0000 C CNN
 F 2 "" H 2150 4550 50  0001 C CNN
 F 3 "" H 2150 4550 50  0001 C CNN
 	1    2150 4550
 	1    0    0    -1  
 $EndComp
+Text GLabel 8250 1100 0    50   Input ~ 0
+ALIMHV+
+Text GLabel 8250 1200 0    50   Input ~ 0
+ALIMHV-
 Wire Wire Line
-	2150 4550 2150 4700
-Connection ~ 2150 4700
+	7450 1850 7550 1850
 Wire Wire Line
-	2150 4700 2200 4700
+	7200 1750 7200 1950
+Wire Wire Line
+	7200 1950 7550 1950
+Wire Wire Line
+	7300 2250 7550 2250
+Wire Wire Line
+	7550 2150 7200 2150
+$Comp
+L Device:R R?
+U 1 1 5E94B760
+P 6850 2200
+F 0 "R?" H 6750 2200 50  0000 C CNN
+F 1 "100M" V 6850 2200 50  0000 C CNN
+F 2 "" V 6780 2200 50  0001 C CNN
+F 3 "~" H 6850 2200 50  0001 C CNN
+	1    6850 2200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7550 2050 6850 2050
+$Comp
+L power:GND #PWR?
+U 1 1 5E95524C
+P 6850 2350
+F 0 "#PWR?" H 6850 2100 50  0001 C CNN
+F 1 "GND" H 6855 2177 50  0000 C CNN
+F 2 "" H 6850 2350 50  0001 C CNN
+F 3 "" H 6850 2350 50  0001 C CNN
+	1    6850 2350
+	1    0    0    -1  
+$EndComp
+Text GLabel 6500 1900 0    50   Input ~ 0
+HV2_EN
+Wire Wire Line
+	6850 2000 6850 2050
+Connection ~ 6850 2050
+$Comp
+L dk_Transistors-FETs-MOSFETs-Single:FDV303N Q?
+U 1 1 5E977E73
+P 6850 1800
+F 0 "Q?" H 6958 1853 60  0000 L CNN
+F 1 "FDV303N" H 6400 2000 60  0000 L CNN
+F 2 "digikey-footprints:SOT-23-3" H 7050 2000 60  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/FDV303N-D.PDF" H 7050 2100 60  0001 L CNN
+F 4 "FDV303NCT-ND" H 7050 2200 60  0001 L CNN "Digi-Key_PN"
+F 5 "FDV303N" H 7050 2300 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 7050 2400 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 7050 2500 60  0001 L CNN "Family"
+F 8 "https://www.onsemi.com/pub/Collateral/FDV303N-D.PDF" H 7050 2600 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/FDV303N/FDV303NCT-ND/458956" H 7050 2700 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET N-CH 25V 680MA SOT-23" H 7050 2800 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 7050 2900 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 7050 3000 60  0001 L CNN "Status"
+	1    6850 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 1900 7450 1900
+Wire Wire Line
+	7450 1900 7450 1850
+Wire Wire Line
+	6500 1900 6550 1900
+Wire Wire Line
+	6850 1600 7550 1600
+Wire Wire Line
+	7550 1600 7550 1750
+Connection ~ 7550 1750
+Text GLabel 10550 4500 2    50   Output ~ 0
+HV2_EN
+Wire Wire Line
+	10550 4500 10400 4500
+Wire Wire Line
+	5600 6150 5700 6150
+Wire Wire Line
+	5600 6000 5600 6150
+Text HLabel 5700 6150 2    50   Output ~ 0
+Aperture_Grid
+Wire Wire Line
+	5800 6000 5600 6000
+$Comp
+L Connector:Conn_01x01_Female E?
+U 1 1 5EA15751
+P 6000 6000
+F 0 "E?" H 6000 6100 50  0000 R CNN
+F 1 "Electrode out" H 6200 5950 50  0000 R CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 6000 6000 50  0001 C CNN
+F 3 "~" H 6000 6000 50  0001 C CNN
+	1    6000 6000
+	1    0    0    -1  
+$EndComp
+Text Label 5600 6000 2    50   ~ 0
+Aperture_Grid
+$Comp
+L power:GNDB #PWR?
+U 1 1 5EA588F2
+P 2150 4950
+F 0 "#PWR?" H 2150 4700 50  0001 C CNN
+F 1 "GNDB" H 2155 4777 50  0000 C CNN
+F 2 "" H 2150 4950 50  0001 C CNN
+F 3 "" H 2150 4950 50  0001 C CNN
+	1    2150 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 4900 2150 4950
+$Comp
+L power:+12V #PWR?
+U 1 1 5EA61FCC
+P 4050 4550
+F 0 "#PWR?" H 4050 4400 50  0001 C CNN
+F 1 "+12V" H 4065 4723 50  0000 C CNN
+F 2 "" H 4050 4550 50  0001 C CNN
+F 3 "" H 4050 4550 50  0001 C CNN
+	1    4050 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDB #PWR?
+U 1 1 5EA624D3
+P 5200 5400
+F 0 "#PWR?" H 5200 5150 50  0001 C CNN
+F 1 "GNDB" H 5350 5350 50  0000 C CNN
+F 2 "" H 5200 5400 50  0001 C CNN
+F 3 "" H 5200 5400 50  0001 C CNN
+	1    5200 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 5400 5200 5350
+Wire Wire Line
+	1800 2350 2200 2350
+Connection ~ 1800 2350
+Connection ~ 2200 2350
+Wire Wire Line
+	9350 950  10100 950 
+Connection ~ 9450 1350
+Wire Wire Line
+	9450 1350 9850 1350
+Wire Wire Line
+	9450 1350 9450 1900
+Connection ~ 9850 1350
+Wire Wire Line
+	9850 1350 9850 1600
+$Comp
+L Device:C C?
+U 1 1 5E7E1B4C
+P 9850 1750
+F 0 "C?" H 9965 1796 50  0000 L CNN
+F 1 "2500pF 15 kV" H 9965 1705 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L13.0mm_W8.0mm_P10.00mm_FKS3_FKP3_MKS4" H 9888 1600 50  0001 C CNN
+F 3 "~" H 9850 1750 50  0001 C CNN
+	1    9850 1750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

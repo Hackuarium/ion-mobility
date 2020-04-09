@@ -206,13 +206,14 @@ F3 "" 0 0 50 H I C CNN
 DRAW
 T 0 0 -300 50 0 0 0 "15kV HV source" Normal 0 C C
 S -800 400 800 -350 0 1 0 f
-X Vin- 1 -900 -250 100 R 50 50 1 1 I
+X Vin- 1 -900 -300 100 R 50 50 1 1 I
 X HV 10 900 150 100 L 50 50 1 1 O
-X Vin+ 2 -900 -150 100 R 50 50 1 1 I
-X Iout_monitor 3 -900 -50 100 R 50 50 1 1 I
-X En/Dis 4 -900 50 100 R 50 50 1 1 I
-X Signal_GND 6 -900 150 100 R 50 50 1 1 I
-X +5V_Ref 7 -900 250 100 R 50 50 1 1 I
+X Vin+ 2 -900 -200 100 R 50 50 1 1 I
+X Iout_monitor 3 -900 -100 100 R 50 50 1 1 I
+X En/Dis 4 -900 0 100 R 50 50 1 1 I
+X Adjust_input 5 -900 100 100 R 50 50 1 1 I
+X Signal_GND 6 -900 200 100 R 50 50 1 1 I
+X +5V_Ref 7 -900 300 100 R 50 50 1 1 I
 X HV_GND 8 900 -150 100 L 50 50 1 1 O
 X Eout_monitor 9 350 -450 100 U 50 50 1 1 O
 ENDDRAW
@@ -319,6 +320,61 @@ X C 3 0 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# dk_Transistors-FETs-MOSFETs-Single_FDV303N
+#
+DEF dk_Transistors-FETs-MOSFETs-Single_FDV303N Q 0 0 Y Y 1 F N
+F0 "Q" -106 143 60 H V R CNN
+F1 "dk_Transistors-FETs-MOSFETs-Single_FDV303N" 136 0 60 V V C CNN
+F2 "digikey-footprints:SOT-23-3" 200 200 60 H I L CNN
+F3 "https://www.onsemi.com/pub/Collateral/FDV303N-D.PDF" 200 300 60 H I L CNN
+F4 "FDV303NCT-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "FDV303N" 200 500 60 H I L CNN "MPN"
+F6 "Discrete Semiconductor Products" 200 600 60 H I L CNN "Category"
+F7 "Transistors - FETs, MOSFETs - Single" 200 700 60 H I L CNN "Family"
+F8 "https://www.onsemi.com/pub/Collateral/FDV303N-D.PDF" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/on-semiconductor/FDV303N/FDV303NCT-ND/458956" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "MOSFET N-CH 25V 680MA SOT-23" 200 1000 60 H I L CNN "Description"
+F11 "ON Semiconductor" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+C -50 0 130 0 1 0 f
+C 0 -75 5 0 1 0 N
+C 0 -55 5 0 1 0 N
+C 0 75 5 0 1 0 N
+P 2 0 1 0 0 -55 -100 -55 N
+P 3 0 1 0 -200 -100 -120 -100 -120 55 N
+P 3 0 1 0 0 -100 0 0 -100 0 N
+P 3 0 1 0 0 100 0 55 -100 55 N
+P 5 0 1 0 -5 -75 40 -75 40 55 40 75 -5 75 N
+P 2 1 1 0 -100 -55 -100 -75 N
+P 2 1 1 0 -100 -55 -100 -35 N
+P 2 1 1 0 -100 0 -100 -20 N
+P 2 1 1 0 -100 0 -100 20 N
+P 2 1 1 0 -100 75 -100 35 N
+P 2 1 1 0 60 20 20 20 N
+P 4 1 1 0 -100 0 -70 20 -70 -20 -100 0 F
+P 4 1 1 0 40 20 20 -10 60 -10 40 20 F
+X G 1 -300 -100 100 R 50 50 1 1 B
+X S 2 0 -200 100 U 50 50 1 1 B
+X D 3 0 200 100 D 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# power_+12V
+#
+DEF power_+12V #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+12V" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +12V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
 # power_+15V
 #
 DEF power_+15V #PWR 0 0 Y Y 1 F P
@@ -367,6 +423,19 @@ ENDDEF
 DEF power_GNDA #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
 F1 "power_GNDA" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GNDA 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_GNDB
+#
+DEF power_GNDB #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GNDB" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
