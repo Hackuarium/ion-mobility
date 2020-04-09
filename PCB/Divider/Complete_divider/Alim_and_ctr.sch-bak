@@ -335,14 +335,14 @@ Wire Notes Line
 	2100 5650 6950 5650
 Wire Notes Line
 	6950 5650 6950 7650
-Text HLabel 5700 7000 2    50   Output ~ 0
+Text HLabel 5700 7300 2    50   Output ~ 0
 Middle_electrode2
 Wire Wire Line
-	5600 7000 5600 7150
+	5600 7300 5600 7150
 Wire Wire Line
 	5600 7150 5800 7150
 Wire Wire Line
-	5700 7000 5600 7000
+	5700 7300 5600 7300
 Wire Wire Line
 	3350 4100 3650 4100
 Text HLabel 3800 6350 2    50   Output ~ 0
