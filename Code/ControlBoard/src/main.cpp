@@ -1,16 +1,13 @@
 #include <Arduino.h>
 #include <Wire.h>
 
-#define PWM_FREQ 500
+#define PWM_FREQ 1000
 #define PWM_PIN 16
 #define PWM_CHANNEL 0
 #define PWM_RES 8
 
 #define EOUT_MEASURE_PIN 14
 #define IOUT_MEASURE_PIN 13
-
-
-
 
 
 
@@ -22,7 +19,7 @@ void setup(){
   ledcAttachPin(PWM_PIN, PWM_CHANNEL);
   ledcAttachPin(LED_BUILTIN, 1);
 
-  pinMode(EOUT_MEASURE_PIN,INPUT);
+  //pinMode(EOUT_MEASURE_PIN,INPUT);
   pinMode(IOUT_MEASURE_PIN,INPUT);
 
   Serial.begin(115200);
@@ -33,7 +30,6 @@ bool asked = 0;  //asked=0 => nothing has been asked to the user
 char tab[16];
 int DutyCycle = 0;
 int HVToReach = 0;
-
 
 
 int ReadMonitor(){
@@ -75,10 +71,23 @@ void SearchForCharacters(){
 
 
 void MeasureVoltage(){
-  double eout = analogRead(EOUT_MEASURE_PIN)*3*5000/4096; //True voltage : x*3/4096, and multiply by 5 bc of divider, and by 1000 to get HV
-  Serial.print("The achieved voltage is ");
-  Serial.print(eout);
-  Serial.println("Volts");
+  static int count =0;
+  static float eout=0.0;
+
+  //if(count<100){
+    float a = (float)analogRead(EOUT_MEASURE_PIN);
+    Serial.println(a);
+
+    eout = a*3.3*2/4096.0; //True voltage : x*3/4096, and multiply by 5 bc of divider, and by 1000 to get HV
+    count++;
+  //}
+  //else {
+    Serial.print("The achieved voltage is ");
+    Serial.print(eout);
+    Serial.println("Volts");
+    count=0;
+    eout=0;
+  //}
 }
 
 
@@ -97,7 +106,8 @@ void loop(){
     DutyCycle = HVToReach*255/12;    //calculate duty cycle
   }
 
-  ledcWrite(PWM_CHANNEL, DutyCycle);
+  ledcWrite(PWM_CHANNEL, 255-DutyCycle);
   ledcWrite(1, DutyCycle); 
-  delay(3); 
+  delay(1000); 
+  //MeasureVoltage();
 }
