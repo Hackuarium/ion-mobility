@@ -30,6 +30,7 @@ bool asked = 0;  //asked=0 => nothing has been asked to the user
 char tab[16];
 int DutyCycle = 0;
 int HVToReach = 0;
+double voltage_applied =0;
 
 
 int ReadMonitor(){
@@ -46,19 +47,22 @@ void SearchForCharacters(){
 
   if(Serial.available()>0){
 
-    int HV=ReadMonitor();
+    int HV_asked = ReadMonitor();
+    voltage_applied = HV_asked;
+    //voltage_applied = (HV_asked+193.64)/332.27;  ////////////////
 
-    if(HV>15000 || HV<0){           // ERROR : serial character invalid
-      Serial.println("Error : HV must be in the range 0 to 15000V");
+    if(HV_asked>14 || HV_asked<0){           // ERROR : serial character invalid
+      Serial.println("Error : HV must be in the range 0 to 3400");
+      voltage_applied = 0;
       asked = 0; 
       return;
     }
 
     else{
-      HVToReach = HV;                     // The HVToReach value is updated
       Serial.print("You have asked a voltage of ");
-      Serial.print(HV);   
-      Serial.println("V.");
+      Serial.print(HV_asked);   
+      Serial.print("V, hence ");
+      Serial.println(voltage_applied);
       asked = 0; 
       return;
     }
@@ -103,10 +107,10 @@ void loop(){
 
   if(asked){
     SearchForCharacters();
-    DutyCycle = HVToReach*255/12;    //calculate duty cycle
+    DutyCycle = voltage_applied*255/15;    //calculate duty cycle
   }
 
-  ledcWrite(PWM_CHANNEL, 255-DutyCycle);
+  ledcWrite(PWM_CHANNEL,DutyCycle);
   ledcWrite(1, DutyCycle); 
   delay(1000); 
   //MeasureVoltage();
