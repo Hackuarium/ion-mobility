@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 4
+Sheet 1 2
 Title ""
 Date ""
 Rev ""
@@ -106,7 +106,7 @@ F 3 "~" H 6000 7150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L HV_source:15A HV2
+L Alim_and_ctr-rescue:15A-HV_source HV2
 U 1 1 5E78A75A
 P 8450 2050
 F 0 "HV2" H 8450 1627 50  0000 C CNN
@@ -534,25 +534,6 @@ $EndComp
 Text GLabel 8450 4000 0    50   Output ~ 0
 GRID_CTRL
 $Comp
-L Isolator:SFH617A-1 U?
-U 1 1 5E89C279
-P 3300 5050
-F 0 "U?" H 3350 4850 50  0000 R CNN
-F 1 "PC123" H 3450 5250 50  0000 R CNN
-F 2 "Package_DIP:DIP-4_W7.62mm" H 3100 4850 50  0001 L CIN
-F 3 "http://www.vishay.com/docs/83740/sfh617a.pdf" H 3300 5050 50  0001 L CNN
-	1    3300 5050
-	1    0    0    -1  
-$EndComp
-Text GLabel 2900 4950 0    50   Input ~ 0
-PWM
-Wire Wire Line
-	2900 4950 3000 4950
-Wire Wire Line
-	2900 5150 3000 5150
-Wire Wire Line
-	2900 5150 2900 5200
-$Comp
 L Device:R R?
 U 1 1 5E969429
 P 3350 2950
@@ -576,10 +557,6 @@ F 3 "~" H 3350 2150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3350 2300 3350 2750
-Wire Notes Line
-	2650 4250 2650 5550
-Wire Notes Line
-	6250 5550 6250 4250
 $Comp
 L Device:C C?
 U 1 1 5EA25A25
@@ -708,127 +685,10 @@ Wire Wire Line
 	8900 4450 8450 4450
 Wire Wire Line
 	8450 4450 8450 4400
-$Comp
-L power:GNDA #PWR?
-U 1 1 5E9B1BBA
-P 2900 5200
-F 0 "#PWR?" H 2900 4950 50  0001 C CNN
-F 1 "GNDA" H 2900 5050 50  0000 C CNN
-F 2 "" H 2900 5200 50  0001 C CNN
-F 3 "" H 2900 5200 50  0001 C CNN
-	1    2900 5200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3600 5150 3700 5150
-$Comp
-L dk_Transistors-Bipolar-BJT-RF:2N5109 Q?
-U 1 1 5E8C1229
-P 5550 4900
-F 0 "Q?" H 5600 4900 60  0000 L CNN
-F 1 "BC337" H 5150 4700 60  0000 L CNN
-F 2 "digikey-footprints:TO-39-3" H 5750 5100 60  0001 L CNN
-F 3 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=2N5109.PDF" H 5750 5200 60  0001 L CNN
-F 4 "2N5109CS-ND" H 5750 5300 60  0001 L CNN "Digi-Key_PN"
-F 5 "2N5109" H 5750 5400 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 5750 5500 60  0001 L CNN "Category"
-F 7 "Transistors - Bipolar (BJT) - RF" H 5750 5600 60  0001 L CNN "Family"
-F 8 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=2N5109.PDF" H 5750 5700 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/central-semiconductor-corp/2N5109/2N5109CS-ND/4806909" H 5750 5800 60  0001 L CNN "DK_Detail_Page"
-F 10 "RF TRANS NPN 20V 1.2GHZ TO39" H 5750 5900 60  0001 L CNN "Description"
-F 11 "Central Semiconductor Corp" H 5750 6000 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 5750 6100 60  0001 L CNN "Status"
-	1    5550 4900
-	1    0    0    -1  
-$EndComp
-Text Notes 2900 4550 0    118  ~ 0
-PWM \n
-Text GLabel 5700 5250 2    50   Output ~ 0
-ALIMHV+
-Wire Notes Line
-	6250 4250 2650 4250
-Wire Wire Line
-	2150 4550 2150 4700
-Wire Wire Line
-	2100 4900 2150 4900
-Wire Wire Line
-	2100 4700 2150 4700
-$Comp
-L power:+5V #PWR?
-U 1 1 5EAC47CB
-P 1200 4550
-F 0 "#PWR?" H 1200 4400 50  0001 C CNN
-F 1 "+5V" H 1215 4723 50  0000 C CNN
-F 2 "" H 1200 4550 50  0001 C CNN
-F 3 "" H 1200 4550 50  0001 C CNN
-	1    1200 4550
-	1    0    0    -1  
-$EndComp
-Wire Notes Line
-	2600 4250 550  4250
-Wire Notes Line
-	2600 5550 2600 4250
-Wire Notes Line
-	550  5550 2600 5550
-Wire Notes Line
-	550  4250 550  5550
-$Comp
-L Connector:Conn_01x02_Male J?
-U 1 1 5E976839
-P 900 4750
-F 0 "J?" H 800 4700 50  0000 C CNN
-F 1 "Low voltage in" H 1000 4550 50  0000 C CNN
-F 2 "" H 900 4750 50  0001 C CNN
-F 3 "~" H 900 4750 50  0001 C CNN
-	1    900  4750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1100 4850 1200 4850
-Wire Wire Line
-	1200 4850 1200 4900
-Wire Wire Line
-	1100 4750 1200 4750
-Wire Wire Line
-	1200 4750 1200 4700
-Text Notes 950  5400 0    118  ~ 0
-ISOLATED ALIM\n
-$Comp
-L Converter_DCDC:ITX0503SA-H PS?
-U 1 1 5E91C369
-P 1700 4800
-F 0 "PS?" H 1700 5150 50  0000 C CNN
-F 1 "RHV3-0512S/R20" H 1700 5050 50  0000 C CNN
-F 2 "Converter_DCDC:Converter_DCDC_XP_POWER-ITXxxxxSA_THT" H 650 4550 50  0001 L CNN
-F 3 "https://www.xppower.com/pdfs/SF_ITX.pdf" H 2750 4500 50  0001 L CNN
-	1    1700 4800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1300 4700 1200 4700
-Connection ~ 1200 4700
-Wire Wire Line
-	1200 4700 1200 4550
-Wire Wire Line
-	1300 4900 1200 4900
-Connection ~ 1200 4900
-Wire Wire Line
-	1200 4900 1200 5000
 Wire Notes Line
 	550  4200 5800 4200
 Wire Notes Line
 	550  550  550  4200
-$Comp
-L power:+12V #PWR?
-U 1 1 5EAE95C2
-P 2150 4550
-F 0 "#PWR?" H 2150 4400 50  0001 C CNN
-F 1 "+12V" H 2165 4723 50  0000 C CNN
-F 2 "" H 2150 4550 50  0001 C CNN
-F 3 "" H 2150 4550 50  0001 C CNN
-	1    2150 4550
-	1    0    0    -1  
-$EndComp
 Text GLabel 8250 1100 0    50   Input ~ 0
 ALIMHV+
 Wire Wire Line
@@ -900,7 +760,6 @@ Wire Wire Line
 	6850 1600 7550 1600
 Wire Wire Line
 	7550 1600 7550 1750
-Connection ~ 7550 1750
 Text GLabel 10550 4550 2    50   Output ~ 0
 HV2_EN
 Wire Wire Line
@@ -926,30 +785,6 @@ F 3 "~" H 6000 6000 50  0001 C CNN
 $EndComp
 Text Label 5600 6000 2    50   ~ 0
 Aperture_Grid
-$Comp
-L power:GNDB #PWR?
-U 1 1 5EA588F2
-P 2150 4950
-F 0 "#PWR?" H 2150 4700 50  0001 C CNN
-F 1 "GNDB" H 2155 4777 50  0000 C CNN
-F 2 "" H 2150 4950 50  0001 C CNN
-F 3 "" H 2150 4950 50  0001 C CNN
-	1    2150 4950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2150 4900 2150 4950
-$Comp
-L power:+12V #PWR?
-U 1 1 5EA61FCC
-P 3750 4500
-F 0 "#PWR?" H 3750 4350 50  0001 C CNN
-F 1 "+12V" H 3650 4650 50  0000 C CNN
-F 2 "" H 3750 4500 50  0001 C CNN
-F 3 "" H 3750 4500 50  0001 C CNN
-	1    3750 4500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1800 2350 2200 2350
 Connection ~ 1800 2350
@@ -973,17 +808,6 @@ F 1 "2500pF 15 kV" H 9965 1705 50  0000 L CNN
 F 2 "Capacitor_THT:C_Rect_L13.0mm_W8.0mm_P10.00mm_FKS3_FKP3_MKS4" H 9888 1600 50  0001 C CNN
 F 3 "~" H 9850 1750 50  0001 C CNN
 	1    9850 1750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5E93EA25
-P 1200 5000
-F 0 "#PWR?" H 1200 4750 50  0001 C CNN
-F 1 "GND" H 1205 4827 50  0000 C CNN
-F 2 "" H 1200 5000 50  0001 C CNN
-F 3 "" H 1200 5000 50  0001 C CNN
-	1    1200 5000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1019,148 +843,6 @@ F 3 "" H 10550 3100 50  0001 C CNN
 	1    10550 3100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3600 4950 3750 4950
-$Comp
-L Device:R R?
-U 1 1 5E9A7163
-P 3750 4700
-F 0 "R?" H 3650 4700 50  0000 C CNN
-F 1 "1K" V 3750 4700 50  0000 C CNN
-F 2 "" V 3680 4700 50  0001 C CNN
-F 3 "~" H 3750 4700 50  0001 C CNN
-	1    3750 4700
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3750 4850 3750 4950
-Connection ~ 3750 4950
-$Comp
-L power:GNDB #PWR?
-U 1 1 5E9C00FD
-P 3700 5250
-F 0 "#PWR?" H 3700 5000 50  0001 C CNN
-F 1 "GNDB" H 3700 5100 50  0000 C CNN
-F 2 "" H 3700 5250 50  0001 C CNN
-F 3 "" H 3700 5250 50  0001 C CNN
-	1    3700 5250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3700 5250 3700 5150
-$Comp
-L power:GNDB #PWR?
-U 1 1 5EA624D3
-P 4200 5400
-F 0 "#PWR?" H 4200 5150 50  0001 C CNN
-F 1 "GNDB" H 4350 5350 50  0000 C CNN
-F 2 "" H 4200 5400 50  0001 C CNN
-F 3 "" H 4200 5400 50  0001 C CNN
-	1    4200 5400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5E8B8BDA
-P 4200 5150
-F 0 "C?" H 4000 5150 50  0000 L CNN
-F 1 "2,2uF" H 3950 5050 50  0000 L CNN
-F 2 "Capacitor_THT:C_Rect_L13.0mm_W8.0mm_P10.00mm_FKS3_FKP3_MKS4" H 4238 5000 50  0001 C CNN
-F 3 "~" H 4200 5150 50  0001 C CNN
-	1    4200 5150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4150 4950 4200 4950
-Wire Notes Line
-	2650 5550 6250 5550
-Wire Wire Line
-	3750 4950 3850 4950
-$Comp
-L Device:R R?
-U 1 1 5E8C178F
-P 4000 4950
-F 0 "R?" V 4100 4950 50  0000 C CNN
-F 1 "20K" V 4000 4950 50  0000 C CNN
-F 2 "" V 3930 4950 50  0001 C CNN
-F 3 "~" H 4000 4950 50  0001 C CNN
-	1    4000 4950
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	4200 5300 4200 5400
-Wire Wire Line
-	4200 5000 4200 4950
-$Comp
-L pspice:OPAMP U?
-U 1 1 5EA0DB32
-P 4800 4900
-F 0 "U?" H 4750 5150 50  0000 L CNN
-F 1 "OPAMP" H 4750 5050 50  0000 L CNN
-F 2 "" H 4800 4900 50  0001 C CNN
-F 3 "~" H 4800 4900 50  0001 C CNN
-	1    4800 4900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3750 4550 3750 4500
-$Comp
-L power:+12V #PWR?
-U 1 1 5EA1FD07
-P 4700 4500
-F 0 "#PWR?" H 4700 4350 50  0001 C CNN
-F 1 "+12V" H 4600 4650 50  0000 C CNN
-F 2 "" H 4700 4500 50  0001 C CNN
-F 3 "" H 4700 4500 50  0001 C CNN
-	1    4700 4500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4700 4500 4700 4600
-$Comp
-L power:GNDB #PWR?
-U 1 1 5EA2706A
-P 4700 5400
-F 0 "#PWR?" H 4700 5150 50  0001 C CNN
-F 1 "GNDB" H 4850 5350 50  0000 C CNN
-F 2 "" H 4700 5400 50  0001 C CNN
-F 3 "" H 4700 5400 50  0001 C CNN
-	1    4700 5400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4700 5400 4700 5200
-Wire Wire Line
-	5200 4900 5100 4900
-Wire Wire Line
-	4500 5000 4450 5000
-$Comp
-L power:+12V #PWR?
-U 1 1 5EA5FB6E
-P 5550 4500
-F 0 "#PWR?" H 5550 4350 50  0001 C CNN
-F 1 "+12V" H 5450 4650 50  0000 C CNN
-F 2 "" H 5550 4500 50  0001 C CNN
-F 3 "" H 5550 4500 50  0001 C CNN
-	1    5550 4500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5550 4500 5550 4700
-Wire Wire Line
-	4200 4950 4200 4800
-Wire Wire Line
-	4200 4800 4500 4800
-Connection ~ 4200 4950
-Wire Wire Line
-	4450 5250 5550 5250
-Wire Wire Line
-	5550 5100 5550 5250
-Wire Wire Line
-	4450 5000 4450 5250
-Wire Wire Line
-	5700 5250 5550 5250
-Connection ~ 5550 5250
 $Comp
 L power:GNDB #PWR?
 U 1 1 5EA917E8
@@ -1176,4 +858,10 @@ Wire Wire Line
 	8050 1250 8050 1200
 Wire Wire Line
 	8050 1200 8250 1200
+$Sheet
+S 3600 4500 1950 800 
+U 5EB8FD8D
+F0 "HV1Ctrl" 50
+F1 "HV1Ctrl.sch" 50
+$EndSheet
 $EndSCHEMATC

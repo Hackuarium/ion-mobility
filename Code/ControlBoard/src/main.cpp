@@ -51,8 +51,8 @@ void SearchForCharacters(){
     voltage_applied = HV_asked;
     //voltage_applied = (HV_asked+193.64)/332.27;  ////////////////
 
-    if(HV_asked>14 || HV_asked<0){           // ERROR : serial character invalid
-      Serial.println("Error : HV must be in the range 0 to 3400");
+    if(HV_asked>15 || HV_asked<0){           // ERROR : serial character invalid
+      Serial.println("Error : HV must be in the range 0 to 15");
       voltage_applied = 0;
       asked = 0; 
       return;

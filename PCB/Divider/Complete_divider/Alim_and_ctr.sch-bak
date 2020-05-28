@@ -1176,8 +1176,4 @@ Wire Wire Line
 	8050 1250 8050 1200
 Wire Wire Line
 	8050 1200 8250 1200
-Text Notes 4250 4750 0    50   ~ 0
-7.3V—7.0\n
-Text Notes 5700 5150 0    50   ~ 0
-7.3V—7.0\n
 $EndSCHEMATC
