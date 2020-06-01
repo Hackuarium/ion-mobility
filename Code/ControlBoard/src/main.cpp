@@ -6,8 +6,11 @@
 #define PWM_CHANNEL 0
 #define PWM_RES 8
 
-#define EOUT_MEASURE_PIN 14
+#define EOUT_MEASURE_PIN 12
 #define IOUT_MEASURE_PIN 13
+
+
+
 
 
 
@@ -76,22 +79,22 @@ void SearchForCharacters(){
 
 void MeasureVoltage(){
   static int count =0;
-  static float eout=0.0;
+  static float eout = 0.0;
 
-  //if(count<100){
+  while(count<100){
     float a = (float)analogRead(EOUT_MEASURE_PIN);
-    Serial.println(a);
-
-    eout = a*3.3*2/4096.0; //True voltage : x*3/4096, and multiply by 5 bc of divider, and by 1000 to get HV
+    //Serial.println(a);
+    
+    eout = eout + a*3.3*4.3/4095+0.6;          //4.3 : divider ratio with R1=3.3M and R2=1M. 
+                                //1.18 : to set the measure to maximum when the input is 12V
     count++;
-  //}
-  //else {
-    Serial.print("The achieved voltage is ");
-    Serial.print(eout);
-    Serial.println("Volts");
-    count=0;
-    eout=0;
-  //}
+  }
+  
+  Serial.print("The achieved voltage is ");
+  Serial.print(eout/100);
+  Serial.println("Volts");
+  count=0;
+  eout=0;
 }
 
 
@@ -113,5 +116,5 @@ void loop(){
   ledcWrite(PWM_CHANNEL,DutyCycle);
   ledcWrite(1, DutyCycle); 
   delay(1000); 
-  //MeasureVoltage();
+  MeasureVoltage();
 }

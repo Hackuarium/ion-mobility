@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 4
+Sheet 2 5
 Title ""
 Date ""
 Rev ""
@@ -421,7 +421,7 @@ F 3 "~" H 3950 3650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 3500 3500 0    50   Input ~ 0
-DRIFTTUBE
+DRIFT_TUBE
 Text GLabel 8250 3500 2    50   Output ~ 0
 APGRID
 $Comp
