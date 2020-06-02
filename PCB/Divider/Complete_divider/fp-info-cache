@@ -1,4 +1,4 @@
-16941519890083962
+16947890343429173
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -50154,6 +50154,20 @@ L_Toroid Vertical series Radial pin pitch 31.80mm  length 67.6mm width 36.1mm Vi
 0
 2
 2
+Isolated_converters
+R8
+
+
+0
+4
+4
+Isolated_converters
+R20
+
+
+0
+4
+4
 Jumper
 SolderJumper-2_P1.3mm_Bridged2Bar_Pad1.0x1.5mm
 SMD Solder Jumper, 1x1.5mm Pads, 0.3mm gap, bridged with 2 copper strips
@@ -74535,6 +74549,20 @@ transformer flyback
 0
 10
 10
+Transistors
+S8050
+
+
+0
+3
+3
+Transistors
+ZVN2110A
+
+
+0
+3
+3
 Valve
 Valve_ECC-83-1
 Valve ECC-83-1 round pins

@@ -1,5 +1,7 @@
 (fp_lib_table
   (lib (name Complete_divider)(type KiCad)(uri ${KIPRJMOD}/Complete_divider.pretty)(options "")(descr ""))
-  (lib (name HV_source)(type KiCad)(uri ${KIPRJMOD}/HV_source.pretty)(options "")(descr ""))
-  (lib (name Dev_boards)(type KiCad)(uri ${KIPRJMOD}/Dev_boards.pretty)(options "")(descr ""))
+  (lib (name Dev_boards)(type KiCad)(uri ${KIPRJMOD}/Footprints/Dev_boards.pretty)(options "")(descr ""))
+  (lib (name HV_source)(type KiCad)(uri ${KIPRJMOD}/Footprints/HV_source.pretty)(options "")(descr ""))
+  (lib (name Isolated_converters)(type KiCad)(uri ${KIPRJMOD}/Footprints/Isolated_converters.pretty)(options "")(descr ""))
+  (lib (name Transistors)(type KiCad)(uri ${KIPRJMOD}/Footprints/Transistors.pretty)(options "")(descr ""))
 )
