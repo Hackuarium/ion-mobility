@@ -116,5 +116,5 @@ void loop(){
   ledcWrite(PWM_CHANNEL,DutyCycle);
   ledcWrite(1, DutyCycle); 
   delay(1000); 
-  MeasureVoltage();
+  //MeasureVoltage();
 }

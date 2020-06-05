@@ -49,11 +49,11 @@ X GNDA 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# Complete_divider-rescue_ITX0503SA-H-Converter_DCDC
+# Complete_divider-rescue_ITX0503SA-H-Converter_DCDC-Complete_divider-rescue
 #
-DEF Complete_divider-rescue_ITX0503SA-H-Converter_DCDC PS 0 20 Y Y 1 F N
+DEF Complete_divider-rescue_ITX0503SA-H-Converter_DCDC-Complete_divider-rescue PS 0 20 Y Y 1 F N
 F0 "PS" -300 250 50 H V L CNN
-F1 "Complete_divider-rescue_ITX0503SA-H-Converter_DCDC" 50 250 50 H V L CNN
+F1 "Complete_divider-rescue_ITX0503SA-H-Converter_DCDC-Complete_divider-rescue" 50 250 50 H V L CNN
 F2 "Converter_DCDC:Converter_DCDC_XP_POWER-ITXxxxxSA_THT" -1050 -250 50 H I L CNN
 F3 "" 1050 -300 50 H I L CNN
 $FPLIST
@@ -65,8 +65,8 @@ P 2 0 1 0 0 -100 0 -150 N
 P 2 0 1 0 0 0 0 -50 N
 P 2 0 1 0 0 100 0 50 N
 P 2 0 1 0 0 200 0 150 N
-X -Vin 1 -400 -100 100 R 50 50 0 0 W
-X +Vin 2 -400 100 100 R 50 50 0 0 W
+X +Vin 1 -400 100 100 R 50 50 0 0 W
+X -Vin 2 -400 -100 100 R 50 50 0 0 W
 X -Vout 3 400 -100 100 L 50 50 0 0 w
 X +Vout 4 400 100 100 L 50 50 0 0 w
 ENDDRAW

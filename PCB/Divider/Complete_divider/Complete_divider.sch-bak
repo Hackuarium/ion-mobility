@@ -32,7 +32,7 @@ Wire Wire Line
 Wire Wire Line
 	7050 2900 6850 2900
 Wire Wire Line
-	6850 3450 6900 3450
+	6850 3350 6900 3350
 Wire Wire Line
 	6900 4950 7050 4950
 $Sheet
@@ -73,8 +73,7 @@ Wire Wire Line
 Wire Wire Line
 	6300 4850 6300 4000
 Wire Wire Line
-	6900 3450 6900 4950
-NoConn ~ 10200 4950
+	6900 3350 6900 4950
 Wire Wire Line
 	9500 4950 9650 4950
 Wire Wire Line
@@ -85,12 +84,9 @@ Wire Wire Line
 	1500 5000 1550 5000
 NoConn ~ 1550 5000
 Wire Wire Line
-	6850 3600 9650 3600
+	6850 3500 9650 3500
 Wire Wire Line
-	9650 3600 9650 4950
-Connection ~ 9650 4950
-Wire Wire Line
-	9650 4950 10200 4950
+	9650 3500 9650 4950
 Wire Wire Line
 	6850 2350 7050 2350
 Wire Wire Line
@@ -108,11 +104,17 @@ F0 "Schematics for Alim_and_ctr" 50
 F1 "Alim_and_ctr.sch" 50
 F2 "Gate" O R 6850 2900 50 
 F3 "Electrode_in" I L 4800 3400 50 
-F4 "Electrode_out" O R 6850 3450 50 
+F4 "Electrode_out" O R 6850 3350 50 
 F5 "Pwr_out" O R 6850 2450 50 
 F6 "Middle_electrode1" O R 6850 2550 50 
 F7 "Middle_electrode2" O R 6850 3250 50 
 F8 "Needle" O R 6850 2350 50 
-F9 "Aperture_Grid" I R 6850 3600 50 
+F9 "Aperture_Grid" I R 6850 3500 50 
+F10 "Last_electrode" O R 6850 3600 50 
 $EndSheet
+Wire Wire Line
+	6850 3600 9850 3600
+Wire Wire Line
+	9850 3600 9850 4950
+NoConn ~ 9850 4950
 $EndSCHEMATC

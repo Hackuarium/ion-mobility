@@ -1,4 +1,4 @@
-16949481468410173
+16955846892206173
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -6104,6 +6104,13 @@ banana socket
 3
 3
 Connector
+Banana_connector_HV
+
+
+0
+1
+1
+Connector
 CUI_PD-30
 3 pin connector, PD-30, http://www.cui.com/product/resource/pd-30.pdf
 connector 3-pin PD-30 power DIN
@@ -6131,6 +6138,20 @@ DEUTSCH DT header 12 pin
 0
 12
 12
+Connector
+Electrode_Pad
+
+
+0
+1
+0
+Connector
+Electrode_hole
+
+
+0
+1
+1
 Connector
 FanPinHeader_1x03_P2.54mm_Vertical
 3-pin CPU fan Through hole pin header, see http://www.formfactors.org/developer%5Cspecs%5Crev1_2_public.pdf
@@ -52373,6 +52394,13 @@ Broadcom LGA NoLead
 0
 8
 8
+OptoDevice
+CNY65AYST
+
+
+0
+4
+4
 OptoDevice
 Everlight_ITR8307
 package for Everlight ITR8307 with PCB cutout, light-direction upwards, see http://www.everlight.com/file/ProductFile/ITR8307.pdf
