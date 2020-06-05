@@ -1,0 +1,325 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R?
+U 1 1 5EDCBEC8
+P 6700 2850
+AR Path="/5EB8FD8D/5EDCBEC8" Ref="R?"  Part="1" 
+AR Path="/5EDCBEC8" Ref="R?"  Part="1" 
+AR Path="/5E63F098/5EDCBEC8" Ref="R?"  Part="1" 
+AR Path="/5E63F098/5EDBC18D/5EDCBEC8" Ref="R?"  Part="1" 
+F 0 "R?" H 6600 2850 50  0000 C CNN
+F 1 "1M" V 6700 2850 50  0000 C CNN
+F 2 "" V 6630 2850 50  0001 C CNN
+F 3 "~" H 6700 2850 50  0001 C CNN
+	1    6700 2850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EDCBECE
+P 6700 3300
+AR Path="/5EB8FD8D/5EDCBECE" Ref="R?"  Part="1" 
+AR Path="/5EDCBECE" Ref="R?"  Part="1" 
+AR Path="/5E63F098/5EDCBECE" Ref="R?"  Part="1" 
+AR Path="/5E63F098/5EDBC18D/5EDCBECE" Ref="R?"  Part="1" 
+F 0 "R?" H 6600 3300 50  0000 C CNN
+F 1 "3.3M" V 6700 3300 50  0000 C CNN
+F 2 "" V 6630 3300 50  0001 C CNN
+F 3 "~" H 6700 3300 50  0001 C CNN
+	1    6700 3300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 3250 6850 3400
+Wire Wire Line
+	6850 3400 7450 3400
+Wire Wire Line
+	7450 3400 7450 3150
+$Comp
+L power:GND #PWR?
+U 1 1 5EDCBED7
+P 6700 3600
+AR Path="/5E63F098/5EDCBED7" Ref="#PWR?"  Part="1" 
+AR Path="/5E63F098/5EDBC18D/5EDCBED7" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6700 3350 50  0001 C CNN
+F 1 "GND" H 6705 3427 50  0000 C CNN
+F 2 "" H 6700 3600 50  0001 C CNN
+F 3 "" H 6700 3600 50  0001 C CNN
+	1    6700 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 3450 6700 3600
+Text GLabel 6550 2550 0    50   Input ~ 0
+EOUT
+Wire Wire Line
+	6550 2550 6700 2550
+Wire Wire Line
+	6700 2550 6700 2700
+Text GLabel 7550 3150 2    50   Input ~ 0
+EOUTPIN
+Wire Wire Line
+	7550 3150 7450 3150
+$Comp
+L Amplifier_Operational:LM358 U?
+U 1 1 5EDCBEE3
+P 7150 3150
+AR Path="/5E63F098/5EDCBEE3" Ref="U?"  Part="1" 
+AR Path="/5E63F098/5EDBC18D/5EDCBEE3" Ref="U?"  Part="1" 
+F 0 "U?" H 7150 3517 50  0000 C CNN
+F 1 "LM358P" H 7150 3426 50  0000 C CNN
+F 2 "" H 7150 3150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 7150 3150 50  0001 C CNN
+	1    7150 3150
+	1    0    0    -1  
+$EndComp
+Connection ~ 7450 3150
+Wire Wire Line
+	6700 3000 6700 3050
+Wire Wire Line
+	6700 3050 6850 3050
+Connection ~ 6700 3050
+Wire Wire Line
+	6700 3050 6700 3150
+$Comp
+L Amplifier_Operational:LM358 U?
+U 2 1 5EDCBEEE
+P 8800 3150
+AR Path="/5E63F098/5EDCBEEE" Ref="U?"  Part="2" 
+AR Path="/5E63F098/5EDBC18D/5EDCBEEE" Ref="U?"  Part="2" 
+F 0 "U?" H 8800 3517 50  0000 C CNN
+F 1 "LM358" H 8800 3426 50  0000 C CNN
+F 2 "" H 8800 3150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 8800 3150 50  0001 C CNN
+	2    8800 3150
+	1    0    0    -1  
+$EndComp
+Text GLabel 8400 3050 0    50   Input ~ 0
+EOUT
+Wire Wire Line
+	8400 3050 8500 3050
+$Comp
+L power:GND #PWR?
+U 1 1 5EDCBEF7
+P 8450 3300
+AR Path="/5E63F098/5EDCBEF7" Ref="#PWR?"  Part="1" 
+AR Path="/5E63F098/5EDBC18D/5EDCBEF7" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8450 3050 50  0001 C CNN
+F 1 "GND" H 8455 3127 50  0000 C CNN
+F 2 "" H 8450 3300 50  0001 C CNN
+F 3 "" H 8450 3300 50  0001 C CNN
+	1    8450 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 3300 8450 3250
+Wire Wire Line
+	8450 3250 8500 3250
+$Comp
+L Amplifier_Operational:LM358 U?
+U 3 1 5EDCFF75
+P 8000 4350
+F 0 "U?" H 7958 4396 50  0000 L CNN
+F 1 "LM358" H 7958 4305 50  0000 L CNN
+F 2 "" H 8000 4350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 8000 4350 50  0001 C CNN
+	3    8000 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5EDD48A6
+P 7900 4000
+F 0 "#PWR?" H 7900 3850 50  0001 C CNN
+F 1 "+12V" H 7915 4173 50  0000 C CNN
+F 2 "" H 7900 4000 50  0001 C CNN
+F 3 "" H 7900 4000 50  0001 C CNN
+	1    7900 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 4000 7900 4050
+$Comp
+L power:GND #PWR?
+U 1 1 5EDD5377
+P 7900 4700
+AR Path="/5E63F098/5EDD5377" Ref="#PWR?"  Part="1" 
+AR Path="/5E63F098/5EDBC18D/5EDD5377" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7900 4450 50  0001 C CNN
+F 1 "GND" H 7905 4527 50  0000 C CNN
+F 2 "" H 7900 4700 50  0001 C CNN
+F 3 "" H 7900 4700 50  0001 C CNN
+	1    7900 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 4700 7900 4650
+Text GLabel 9150 3150 2    50   Output ~ 0
+LCD2_MEASURE
+Wire Wire Line
+	9150 3150 9100 3150
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5EDDFE48
+P 1850 3100
+F 0 "J?" H 1958 3281 50  0000 C CNN
+F 1 "LCD2Vin" H 1958 3190 50  0000 C CNN
+F 2 "" H 1850 3100 50  0001 C CNN
+F 3 "~" H 1850 3100 50  0001 C CNN
+	1    1850 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 3100 2200 3100
+$Comp
+L power:GND #PWR?
+U 1 1 5EDE1095
+P 2150 3250
+AR Path="/5E63F098/5EDE1095" Ref="#PWR?"  Part="1" 
+AR Path="/5E63F098/5EDBC18D/5EDE1095" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2150 3000 50  0001 C CNN
+F 1 "GND" H 2155 3077 50  0000 C CNN
+F 2 "" H 2150 3250 50  0001 C CNN
+F 3 "" H 2150 3250 50  0001 C CNN
+	1    2150 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 3250 2150 3200
+Wire Wire Line
+	2150 3200 2050 3200
+Text GLabel 2200 3100 2    50   Input ~ 0
+LCD2_MEASURE
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5EDE1F90
+P 3350 3100
+F 0 "J?" H 3458 3281 50  0000 C CNN
+F 1 "LCD2 PWR" H 3458 3190 50  0000 C CNN
+F 2 "" H 3350 3100 50  0001 C CNN
+F 3 "~" H 3350 3100 50  0001 C CNN
+	1    3350 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5EDE2C72
+P 3700 3050
+F 0 "#PWR?" H 3700 2900 50  0001 C CNN
+F 1 "+12V" H 3715 3223 50  0000 C CNN
+F 2 "" H 3700 3050 50  0001 C CNN
+F 3 "" H 3700 3050 50  0001 C CNN
+	1    3700 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 3100 3700 3100
+Wire Wire Line
+	3700 3100 3700 3050
+$Comp
+L power:GND #PWR?
+U 1 1 5EDE3C96
+P 3700 3250
+AR Path="/5E63F098/5EDE3C96" Ref="#PWR?"  Part="1" 
+AR Path="/5E63F098/5EDBC18D/5EDE3C96" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3700 3000 50  0001 C CNN
+F 1 "GND" H 3705 3077 50  0000 C CNN
+F 2 "" H 3700 3250 50  0001 C CNN
+F 3 "" H 3700 3250 50  0001 C CNN
+	1    3700 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 3250 3700 3200
+Wire Wire Line
+	3700 3200 3550 3200
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5EDE5DF7
+P 3350 4000
+F 0 "J?" H 3458 4181 50  0000 C CNN
+F 1 "LCD1 PWR" H 3458 4090 50  0000 C CNN
+F 2 "" H 3350 4000 50  0001 C CNN
+F 3 "~" H 3350 4000 50  0001 C CNN
+	1    3350 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5EDE5DFD
+P 3700 3950
+F 0 "#PWR?" H 3700 3800 50  0001 C CNN
+F 1 "+12V" H 3715 4123 50  0000 C CNN
+F 2 "" H 3700 3950 50  0001 C CNN
+F 3 "" H 3700 3950 50  0001 C CNN
+	1    3700 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 4000 3700 4000
+Wire Wire Line
+	3700 4000 3700 3950
+$Comp
+L power:GND #PWR?
+U 1 1 5EDE5E05
+P 3700 4150
+AR Path="/5E63F098/5EDE5E05" Ref="#PWR?"  Part="1" 
+AR Path="/5E63F098/5EDBC18D/5EDE5E05" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3700 3900 50  0001 C CNN
+F 1 "GND" H 3705 3977 50  0000 C CNN
+F 2 "" H 3700 4150 50  0001 C CNN
+F 3 "" H 3700 4150 50  0001 C CNN
+	1    3700 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 4150 3700 4100
+Wire Wire Line
+	3700 4100 3550 4100
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5EE1B504
+P 1850 4000
+F 0 "J?" H 1958 4181 50  0000 C CNN
+F 1 "LCD1 Vin" H 1958 4090 50  0000 C CNN
+F 2 "" H 1850 4000 50  0001 C CNN
+F 3 "~" H 1850 4000 50  0001 C CNN
+	1    1850 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 4000 2200 4000
+$Comp
+L power:GND #PWR?
+U 1 1 5EE1B50B
+P 2150 4150
+AR Path="/5E63F098/5EE1B50B" Ref="#PWR?"  Part="1" 
+AR Path="/5E63F098/5EDBC18D/5EE1B50B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2150 3900 50  0001 C CNN
+F 1 "GND" H 2155 3977 50  0000 C CNN
+F 2 "" H 2150 4150 50  0001 C CNN
+F 3 "" H 2150 4150 50  0001 C CNN
+	1    2150 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 4150 2150 4100
+Wire Wire Line
+	2150 4100 2050 4100
+Text GLabel 2200 4000 2    50   Input ~ 0
+ALIMHV1+
+$EndSCHEMATC

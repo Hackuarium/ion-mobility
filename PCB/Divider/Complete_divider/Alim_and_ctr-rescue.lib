@@ -1,0 +1,39 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# 15A-HV_source
+#
+DEF 15A-HV_source HV 0 40 Y Y 1 F P
+F0 "HV" -650 450 50 H V C CNN
+F1 "15A-HV_source" -650 -400 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+T 0 0 -300 50 0 0 0 "15kV HV source" Normal 0 C C
+S -800 400 800 -350 0 1 0 f
+X Vin- 1 -900 -250 100 R 50 50 1 1 I
+X HV 10 900 150 100 L 50 50 1 1 O
+X Vin+ 2 -900 -150 100 R 50 50 1 1 I
+X Iout_monitor 3 -900 -50 100 R 50 50 1 1 I
+X En/Dis 4 -900 50 100 R 50 50 1 1 I
+X Signal_GND 6 -900 150 100 R 50 50 1 1 I
+X +5V_Ref 7 -900 250 100 R 50 50 1 1 I
+X HV_GND 8 900 -150 100 L 50 50 1 1 O
+X Eout_monitor 9 350 -450 100 U 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# GNDB-power-Complete_divider-rescue
+#
+DEF GNDB-power-Complete_divider-rescue #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "GNDB-power-Complete_divider-rescue" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GNDA 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+#End Library

@@ -1,0 +1,361 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Isolator:SFH617A-1 U?
+U 1 1 5EBA3F14
+P 5200 3650
+F 0 "U?" H 5250 3450 50  0000 R CNN
+F 1 "PC123" H 5350 3850 50  0000 R CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 5000 3450 50  0001 L CIN
+F 3 "http://www.vishay.com/docs/83740/sfh617a.pdf" H 5200 3650 50  0001 L CNN
+	1    5200 3650
+	1    0    0    -1  
+$EndComp
+Text GLabel 4800 3550 0    50   Input ~ 0
+PWM
+Wire Wire Line
+	4800 3550 4900 3550
+Wire Wire Line
+	4800 3750 4900 3750
+Wire Wire Line
+	4800 3750 4800 3800
+Wire Notes Line
+	4550 2850 4550 4150
+Wire Notes Line
+	8150 4150 8150 2850
+Wire Wire Line
+	5500 3750 5600 3750
+$Comp
+L dk_Transistors-Bipolar-BJT-RF:2N5109 Q?
+U 1 1 5EBA3F30
+P 7450 3500
+F 0 "Q?" H 7500 3500 60  0000 L CNN
+F 1 "BC337" H 7050 3300 60  0000 L CNN
+F 2 "digikey-footprints:TO-39-3" H 7650 3700 60  0001 L CNN
+F 3 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=2N5109.PDF" H 7650 3800 60  0001 L CNN
+F 4 "2N5109CS-ND" H 7650 3900 60  0001 L CNN "Digi-Key_PN"
+F 5 "2N5109" H 7650 4000 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 7650 4100 60  0001 L CNN "Category"
+F 7 "Transistors - Bipolar (BJT) - RF" H 7650 4200 60  0001 L CNN "Family"
+F 8 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=2N5109.PDF" H 7650 4300 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/central-semiconductor-corp/2N5109/2N5109CS-ND/4806909" H 7650 4400 60  0001 L CNN "DK_Detail_Page"
+F 10 "RF TRANS NPN 20V 1.2GHZ TO39" H 7650 4500 60  0001 L CNN "Description"
+F 11 "Central Semiconductor Corp" H 7650 4600 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 7650 4700 60  0001 L CNN "Status"
+	1    7450 3500
+	1    0    0    -1  
+$EndComp
+Text Notes 4800 3150 0    118  ~ 0
+PWM \n
+Text GLabel 7600 3850 2    50   Output ~ 0
+ALIMHV+
+Wire Notes Line
+	8150 2850 4550 2850
+Wire Wire Line
+	5500 3550 5650 3550
+$Comp
+L Device:R R?
+U 1 1 5EBA3F40
+P 5650 3300
+F 0 "R?" H 5550 3300 50  0000 C CNN
+F 1 "1K" V 5650 3300 50  0000 C CNN
+F 2 "" V 5580 3300 50  0001 C CNN
+F 3 "~" H 5650 3300 50  0001 C CNN
+	1    5650 3300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5650 3450 5650 3550
+Connection ~ 5650 3550
+$Comp
+L power:GNDB #PWR?
+U 1 1 5EBA3F48
+P 5600 3850
+F 0 "#PWR?" H 5600 3600 50  0001 C CNN
+F 1 "GNDB" H 5600 3700 50  0000 C CNN
+F 2 "" H 5600 3850 50  0001 C CNN
+F 3 "" H 5600 3850 50  0001 C CNN
+	1    5600 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 3850 5600 3750
+$Comp
+L power:GNDB #PWR?
+U 1 1 5EBA3F4F
+P 6100 4000
+F 0 "#PWR?" H 6100 3750 50  0001 C CNN
+F 1 "GNDB" H 6250 3950 50  0000 C CNN
+F 2 "" H 6100 4000 50  0001 C CNN
+F 3 "" H 6100 4000 50  0001 C CNN
+	1    6100 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5EBA3F55
+P 6100 3750
+F 0 "C?" H 5900 3750 50  0000 L CNN
+F 1 "2,2uF" H 5850 3650 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L13.0mm_W8.0mm_P10.00mm_FKS3_FKP3_MKS4" H 6138 3600 50  0001 C CNN
+F 3 "~" H 6100 3750 50  0001 C CNN
+	1    6100 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 3550 6100 3550
+Wire Notes Line
+	4550 4150 8150 4150
+Wire Wire Line
+	5650 3550 5750 3550
+$Comp
+L Device:R R?
+U 1 1 5EBA3F5E
+P 5900 3550
+F 0 "R?" V 6000 3550 50  0000 C CNN
+F 1 "20K" V 5900 3550 50  0000 C CNN
+F 2 "" V 5830 3550 50  0001 C CNN
+F 3 "~" H 5900 3550 50  0001 C CNN
+	1    5900 3550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6100 3900 6100 4000
+Wire Wire Line
+	6100 3600 6100 3550
+$Comp
+L pspice:OPAMP U?
+U 1 1 5EBA3F66
+P 6700 3500
+F 0 "U?" H 6650 3750 50  0000 L CNN
+F 1 "OPAMP" H 6650 3650 50  0000 L CNN
+F 2 "" H 6700 3500 50  0001 C CNN
+F 3 "~" H 6700 3500 50  0001 C CNN
+	1    6700 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 3150 5650 3100
+Wire Wire Line
+	6600 3100 6600 3200
+$Comp
+L power:GNDB #PWR?
+U 1 1 5EBA3F74
+P 6600 4000
+F 0 "#PWR?" H 6600 3750 50  0001 C CNN
+F 1 "GNDB" H 6750 3950 50  0000 C CNN
+F 2 "" H 6600 4000 50  0001 C CNN
+F 3 "" H 6600 4000 50  0001 C CNN
+	1    6600 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 4000 6600 3800
+Wire Wire Line
+	7100 3500 7000 3500
+Wire Wire Line
+	6400 3600 6350 3600
+Wire Wire Line
+	7450 3100 7450 3300
+Wire Wire Line
+	6100 3550 6100 3400
+Wire Wire Line
+	6100 3400 6400 3400
+Connection ~ 6100 3550
+Wire Wire Line
+	6350 3850 7450 3850
+Wire Wire Line
+	7450 3700 7450 3850
+Wire Wire Line
+	6350 3600 6350 3850
+Wire Wire Line
+	7600 3850 7450 3850
+Connection ~ 7450 3850
+Wire Notes Line
+	3700 2850 1100 2850
+Wire Notes Line
+	1100 4150 3700 4150
+Wire Notes Line
+	1100 2850 1100 4150
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5EBAF95F
+P 1450 3350
+AR Path="/5EBAF95F" Ref="J?"  Part="1" 
+AR Path="/5EB8FD8D/5EBAF95F" Ref="J?"  Part="1" 
+F 0 "J?" H 1350 3300 50  0000 C CNN
+F 1 "Low voltage in" H 1550 3150 50  0000 C CNN
+F 2 "" H 1450 3350 50  0001 C CNN
+F 3 "~" H 1450 3350 50  0001 C CNN
+	1    1450 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 3450 1750 3450
+Wire Wire Line
+	1750 3450 1750 3500
+Wire Wire Line
+	1650 3350 1750 3350
+Wire Wire Line
+	1750 3350 1750 3300
+Text Notes 1150 4100 0    118  ~ 0
+ISOLATED ALIM\n
+$Comp
+L Converter_DCDC:ITX0503SA-H PS?
+U 1 1 5EBAF96A
+P 2250 3400
+AR Path="/5EBAF96A" Ref="PS?"  Part="1" 
+AR Path="/5EB8FD8D/5EBAF96A" Ref="PS?"  Part="1" 
+F 0 "PS?" H 2250 3750 50  0000 C CNN
+F 1 "RHV2-1212S/R20" H 2250 3650 50  0000 C CNN
+F 2 "Converter_DCDC:Converter_DCDC_XP_POWER-ITXxxxxSA_THT" H 1200 3150 50  0001 L CNN
+F 3 "https://www.xppower.com/pdfs/SF_ITX.pdf" H 3300 3100 50  0001 L CNN
+	1    2250 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 3300 1750 3300
+Connection ~ 1750 3300
+Wire Wire Line
+	1750 3300 1750 3150
+Wire Wire Line
+	1850 3500 1750 3500
+Connection ~ 1750 3500
+Wire Wire Line
+	1750 3500 1750 3600
+$Comp
+L power:GNDB #PWR?
+U 1 1 5EBAF97C
+P 2750 3700
+AR Path="/5EBAF97C" Ref="#PWR?"  Part="1" 
+AR Path="/5EB8FD8D/5EBAF97C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2750 3450 50  0001 C CNN
+F 1 "GNDB" H 2755 3527 50  0000 C CNN
+F 2 "" H 2750 3700 50  0001 C CNN
+F 3 "" H 2750 3700 50  0001 C CNN
+	1    2750 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EBAF983
+P 1750 3600
+AR Path="/5EBAF983" Ref="#PWR?"  Part="1" 
+AR Path="/5EB8FD8D/5EBAF983" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1750 3350 50  0001 C CNN
+F 1 "GND" H 1755 3427 50  0000 C CNN
+F 2 "" H 1750 3600 50  0001 C CNN
+F 3 "" H 1750 3600 50  0001 C CNN
+	1    1750 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Converter_DCDC:OKI-78SR-3.3_1.5-W36H-C U?
+U 1 1 5ED00FB6
+P 3050 3300
+F 0 "U?" H 3050 3542 50  0000 C CNN
+F 1 "mEZD41501A-X" H 3050 3451 50  0000 C CNN
+F 2 "Converter_DCDC:Converter_DCDC_muRata_OKI-78SR_Horizontal" H 3100 3050 50  0001 L CIN
+F 3 "https://power.murata.com/data/power/oki-78sr.pdf" H 3050 3300 50  0001 C CNN
+	1    3050 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 3300 2650 3300
+Wire Wire Line
+	2650 3500 2750 3500
+Wire Wire Line
+	2750 3500 2750 3600
+Wire Wire Line
+	2750 3600 3050 3600
+Wire Wire Line
+	2750 3700 2750 3600
+Connection ~ 2750 3600
+$Comp
+L power:+15V #PWR?
+U 1 1 5ED072D0
+P 3500 3200
+F 0 "#PWR?" H 3500 3050 50  0001 C CNN
+F 1 "+15V" H 3515 3373 50  0000 C CNN
+F 2 "" H 3500 3200 50  0001 C CNN
+F 3 "" H 3500 3200 50  0001 C CNN
+	1    3500 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 3300 3500 3300
+Wire Wire Line
+	3500 3300 3500 3200
+Wire Notes Line
+	3700 4150 3700 2850
+$Comp
+L power:+15V #PWR?
+U 1 1 5ED0A1F2
+P 5650 3100
+F 0 "#PWR?" H 5650 2950 50  0001 C CNN
+F 1 "+15V" H 5665 3273 50  0000 C CNN
+F 2 "" H 5650 3100 50  0001 C CNN
+F 3 "" H 5650 3100 50  0001 C CNN
+	1    5650 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+15V #PWR?
+U 1 1 5ED0A9AE
+P 6600 3100
+F 0 "#PWR?" H 6600 2950 50  0001 C CNN
+F 1 "+15V" H 6615 3273 50  0000 C CNN
+F 2 "" H 6600 3100 50  0001 C CNN
+F 3 "" H 6600 3100 50  0001 C CNN
+	1    6600 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+15V #PWR?
+U 1 1 5ED0AF72
+P 7450 3100
+F 0 "#PWR?" H 7450 2950 50  0001 C CNN
+F 1 "+15V" H 7465 3273 50  0000 C CNN
+F 2 "" H 7450 3100 50  0001 C CNN
+F 3 "" H 7450 3100 50  0001 C CNN
+	1    7450 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5ED0F26D
+P 1750 3150
+F 0 "#PWR?" H 1750 3000 50  0001 C CNN
+F 1 "+12V" H 1765 3323 50  0000 C CNN
+F 2 "" H 1750 3150 50  0001 C CNN
+F 3 "" H 1750 3150 50  0001 C CNN
+	1    1750 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5ED0FDA7
+P 4800 3800
+AR Path="/5ED0FDA7" Ref="#PWR?"  Part="1" 
+AR Path="/5EB8FD8D/5ED0FDA7" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4800 3550 50  0001 C CNN
+F 1 "GND" H 4805 3627 50  0000 C CNN
+F 2 "" H 4800 3800 50  0001 C CNN
+F 3 "" H 4800 3800 50  0001 C CNN
+	1    4800 3800
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
