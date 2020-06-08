@@ -1,0 +1,20 @@
+{
+  "C_Cpp.clang_format_style": "Visual Studio",
+  "editor.formatOnSave": false,
+  "[cpp]": {
+    "editor.quickSuggestions": true
+  },
+  "[c]": {
+    "editor.quickSuggestions": true
+  },
+  "C_Cpp.intelliSenseEngineFallback": "Enabled",
+  "idf.portWin": "COM3",
+  "files.associations": {
+    "gpio.h": "c",
+    "nvs_flash.h": "c",
+    "*.inc": "c",
+    "string.h": "c",
+    "argtable3.h": "c"
+  },
+  "idf.adapterTargetName": "esp32"
+}
