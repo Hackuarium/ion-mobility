@@ -19,7 +19,7 @@ U 1 1 5E635FA5
 P 4600 5800
 F 0 "C4" H 4715 5846 50  0000 L CNN
 F 1 "47uF Tant" H 4715 5755 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_Tantal_D5.0mm_P5.00mm" H 4600 5800 50  0001 C CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A_Pad1.58x1.35mm_HandSolder" H 4600 5800 50  0001 C CNN
 F 3 "~" H 4600 5800 50  0001 C CNN
 	1    4600 5800
 	1    0    0    -1  
@@ -30,7 +30,7 @@ U 1 1 5E6365E0
 P 4600 5400
 F 0 "C3" H 4715 5446 50  0000 L CNN
 F 1 "47uF Tant" H 4715 5355 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_Tantal_D5.0mm_P5.00mm" H 4600 5400 50  0001 C CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A_Pad1.58x1.35mm_HandSolder" H 4600 5400 50  0001 C CNN
 F 3 "~" H 4600 5400 50  0001 C CNN
 	1    4600 5400
 	1    0    0    -1  
@@ -103,7 +103,7 @@ U 1 1 5E660D0A
 P 4150 5250
 F 0 "D1" H 4150 5034 50  0000 C CNN
 F 1 "D_Schottky" H 4150 5125 50  0000 C CNN
-F 2 "Diode_THT:D_5W_P10.16mm_Horizontal" H 4150 5250 50  0001 C CNN
+F 2 "Diode_SMD:D_0805_2012Metric_Castellated" H 4150 5250 50  0001 C CNN
 F 3 "~" H 4150 5250 50  0001 C CNN
 	1    4150 5250
 	-1   0    0    1   
@@ -114,7 +114,7 @@ U 1 1 5E661A2E
 P 4150 5950
 F 0 "D2" H 4150 6166 50  0000 C CNN
 F 1 "D_Schottky" H 4150 6075 50  0000 C CNN
-F 2 "Diode_THT:D_5W_P10.16mm_Horizontal" H 4150 5950 50  0001 C CNN
+F 2 "Diode_SMD:D_0805_2012Metric_Castellated" H 4150 5950 50  0001 C CNN
 F 3 "~" H 4150 5950 50  0001 C CNN
 	1    4150 5950
 	1    0    0    -1  
@@ -179,18 +179,16 @@ Connection ~ 4600 5250
 Text Label 5850 5750 0    50   ~ 10
 -5V
 Wire Wire Line
-	5850 6150 6100 6150
-Wire Wire Line
 	5850 6100 5850 6150
 $Comp
 L Ampli_IMS-rescue:GND-power #PWR08
 U 1 1 5E67E967
-P 6100 6150
-F 0 "#PWR08" H 6100 5900 50  0001 C CNN
-F 1 "GND" H 6105 5977 50  0000 C CNN
-F 2 "" H 6100 6150 50  0001 C CNN
-F 3 "" H 6100 6150 50  0001 C CNN
-	1    6100 6150
+P 5850 6150
+F 0 "#PWR08" H 5850 5900 50  0001 C CNN
+F 1 "GND" H 5855 5977 50  0000 C CNN
+F 2 "" H 5850 6150 50  0001 C CNN
+F 3 "" H 5850 6150 50  0001 C CNN
+	1    5850 6150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -298,29 +296,11 @@ F 3 "" H 5850 4200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5850 4200 5850 4100
-$Comp
-L Ampli_IMS-rescue:R-Device R3
-U 1 1 5E7187D7
-P 5850 3950
-F 0 "R3" V 5750 3900 50  0000 L CNN
-F 1 "10K" V 5950 3900 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" V 5780 3950 50  0001 C CNN
-F 3 "~" H 5850 3950 50  0001 C CNN
-	1    5850 3950
-	-1   0    0    -1  
-$EndComp
 Connection ~ 6000 3550
 Wire Wire Line
 	5500 3800 5500 3550
 Wire Wire Line
 	5500 4100 5500 4200
-Wire Wire Line
-	5850 3800 5850 3750
-Connection ~ 5850 3750
-Wire Wire Line
-	5850 3750 6050 3750
-Wire Wire Line
-	4700 3750 5850 3750
 Wire Wire Line
 	5500 3550 6000 3550
 Wire Wire Line
@@ -343,8 +323,6 @@ Wire Notes Line
 	4800 4100 4800 2450
 Wire Notes Line
 	4800 2450 3550 2450
-Text Notes 3550 2350 0    50   ~ 0
-Stage 1 : Transimpedance amplifier\n(Critical part)
 Wire Notes Line
 	5200 2300 5200 4400
 Wire Notes Line
@@ -353,8 +331,6 @@ Wire Notes Line
 	6950 4400 6950 2300
 Wire Notes Line
 	6950 2300 5200 2300
-Text Notes 5500 2250 0    50   ~ 0
-Stage 2 : custom gain amplifier
 Text Notes 6950 2900 0    50   ~ 0
 Gain=1 when P1=0\nGain=30 when P1=300K\nAOP is the same than stage 1.
 Connection ~ 4700 3200
@@ -369,23 +345,23 @@ $Comp
 L Amplifier_Operational:LMC6082 U1
 U 1 1 5E6D3D33
 P 4200 3750
-F 0 "U1" H 4200 4117 50  0000 C CNN
-F 1 "LMC6082" H 4200 4026 50  0000 C CNN
+F 0 "U1" H 4200 3383 50  0000 C CNN
+F 1 "LMC6082" H 4200 3474 50  0000 C CNN
 F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 4200 3750 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lmc6082.pdf" H 4200 3750 50  0001 C CNN
 	1    4200 3750
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L Amplifier_Operational:LMC6082 U1
 U 2 1 5E6D6CF4
 P 6350 3650
-F 0 "U1" H 6350 4017 50  0000 C CNN
-F 1 "LMC6082" H 6350 3926 50  0000 C CNN
+F 0 "U1" H 6350 3283 50  0000 C CNN
+F 1 "LMC6082" H 6350 3374 50  0000 C CNN
 F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 6350 3650 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lmc6082.pdf" H 6350 3650 50  0001 C CNN
 	2    6350 3650
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L Amplifier_Operational:LMC6082 U1
@@ -405,18 +381,14 @@ Text Label 7250 5850 0    50   ~ 10
 $Comp
 L Ampli_IMS-rescue:GND-power #PWR06
 U 1 1 5E67CE1A
-P 6100 5300
-F 0 "#PWR06" H 6100 5050 50  0001 C CNN
-F 1 "GND" H 6105 5127 50  0000 C CNN
-F 2 "" H 6100 5300 50  0001 C CNN
-F 3 "" H 6100 5300 50  0001 C CNN
-	1    6100 5300
+P 5850 5350
+F 0 "#PWR06" H 5850 5100 50  0001 C CNN
+F 1 "GND" H 5855 5177 50  0000 C CNN
+F 2 "" H 5850 5350 50  0001 C CNN
+F 3 "" H 5850 5350 50  0001 C CNN
+	1    5850 5350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5850 5250 5850 5300
-Wire Wire Line
-	5850 5300 6100 5300
 Text Label 5850 4900 0    50   ~ 10
 +5V
 $Comp
@@ -458,4 +430,24 @@ Wire Wire Line
 Connection ~ 6550 2850
 Wire Wire Line
 	6550 3000 6550 2850
+Wire Wire Line
+	4700 3750 5850 3750
+Wire Wire Line
+	5850 3750 6050 3750
+Connection ~ 5850 3750
+Wire Wire Line
+	5850 3800 5850 3750
+$Comp
+L Ampli_IMS-rescue:R-Device R3
+U 1 1 5E7187D7
+P 5850 3950
+F 0 "R3" V 5750 3900 50  0000 L CNN
+F 1 "10K" V 5950 3900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" V 5780 3950 50  0001 C CNN
+F 3 "~" H 5850 3950 50  0001 C CNN
+	1    5850 3950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 5250 5850 5350
 $EndSCHEMATC

@@ -86,7 +86,7 @@ AR Path="/5E63F098/5EDBC18D/5EDCBEE3" Ref="U?"  Part="1"
 AR Path="/5EDBC18D/5EDCBEE3" Ref="U5"  Part="1" 
 F 0 "U5" H 7150 3517 50  0000 C CNN
 F 1 "LM358P" H 7150 3426 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W10.16mm_LongPads" H 7150 3150 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 7150 3150 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 7150 3150 50  0001 C CNN
 	1    7150 3150
 	1    0    0    -1  
@@ -108,7 +108,7 @@ AR Path="/5E63F098/5EDBC18D/5EDCBEEE" Ref="U?"  Part="2"
 AR Path="/5EDBC18D/5EDCBEEE" Ref="U5"  Part="2" 
 F 0 "U5" H 8800 3517 50  0000 C CNN
 F 1 "LM358P" H 8800 3426 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W10.16mm_LongPads" H 8800 3150 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 8800 3150 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 8800 3150 50  0001 C CNN
 	2    8800 3150
 	1    0    0    -1  
@@ -141,7 +141,7 @@ U 3 1 5EDCFF75
 P 8000 4350
 F 0 "U5" H 7958 4396 50  0000 L CNN
 F 1 "LM358P" H 7958 4305 50  0000 L CNN
-F 2 "Package_DIP:DIP-8_W10.16mm_LongPads" H 8000 4350 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 8000 4350 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 8000 4350 50  0001 C CNN
 	3    8000 4350
 	1    0    0    -1  
@@ -354,4 +354,44 @@ F 3 "" H 4850 4150 50  0001 C CNN
 	1    4850 4150
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:TestPoint TP13
+U 1 1 5EFC7F61
+P 6700 2500
+F 0 "TP13" H 6758 2572 50  0000 L CNN
+F 1 "TestPoint" H 6758 2527 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 6900 2500 50  0001 C CNN
+F 3 "~" H 6900 2500 50  0001 C CNN
+	1    6700 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 2500 6700 2550
+Connection ~ 6700 2550
+$Comp
+L Connector:TestPoint TP14
+U 1 1 5EFC8FB3
+P 6550 3050
+F 0 "TP14" V 6653 3122 50  0000 C CNN
+F 1 "TestPoint" H 6608 3077 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 6750 3050 50  0001 C CNN
+F 3 "~" H 6750 3050 50  0001 C CNN
+	1    6550 3050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6550 3050 6700 3050
+$Comp
+L Connector:TestPoint TP15
+U 1 1 5EFCA1A9
+P 7450 3050
+F 0 "TP15" H 7508 3122 50  0000 L CNN
+F 1 "TestPoint" H 7508 3077 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 7650 3050 50  0001 C CNN
+F 3 "~" H 7650 3050 50  0001 C CNN
+	1    7450 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 3050 7450 3150
 $EndSCHEMATC

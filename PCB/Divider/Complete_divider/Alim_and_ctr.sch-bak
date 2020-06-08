@@ -282,7 +282,7 @@ AR Path="/5EF3CE9D" Ref="Q2"  Part="1"
 AR Path="/5E63F098/5EF3CE9D" Ref="Q?"  Part="1" 
 F 0 "Q2" H 3700 4850 60  0000 L CNN
 F 1 "ZTX1053A" H 3150 4650 60  0000 L CNN
-F 2 "Transistors:S8050" H 3850 5050 60  0001 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 3850 5050 60  0001 L CNN
 F 3 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=2N5109.PDF" H 3850 5150 60  0001 L CNN
 F 4 "2N5109CS-ND" H 3850 5250 60  0001 L CNN "Digi-Key_PN"
 F 5 "2N5109" H 3850 5350 60  0001 L CNN "MPN"
@@ -297,7 +297,7 @@ F 12 "Active" H 3850 6050 60  0001 L CNN "Status"
 	1    0    0    -1  
 $EndComp
 Text Notes 900  4450 0    118  ~ 0
-PWM \n
+HV1\n
 Text GLabel 3800 5200 2    50   Output ~ 0
 ALIMHV1+
 Wire Notes Line
@@ -351,7 +351,7 @@ Wire Wire Line
 Wire Wire Line
 	2300 4950 2300 4900
 Wire Wire Line
-	3300 4850 3200 4850
+	3300 4850 3250 4850
 Wire Wire Line
 	2600 4950 2550 4950
 Wire Wire Line
@@ -359,10 +359,8 @@ Wire Wire Line
 Wire Wire Line
 	2300 4900 2300 4750
 Wire Wire Line
-	2300 4750 2600 4750
+	2300 4750 2450 4750
 Connection ~ 2300 4900
-Wire Wire Line
-	2550 5200 3650 5200
 Wire Wire Line
 	3650 5050 3650 5200
 Wire Wire Line
@@ -587,56 +585,39 @@ Decoupling \nopto IC\n\n
 Wire Wire Line
 	10100 2850 10200 2850
 $Comp
-L Isolator:6N136S OPTO1
-U 1 1 5F065206
-P 8850 3250
-AR Path="/5F065206" Ref="OPTO1"  Part="1" 
-AR Path="/5EE4535D/5F065206" Ref="OPTO?"  Part="1" 
-AR Path="/5E63F098/5F065206" Ref="OPTO?"  Part="1" 
-F 0 "OPTO1" H 8850 3675 50  0000 C CNN
-F 1 "6N136S" H 8850 3584 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W10.16mm_LongPads" H 8650 2950 50  0001 L CIN
-F 3 "https://optoelectronics.liteon.com/upload/download/DS70-2008-0032/6N135-L%206N136-L%20series.pdf" H 8850 3250 50  0001 L CNN
-	1    8850 3250
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+12VA #PWR04
 U 1 1 5F06520D
-P 9250 3000
+P 9300 2950
 AR Path="/5F06520D" Ref="#PWR04"  Part="1" 
 AR Path="/5EE4535D/5F06520D" Ref="#PWR?"  Part="1" 
 AR Path="/5E63F098/5F06520D" Ref="#PWR?"  Part="1" 
-F 0 "#PWR04" H 9250 2850 50  0001 C CNN
-F 1 "+12VA" H 9265 3173 50  0000 C CNN
-F 2 "" H 9250 3000 50  0001 C CNN
-F 3 "" H 9250 3000 50  0001 C CNN
-	1    9250 3000
+F 0 "#PWR04" H 9300 2800 50  0001 C CNN
+F 1 "+12VA" H 9300 3100 50  0000 C CNN
+F 2 "" H 9300 2950 50  0001 C CNN
+F 3 "" H 9300 2950 50  0001 C CNN
+	1    9300 2950
 	1    0    0    -1  
 $EndComp
-Text GLabel 8500 3150 0    50   Input ~ 0
+Text GLabel 8300 3150 0    50   Input ~ 0
 GRID_CTRL
-Wire Wire Line
-	8500 3150 8550 3150
 $Comp
 L power:GND #PWR010
 U 1 1 5F065215
-P 8400 3500
+P 8200 3600
 AR Path="/5F065215" Ref="#PWR010"  Part="1" 
 AR Path="/5EE4535D/5F065215" Ref="#PWR?"  Part="1" 
 AR Path="/5E63F098/5F065215" Ref="#PWR?"  Part="1" 
-F 0 "#PWR010" H 8400 3250 50  0001 C CNN
-F 1 "GND" H 8405 3327 50  0000 C CNN
-F 2 "" H 8400 3500 50  0001 C CNN
-F 3 "" H 8400 3500 50  0001 C CNN
-	1    8400 3500
+F 0 "#PWR010" H 8200 3350 50  0001 C CNN
+F 1 "GND" H 8205 3427 50  0000 C CNN
+F 2 "" H 8200 3600 50  0001 C CNN
+F 3 "" H 8200 3600 50  0001 C CNN
+	1    8200 3600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8400 3500 8400 3350
+	8200 3600 8200 3450
 Wire Wire Line
-	8400 3350 8550 3350
-NoConn ~ 9150 3150
+	8200 3450 8350 3450
 $Comp
 L Device:Q_NMOS_DGS Q1
 U 1 1 5F06523D
@@ -646,7 +627,7 @@ AR Path="/5EE4535D/5F06523D" Ref="Q?"  Part="1"
 AR Path="/5E63F098/5F06523D" Ref="Q?"  Part="1" 
 F 0 "Q1" H 10104 3396 50  0000 L CNN
 F 1 "ZVN2110A " H 9800 3550 50  0000 L CNN
-F 2 "Transistors:S8050" H 10100 3450 50  0001 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 10100 3450 50  0001 C CNN
 F 3 "~" H 9900 3350 50  0001 C CNN
 	1    9900 3350
 	1    0    0    -1  
@@ -667,8 +648,6 @@ F 3 "~" H 9450 3200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9450 3350 9450 3300
-Wire Wire Line
-	9450 3100 9450 3050
 $Comp
 L Device:C_Small C7
 U 1 1 5F06524B
@@ -685,15 +664,7 @@ F 3 "~" H 9450 3450 50  0001 C CNN
 $EndComp
 Connection ~ 9450 3350
 Wire Wire Line
-	9700 3350 9450 3350
-Wire Wire Line
-	9250 3450 9150 3450
-Wire Wire Line
-	9250 3450 9250 3550
-Wire Wire Line
-	9250 3000 9250 3050
-Wire Wire Line
-	9250 3050 9450 3050
+	9700 3350 9650 3350
 Wire Wire Line
 	9450 3550 10000 3550
 Connection ~ 9450 3550
@@ -770,11 +741,6 @@ Wire Wire Line
 	10000 3850 10000 3900
 Wire Wire Line
 	10450 3400 10450 3900
-Wire Wire Line
-	9150 3050 9250 3050
-Connection ~ 9250 3050
-Wire Wire Line
-	9250 3550 9450 3550
 Wire Wire Line
 	9150 3350 9450 3350
 Text GLabel 7950 5550 0    50   Input ~ 0
@@ -956,7 +922,7 @@ Wire Wire Line
 Wire Notes Line
 	5550 5600 5550 7150
 $Sheet
-S 4150 3000 1150 950 
+S 4700 3000 1150 950 
 U 5EDBC18D
 F0 "Voltage Measurements" 50
 F1 "VoltageMeasurements.sch" 50
@@ -964,11 +930,11 @@ $EndSheet
 Wire Notes Line
 	6100 2750 11150 2750
 Wire Notes Line
-	750  4150 2900 4150
+	750  4150 3250 4150
 Wire Notes Line
 	750  2850 750  4150
 Wire Notes Line
-	2900 4150 2900 2850
+	3250 4150 3250 2850
 Wire Wire Line
 	1050 3300 950  3300
 Wire Wire Line
@@ -1042,12 +1008,12 @@ $EndComp
 Text Notes 800  4100 0    118  ~ 0
 ISOLATED ALIM\n
 Wire Notes Line
-	2900 2850 750  2850
+	3250 2850 750  2850
 Text Label 5300 1300 0    50   ~ 0
 Grid1
 Text Label 5200 1650 0    50   ~ 0
 Gate
-Text Notes 1100 2850 0    50   ~ 0
+Text Notes 1100 2700 0    50   ~ 0
 INFO : \n\n- For HV1 : no load \nP1 = 12V*110mA = 1.32W\n\n- For HV2 : \n10M per resistor, hence in total :  \n10kV/580M = 17.24uA\n12kV/580M = 20.6uA \n=> P2= 0.25W\n\n
 Text GLabel 2850 750  0    50   Input ~ 0
 TRI-STATE
@@ -1079,56 +1045,54 @@ Connection ~ 3550 1200
 Wire Wire Line
 	3550 2300 5050 2300
 Wire Wire Line
-	3550 1200 5050 1200
+	2850 1650 2850 1600
 Wire Wire Line
-	3000 1650 3000 1600
+	2400 1650 2850 1650
 Wire Wire Line
-	2550 1650 3000 1650
+	2850 1350 2400 1350
 Wire Wire Line
-	3000 1350 2550 1350
-Wire Wire Line
-	3000 1400 3000 1350
-Connection ~ 1700 1650
-Text Label 1700 1350 0    50   ~ 0
+	2850 1400 2850 1350
+Connection ~ 1550 1650
+Text Label 1550 1350 0    50   ~ 0
 Grid3
-Text Label 1000 1350 0    50   ~ 0
+Text Label 850  1350 0    50   ~ 0
 Grid1
 Wire Wire Line
-	1000 1650 1700 1650
+	850  1650 1550 1650
 $Comp
 L Device:C C2
 U 1 1 5EA2712D
-P 1700 1500
-F 0 "C2" H 1815 1546 50  0000 L CNN
-F 1 "4700pF 10kV" H 1815 1455 50  0000 L CNN
-F 2 "Capacitor_THT:C_Rect_L13.0mm_W8.0mm_P10.00mm_FKS3_FKP3_MKS4" H 1738 1350 50  0001 C CNN
-F 3 "~" H 1700 1500 50  0001 C CNN
-	1    1700 1500
+P 1550 1500
+F 0 "C2" H 1665 1546 50  0000 L CNN
+F 1 "4700pF 10kV" H 1665 1455 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L13.0mm_W8.0mm_P10.00mm_FKS3_FKP3_MKS4" H 1588 1350 50  0001 C CNN
+F 3 "~" H 1550 1500 50  0001 C CNN
+	1    1550 1500
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C3
 U 1 1 5E760172
-P 2550 1500
-F 0 "C3" H 2665 1546 50  0000 L CNN
-F 1 "0.22uF" H 2665 1455 50  0000 L CNN
-F 2 "Capacitor_THT:C_Rect_L13.0mm_W8.0mm_P10.00mm_FKS3_FKP3_MKS4" H 2588 1350 50  0001 C CNN
-F 3 "~" H 2550 1500 50  0001 C CNN
-	1    2550 1500
+P 2400 1500
+F 0 "C3" H 2515 1546 50  0000 L CNN
+F 1 "0.22uF" H 2515 1455 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L13.0mm_W8.0mm_P10.00mm_FKS3_FKP3_MKS4" H 2438 1350 50  0001 C CNN
+F 3 "~" H 2400 1500 50  0001 C CNN
+	1    2400 1500
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R1
 U 1 1 5E75A654
-P 3000 1500
-F 0 "R1" H 3059 1546 50  0000 L CNN
-F 1 "500K" H 3059 1455 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 3000 1500 50  0001 C CNN
-F 3 "~" H 3000 1500 50  0001 C CNN
-	1    3000 1500
+P 2850 1500
+F 0 "R1" H 2909 1546 50  0000 L CNN
+F 1 "500K" H 2909 1455 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 2850 1500 50  0001 C CNN
+F 3 "~" H 2850 1500 50  0001 C CNN
+	1    2850 1500
 	1    0    0    -1  
 $EndComp
-Text Label 2600 1350 0    50   ~ 0
+Text Label 2450 1350 0    50   ~ 0
 Aperture_Grid
 $Comp
 L Device:R R3
@@ -1155,45 +1119,41 @@ $EndComp
 $Comp
 L Device:C C1
 U 1 1 5EA25A25
-P 1000 1500
-F 0 "C1" H 1115 1546 50  0000 L CNN
-F 1 "4700pF 10kV" H 1115 1455 50  0000 L CNN
-F 2 "Capacitor_THT:C_Rect_L13.0mm_W8.0mm_P10.00mm_FKS3_FKP3_MKS4" H 1038 1350 50  0001 C CNN
-F 3 "~" H 1000 1500 50  0001 C CNN
-	1    1000 1500
+P 850 1500
+F 0 "C1" H 965 1546 50  0000 L CNN
+F 1 "4700pF 10kV" H 965 1455 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L13.0mm_W8.0mm_P10.00mm_FKS3_FKP3_MKS4" H 888 1350 50  0001 C CNN
+F 3 "~" H 850 1500 50  0001 C CNN
+	1    850  1500
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
 	6000 550  750  550 
 Wire Notes Line
 	750  550  750  2800
-Connection ~ 2550 1650
+Connection ~ 2400 1650
 $Comp
 L Device:R_POT POT1
 U 1 1 5E6EEFD6
 P 3550 950
 F 0 "POT1" H 3480 996 50  0000 R CNN
 F 1 "10M" V 3550 1050 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_ACP_CA14-H2,5_Horizontal" H 3550 950 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Omeg_PC16BU_Vertical" H 3550 950 50  0001 C CNN
 F 3 "~" H 3550 950 50  0001 C CNN
 	1    3550 950 
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3700 950  3850 950 
 Wire Wire Line
 	3850 1500 4000 1500
 Wire Wire Line
 	3850 950  3850 1500
 Wire Wire Line
 	3550 1700 3550 1800
-Wire Wire Line
-	4000 1800 3550 1800
 Connection ~ 3550 1800
 Wire Wire Line
 	3550 1800 3550 1850
 Wire Wire Line
-	5050 1650 5200 1650
+	5050 1650 5100 1650
 Wire Wire Line
 	3550 2650 3550 2700
 Text GLabel 5050 1650 0    50   Input ~ 0
@@ -1212,7 +1172,7 @@ Wire Wire Line
 	7000 2050 7550 2050
 Wire Wire Line
 	6500 2050 6600 2050
-Text Notes 3000 3650 0    79   ~ 0
+Text Notes 3600 3550 0    79   ~ 0
 GND : MCU, HV2\nGNDA : Gate\nGNDB : HV1\n
 $Comp
 L power:GND #PWR03
@@ -1281,7 +1241,7 @@ U 1 1 5F186C7F
 P 2900 4850
 F 0 "U2" H 2900 5217 50  0000 C CNN
 F 1 "LM358" H 2900 5126 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W10.16mm_LongPads" H 2900 4850 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 2900 4850 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 2900 4850 50  0001 C CNN
 	1    2900 4850
 	1    0    0    -1  
@@ -1292,7 +1252,7 @@ U 2 1 5F18B903
 P 4550 4850
 F 0 "U2" H 4550 5217 50  0000 C CNN
 F 1 "LM358" H 4550 5126 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W10.16mm_LongPads" H 4550 4850 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 4550 4850 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 4550 4850 50  0001 C CNN
 	2    4550 4850
 	1    0    0    -1  
@@ -1303,7 +1263,7 @@ U 3 1 5F18E710
 P 5450 4850
 F 0 "U2" H 5408 4896 50  0000 L CNN
 F 1 "LM358" H 5408 4805 50  0000 L CNN
-F 2 "Package_DIP:DIP-8_W10.16mm_LongPads" H 5450 4850 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 5450 4850 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 5450 4850 50  0001 C CNN
 	3    5450 4850
 	1    0    0    -1  
@@ -1494,7 +1454,7 @@ Wire Wire Line
 Wire Wire Line
 	2000 3250 2000 3300
 Wire Wire Line
-	1850 3300 2000 3300
+	1850 3300 1900 3300
 Connection ~ 2000 3300
 Wire Wire Line
 	2000 3300 2000 3350
@@ -1546,17 +1506,6 @@ Wire Wire Line
 	3000 750  3550 750 
 Wire Wire Line
 	3150 6150 3150 6300
-$Comp
-L HV_source:G40 HV1
-U 1 1 5EE10952
-P 8800 1150
-F 0 "HV1" H 8800 1615 50  0000 C CNN
-F 1 "G40" H 8800 1524 50  0000 C CNN
-F 2 "HV_source:G40" H 8800 1150 50  0001 C CNN
-F 3 "" H 8800 1150 50  0001 C CNN
-	1    8800 1150
-	1    0    0    -1  
-$EndComp
 $Comp
 L Switch:SW_SPST SW1
 U 1 1 5EF48253
@@ -1679,23 +1628,23 @@ Connection ~ 1250 6800
 $Comp
 L Regulator_Linear:MC78M05_TO252 U4
 U 1 1 5F606DF9
-P 7700 5950
-F 0 "U4" H 7700 6192 50  0000 C CNN
-F 1 "MC78M15ACTG " H 7700 6101 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-262-3_Vertical" H 7700 6175 50  0001 C CIN
-F 3 "http://www.fairchildsemi.com/ds/LM/LM78M05.pdf" H 7700 5900 50  0001 C CNN
-	1    7700 5950
+P 7750 5950
+F 0 "U4" H 7750 6192 50  0000 C CNN
+F 1 "MC78M15ACTG " H 7750 6101 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-262-3_Vertical" H 7750 6175 50  0001 C CIN
+F 3 "http://www.fairchildsemi.com/ds/LM/LM78M05.pdf" H 7750 5900 50  0001 C CNN
+	1    7750 5950
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR034
 U 1 1 5F60A9FF
-P 7700 6300
-F 0 "#PWR034" H 7700 6050 50  0001 C CNN
-F 1 "GND" H 7705 6127 50  0000 C CNN
-F 2 "" H 7700 6300 50  0001 C CNN
-F 3 "" H 7700 6300 50  0001 C CNN
-	1    7700 6300
+P 7750 6300
+F 0 "#PWR034" H 7750 6050 50  0001 C CNN
+F 1 "GND" H 7755 6127 50  0000 C CNN
+F 2 "" H 7750 6300 50  0001 C CNN
+F 3 "" H 7750 6300 50  0001 C CNN
+	1    7750 6300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1720,11 +1669,9 @@ F 3 "" H 7050 5950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7050 5950 7200 5950
+	7050 5950 7150 5950
 Wire Wire Line
-	8000 5950 8050 5950
-Wire Wire Line
-	7700 6300 7700 6250
+	7750 6300 7750 6250
 Wire Notes Line
 	11150 4150 6950 4150
 $Comp
@@ -1787,18 +1734,18 @@ $EndComp
 Wire Wire Line
 	9350 2200 9850 2200
 Wire Wire Line
-	1700 1650 2150 1650
+	1550 1650 2000 1650
 Text Label 9850 2300 0    50   ~ 0
 HV_GND
 Wire Wire Line
 	9850 2200 9850 2300
-Text Label 2150 1750 0    50   ~ 0
+Text Label 2000 1750 0    50   ~ 0
 HV_GND
 Wire Wire Line
-	2150 1650 2150 1750
-Connection ~ 2150 1650
+	2000 1650 2000 1750
+Connection ~ 2000 1650
 Wire Wire Line
-	2150 1650 2550 1650
+	2000 1650 2400 1650
 Text Label 1250 6950 0    50   ~ 0
 HV_GND
 Wire Wire Line
@@ -1878,4 +1825,236 @@ Wire Wire Line
 Wire Wire Line
 	1800 4900 1900 4900
 Connection ~ 1800 4900
+$Comp
+L 6N137A:6N137A U6
+U 1 1 5EE1991E
+P 8750 3200
+F 0 "U6" H 8725 3617 50  0000 C CNN
+F 1 "6N137A" H 8725 3526 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 8600 3150 50  0001 L BNN
+F 3 "Vishay" H 8750 3200 50  0001 L BNN
+	1    8750 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 3400 9150 3400
+Wire Wire Line
+	9150 3400 9150 3350
+Wire Wire Line
+	9100 3550 9450 3550
+Wire Wire Line
+	8300 3150 8350 3150
+Wire Wire Line
+	9100 3000 9300 3000
+Wire Wire Line
+	9300 3000 9300 2950
+Wire Wire Line
+	9300 3000 9450 3000
+Wire Wire Line
+	9450 3000 9450 3100
+Connection ~ 9300 3000
+NoConn ~ 9100 3100
+Text Notes 11700 1250 0    118  ~ 0
+QUESTIONS\n- Reverse voltage protection\n- Alim de HV1 chute de tension\n- Quels cables utiliser\n- Alim 5V MCU : conflit entre les deux tension?\n\n
+$Comp
+L Device:CP1 C12
+U 1 1 5EE001A2
+P 7150 6100
+F 0 "C12" H 7265 6146 50  0000 L CNN
+F 1 "0.33uF Tant." H 7150 5950 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B_Pad1.50x2.35mm_HandSolder" H 7150 6100 50  0001 C CNN
+F 3 "~" H 7150 6100 50  0001 C CNN
+	1    7150 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR049
+U 1 1 5EE00982
+P 7150 6300
+F 0 "#PWR049" H 7150 6050 50  0001 C CNN
+F 1 "GND" H 7155 6127 50  0000 C CNN
+F 2 "" H 7150 6300 50  0001 C CNN
+F 3 "" H 7150 6300 50  0001 C CNN
+	1    7150 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 6300 7150 6250
+Wire Wire Line
+	7400 5950 7450 5950
+Wire Wire Line
+	7200 5950 7150 5950
+Connection ~ 7150 5950
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5EE21514
+P 5100 1550
+F 0 "TP2" H 5158 1668 50  0000 L CNN
+F 1 "TestPoint" H 5158 1577 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 5300 1550 50  0001 C CNN
+F 3 "~" H 5300 1550 50  0001 C CNN
+	1    5100 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 1550 5100 1650
+Connection ~ 5100 1650
+Wire Wire Line
+	5100 1650 5200 1650
+$Comp
+L Connector:TestPoint TP8
+U 1 1 5EF257C7
+P 10550 3900
+F 0 "TP8" V 10550 4088 50  0000 L CNN
+F 1 "TestPoint" V 10595 4088 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 10750 3900 50  0001 C CNN
+F 3 "~" H 10750 3900 50  0001 C CNN
+	1    10550 3900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3550 1800 4000 1800
+Wire Wire Line
+	3550 1200 5050 1200
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5EF5C803
+P 1900 3100
+F 0 "TP5" H 1950 3250 50  0000 L CNN
+F 1 "TestPoint" H 1500 3250 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 2100 3100 50  0001 C CNN
+F 3 "~" H 2100 3100 50  0001 C CNN
+	1    1900 3100
+	1    0    0    -1  
+$EndComp
+Connection ~ 1900 3300
+Wire Wire Line
+	1900 3300 2000 3300
+Wire Wire Line
+	1900 3100 1900 3300
+$Comp
+L Connector:TestPoint TP9
+U 1 1 5EFCDFD7
+P 2450 4650
+F 0 "TP9" H 2500 4800 50  0000 L CNN
+F 1 "TestPoint" H 2050 4800 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 2650 4650 50  0001 C CNN
+F 3 "~" H 2650 4650 50  0001 C CNN
+	1    2450 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 4650 2450 4750
+Connection ~ 2450 4750
+Wire Wire Line
+	2450 4750 2600 4750
+$Comp
+L Connector:TestPoint TP12
+U 1 1 5EFF228D
+P 3850 5350
+F 0 "TP12" V 3900 5500 50  0000 L CNN
+F 1 "TestPoint" H 3450 5500 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 4050 5350 50  0001 C CNN
+F 3 "~" H 4050 5350 50  0001 C CNN
+	1    3850 5350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2550 5200 3650 5200
+Wire Wire Line
+	3850 5350 3650 5350
+Wire Wire Line
+	3650 5350 3650 5200
+$Comp
+L Connector:TestPoint TP11
+U 1 1 5F018176
+P 1500 5300
+F 0 "TP11" H 1550 5450 50  0000 L CNN
+F 1 "TestPoint" H 1100 5450 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 1700 5300 50  0001 C CNN
+F 3 "~" H 1700 5300 50  0001 C CNN
+	1    1500 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 5350 1800 5350
+Connection ~ 1800 5350
+Wire Wire Line
+	1500 5300 1500 5350
+$Comp
+L Connector:TestPoint TP10
+U 1 1 5F050400
+P 3250 4750
+F 0 "TP10" H 3300 4900 50  0000 L CNN
+F 1 "TestPoint" H 2850 4900 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 3450 4750 50  0001 C CNN
+F 3 "~" H 3450 4750 50  0001 C CNN
+	1    3250 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 4750 3250 4850
+Connection ~ 3250 4850
+Wire Wire Line
+	3250 4850 3200 4850
+$Comp
+L Connector:TestPoint TP7
+U 1 1 5F0AC407
+P 2900 3300
+F 0 "TP7" V 2800 3400 50  0000 L CNN
+F 1 "TestPoint" H 2500 3450 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 3100 3300 50  0001 C CNN
+F 3 "~" H 3100 3300 50  0001 C CNN
+	1    2900 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2800 3300 2900 3300
+Connection ~ 2800 3300
+$Comp
+L Connector:TestPoint TP6
+U 1 1 5F10C8E9
+P 9650 3250
+F 0 "TP6" H 9700 3400 50  0000 L CNN
+F 1 "TestPoint" H 9250 3400 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 9850 3250 50  0001 C CNN
+F 3 "~" H 9850 3250 50  0001 C CNN
+	1    9650 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 3250 9650 3350
+Connection ~ 9650 3350
+Wire Wire Line
+	9650 3350 9450 3350
+Wire Wire Line
+	10450 3900 10550 3900
+Connection ~ 10450 3900
+Wire Wire Line
+	3700 950  3850 950 
+Connection ~ 10450 2950
+Wire Wire Line
+	10450 2950 10550 2950
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5EE106BA
+P 10550 2950
+F 0 "TP4" V 10550 3138 50  0000 L CNN
+F 1 "TestPoint" H 10608 2977 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 10750 2950 50  0001 C CNN
+F 3 "~" H 10750 2950 50  0001 C CNN
+	1    10550 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L HV_source:G40 HV1
+U 1 1 5EE10952
+P 8800 1150
+F 0 "HV1" H 8800 1615 50  0000 C CNN
+F 1 "G40" H 8800 1524 50  0000 C CNN
+F 2 "HV_source:G40" H 8800 1150 50  0001 C CNN
+F 3 "" H 8800 1150 50  0001 C CNN
+	1    8800 1150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -4,4 +4,5 @@
   (lib (name HV_source)(type KiCad)(uri ${KIPRJMOD}/Footprints/HV_source.pretty)(options "")(descr ""))
   (lib (name Isolated_converters)(type KiCad)(uri ${KIPRJMOD}/Footprints/Isolated_converters.pretty)(options "")(descr ""))
   (lib (name Transistors)(type KiCad)(uri ${KIPRJMOD}/Footprints/Transistors.pretty)(options "")(descr ""))
+  (lib (name Optocouplers)(type KiCad)(uri /Users/valentin/git/hackuarium/ion-mobility/PCB/Divider/Complete_divider/Footprints/Optocouplers.pretty)(options "")(descr ""))
 )
