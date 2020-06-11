@@ -1,4 +1,4 @@
-17688391967842367
+17672552768196271
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -44253,20 +44253,6 @@ THT ceramic resonator filter DSS6
 0
 3
 3
-Dev_boards
-Lolin32
-
-
-0
-36
-36
-Dev_boards
-LolinD32
-
-
-0
-32
-32
 Diode_SMD
 D_0201_0603Metric
 Diode SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator
@@ -46920,27 +46906,6 @@ Fuse Fuseholder TR5 Littelfuse/Wickmann No. 460 No560
 0
 2
 2
-HV_source
-15A
-
-
-0
-10
-10
-HV_source
-G40
-
-
-0
-4
-4
-HV_source
-G40_copy
-
-
-0
-4
-4
 Heatsink
 Heatsink_35x26mm_1xFixation3mm_Fischer-SK486-35
 Heatsink, 35mm x 26mm, 1x Fixation 3mm, Fischer SK486-35
@@ -50189,20 +50154,6 @@ L_Toroid Vertical series Radial pin pitch 31.80mm  length 67.6mm width 36.1mm Vi
 0
 2
 2
-Isolated_converters
-R8
-
-
-0
-4
-4
-Isolated_converters
-R20
-
-
-0
-4
-4
 Jumper
 SolderJumper-2_P1.3mm_Bridged2Bar_Pad1.0x1.5mm
 SMD Solder Jumper, 1x1.5mm Pads, 0.3mm gap, bridged with 2 copper strips
@@ -52842,13 +52793,6 @@ IR Receiver Vishay TSOP-xxxx MOLD
 0
 3
 3
-Optocouplers
-6N137A
-
-
-0
-8
-8
 Oscillator
 Oscillator_DIP-8
 Oscillator, DIP8,http://cdn-reichelt.de/documents/datenblatt/B400/OSZI.pdf
@@ -74598,20 +74542,6 @@ transformer flyback
 0
 10
 10
-Transistors
-S8050
-
-
-0
-3
-3
-Transistors
-ZVN2110A
-
-
-0
-3
-3
 Valve
 Valve_ECC-83-1
 Valve ECC-83-1 round pins
