@@ -1,4 +1,4 @@
-17688391967842367
+17691575883241367
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -6132,6 +6132,13 @@ banana jack horizontal
 4
 1
 Connector
+Conn_JACK_0040
+
+
+0
+2
+1
+Connector
 Connector_SFP_and_Cage
 https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=2227302&DocType=Customer+Drawing&DocLang=English
 SFP+ SFP
@@ -6243,6 +6250,13 @@ tag connect programming header pogo pins
 0
 14
 14
+Connector
+conn_HV_JACK_PB1021
+
+
+0
+2
+1
 Connector_AMASS
 AMASS_MR30PW-FB_1x03_P3.50mm_Horizontal
 Connector XT30 Horizontal PCB Female, https://www.tme.eu/en/Document/5e47640ba39fa492dbd4c0f4c8ae7b93/MR30PW%20SPEC.pdf
