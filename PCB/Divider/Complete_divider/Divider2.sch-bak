@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 5
+Sheet 1 1
 Title ""
 Date ""
 Rev ""
@@ -34,7 +34,7 @@ Wire Wire Line
 Wire Wire Line
 	7250 3500 7400 3500
 Wire Wire Line
-	7850 3500 8250 3500
+	7850 3500 8100 3500
 Wire Wire Line
 	7850 4200 7850 3800
 Wire Wire Line
@@ -816,23 +816,22 @@ F 3 "~" H 3950 3300 50  0001 C CNN
 	1    3950 3300
 	0    -1   -1   0   
 $EndComp
-Connection ~ 7850 3500
-Text Notes 7850 3250 0    50   ~ 0
+Text Notes 7800 2750 0    50   ~ 0
 Only a pin not electrode
 Wire Wire Line
 	3500 3500 3600 3500
 $Comp
 L Connector:Conn_01x01_Female E?
 U 1 1 5E6D95D5
-P 7850 3300
+P 8100 2900
 AR Path="/5E6FA86A/5E6D95D5" Ref="E?"  Part="1" 
 AR Path="/5E63EFA9/5E6D95D5" Ref="E14"  Part="1" 
-AR Path="/5E6D95D5" Ref="E?"  Part="1" 
-F 0 "E14" V 7788 3212 50  0000 R CNN
-F 1 "Electr." V 7697 3212 50  0000 R CNN
-F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 7850 3300 50  0001 C CNN
-F 3 "~" H 7850 3300 50  0001 C CNN
-	1    7850 3300
+AR Path="/5E6D95D5" Ref="J2"  Part="1" 
+F 0 "J2" V 8038 2812 50  0000 R CNN
+F 1 "PWR out" V 7947 2812 50  0000 R CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 8100 2900 50  0001 C CNN
+F 3 "~" H 8100 2900 50  0001 C CNN
+	1    8100 2900
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -873,4 +872,9 @@ $EndComp
 Connection ~ 3800 4200
 Wire Wire Line
 	3600 3100 3600 3500
+Wire Wire Line
+	8100 3100 8100 3500
+Connection ~ 8100 3500
+Wire Wire Line
+	8100 3500 8250 3500
 $EndSCHEMATC

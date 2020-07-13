@@ -13,31 +13,4 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L power:GND #PWR0101
-U 1 1 5EDA78B9
-P 5200 3500
-F 0 "#PWR0101" H 5200 3250 50  0001 C CNN
-F 1 "GND" H 5205 3327 50  0000 C CNN
-F 2 "" H 5200 3500 50  0001 C CNN
-F 3 "" H 5200 3500 50  0001 C CNN
-	1    5200 3500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5200 3500 5200 3450
-Wire Wire Line
-	5200 3450 5300 3450
-$Comp
-L Device:Net-Tie_2 NT?
-U 1 1 5EDAA462
-P 5400 3450
-F 0 "NT?" H 5400 3631 50  0000 C CNN
-F 1 "Net-Tie_2" H 5400 3540 50  0000 C CNN
-F 2 "" H 5400 3450 50  0001 C CNN
-F 3 "~" H 5400 3450 50  0001 C CNN
-	1    5400 3450
-	1    0    0    -1  
-$EndComp
-NoConn ~ 5500 3450
 $EndSCHEMATC
