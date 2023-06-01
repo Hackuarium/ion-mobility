@@ -27,14 +27,17 @@ The ESI needle (needs to be 3-4 kV higher in potential than the first electrode)
 
 The target ("Cible") is mounted at the end of the IMS, and has room on its back side to connect the amplification PCB.
 
-## CAD designed device and mounted IMS
+## CAD designed device
 
 Below is a picture of the CAD simulated IMS device.
 
 ![CAD designed IMS](IMS_Assembly_iso.jpg)
+
 ![CAD designed IMS cut](IMS_Assembly_cut.jpg)
+
 ![CAD designed IMS back](IMS_Assembly_iso_back.jpg)
 
+## Mounted IMS
 
 And here is a picture of the 3D printed IMS in its current state, with the electrodes, dividers and target (see "PCB" folder for specifications).
 
