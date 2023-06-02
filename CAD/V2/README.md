@@ -31,11 +31,11 @@ The target ("Cible") is mounted at the end of the IMS, and has room on its back 
 
 Below is a picture of the CAD simulated IMS device.
 
-![CAD designed IMS](IMS_Assembly_iso.jpg)
+![CAD designed IMS](IMS_Assembly_iso.JPG)
 
-![CAD designed IMS cut](IMS_Assembly_cut.jpg)
+![CAD designed IMS cut](IMS_Assembly_cut.JPG)
 
-![CAD designed IMS back](IMS_Assembly_iso_back.jpg)
+![CAD designed IMS back](IMS_Assembly_iso_back.JPG)
 
 ## Mounted IMS
 
