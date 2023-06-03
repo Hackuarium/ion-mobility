@@ -54,6 +54,11 @@ Below is a picture of the CAD simulated IMS device.
   <img src="IMS_Assembly_iso_back.JPG" width="32%" />
 </p>
 
+And a picture of the CAD printed, with the 4 different parts assembled. 
+<p align="center">
+    <img src="CAD_V2_printed.jpg" width="65%" alt>
+</p>
+
 
 ## Mounted IMS
 
@@ -61,8 +66,4 @@ And here is a picture of the 3D printed IMS in its current state, with the elect
 
 (picture to be taken)
 
-<p>
-    <img src="CAD_V2_printed.jpg" alt>
-    <em>Picture of the printed CAD</em>
-</p>
 
