@@ -62,7 +62,7 @@ And pictures of the 3D printed CAD, with the 4 different parts assembled and the
 And here are pictures of the 3D printed IMS. The 4 different parts (extension, desolvation, drift and cible) interlock together to form the body of the IMS. The PCBs are then mounted inside and on top in order to obtain the full device (see "PCB" folder for specifications).
 
 <p align="center">
-    <img src="CAD_V2_printed.JPG" width="65%" alt>
+    <img src="CAD_V2_printed.jpg" width="65%" alt>
     <img src="IMS_mounted_extension.JPG" width="65%" alt>
 </p>
 
