@@ -45,7 +45,7 @@ The target ("Cible") is mounted at the end of the IMS, and has room on its back 
 
 ## CAD designed device
 
-Below is a picture of the CAD simulated IMS device.
+Below are pictures of the CAD simulated IMS device.
 
 
 <p align="center">
@@ -54,10 +54,17 @@ Below is a picture of the CAD simulated IMS device.
   <img src="IMS_Assembly_iso_back.JPG" width="32%" />
 </p>
 
-And a picture of the CAD printed, with the 4 different parts assembled. 
+And pictures of the 3D printed CAD, with the 4 different parts assembled and then mounted with the PCBs. 
 <p align="center">
     <img src="CAD_V2_printed.jpg" width="65%" alt>
+    <img src="IMS_mounted_extension.jpg" width="65%" alt>
 </p>
+<p align="center">
+    <img src="IMS_hole_cible.jpg" width="65%" alt>
+    <img src="IMS_modularity.jpg" width="65%" alt>
+</p>
+
+
 
 
 ## Mounted IMS

@@ -8,4 +8,6 @@ Here are all the PCB files related to the electrodes. The CAD files of the elect
 
 Below is a picture of the PCB. 
 
-(picture to be taken)
+<p align="center">
+    <img src="electrode.jpg" width="65%" alt>
+</p>
