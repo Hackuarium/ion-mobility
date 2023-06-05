@@ -55,22 +55,20 @@ Below are pictures of the CAD simulated IMS device.
 </p>
 
 And pictures of the 3D printed CAD, with the 4 different parts assembled and then mounted with the PCBs. 
-<p align="center">
-    <img src="CAD_V2_printed.jpg" width="65%" alt>
-    <img src="IMS_mounted_extension.jpg" width="65%" alt>
-</p>
-<p align="center">
-    <img src="IMS_hole_cible.jpg" width="65%" alt>
-    <img src="IMS_modularity.jpg" width="65%" alt>
-</p>
-
-
 
 
 ## Mounted IMS
 
-And here is a picture of the 3D printed IMS in its current state, with the electrodes, dividers and target (see "PCB" folder for specifications).
+And here are pictures of the 3D printed IMS. The 4 different parts (extension, desolvation, drift and cible) interlock together to form the body of the IMS. The PCBs are then mounted inside and on top in order to obtain the full device (see "PCB" folder for specifications).
 
-(picture to be taken)
+<p align="center">
+    <img src="CAD_V2_printed.JPG" width="65%" alt>
+    <img src="IMS_mounted_extension.JPG" width="65%" alt>
+</p>
+
+<p align="center">
+    <img src="IMS_hole_cible.JPG" width="65%" alt>
+    <img src="IMS_modularity.JPG" width="65%" alt>
+</p>
 
 

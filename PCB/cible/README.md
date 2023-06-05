@@ -15,6 +15,6 @@ The target has to be surrounded by a ground connected ring with small holes to i
 Below are pictures of the target PCB. 
 
 <p align="center">
-    <img src="cible_front.jpg" width="65%" alt>
-    <img src="cible_back.jpg" width="65%" alt>
+    <img src="cible_front.JPG" width="65%" alt>
+    <img src="cible_back.JPG" width="65%" alt>
 </p>
