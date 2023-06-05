@@ -15,7 +15,7 @@ Higher resistors in between the electrodes doesn't change the voltage gradient b
 Below are pictures of the PCBs. First one is desolvation region and second one is drift region.
 
 <p align="center">
-    <img src="PCB_desolvation_KR_empty.JPG" width="65%" alt>
-    <img src="PCB_drift_KR_empty.JPG" width="65%" alt>
+    <img src="PCB_desolvation_KR_empty.JPG" width="45%" alt>
+    <img src="PCB_drift_KR_empty.JPG" width="43.5%" alt>
 </p>
 

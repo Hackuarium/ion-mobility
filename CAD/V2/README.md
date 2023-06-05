@@ -67,8 +67,8 @@ And here are pictures of the 3D printed IMS. The 4 different parts (extension, d
 </p>
 
 <p align="center">
-    <img src="IMS_hole_cible.JPG" width="65%" alt>
-    <img src="IMS_modularity.JPG" width="65%" alt>
+    <img src="IMS_hole_cible.JPG" width="24%" alt>
+    <img src="IMS_modularity.JPG" width="70%" alt>
 </p>
 
 
