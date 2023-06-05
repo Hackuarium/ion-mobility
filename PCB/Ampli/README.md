@@ -17,5 +17,5 @@ Possible amplification of the noise must be taken into account, and possibly fil
 Below is a picture of the mounted PCB, currently missing the connectors and a potential filtering capacitor C1. 
 
 <p align="center">
-    <img src="ampli_mounted.JPG" width="65%" alt>
+    <img src="ampli_mounted.jpg" width="65%" alt>
 </p>
