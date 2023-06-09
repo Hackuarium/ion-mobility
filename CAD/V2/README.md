@@ -45,8 +45,7 @@ The target ("Cible") is mounted at the end of the IMS, and has room on its back 
 
 ## CAD designed device
 
-Below are pictures of the CAD simulated IMS device.
-
+Here is shown the V2 version of the CAD, which is a simplified version to test for the target. It lacks a way to implement the grids (3-grid ion shutter and aperture grid) as well as a backside gas chamber for the target. It is currently printed and assembled, with 28 electrodes per zone (plus potentially 2 more in the extension if needed, to get 58 electrodes).
 
 <p align="center">
   <img src="IMS_Assembly_iso.JPG" width="34%" />
@@ -56,6 +55,12 @@ Below are pictures of the CAD simulated IMS device.
 
 And pictures of the 3D printed CAD, with the 4 different parts assembled and then mounted with the PCBs. 
 
+1. Desolvation zone : this section contains 28 slots, meaning 28 electrodes can be placed. Every 2 electrodes have the same distance in between them, i.e. 0.8 mm. This ensures that the electric field is linear and continuous throughout the whole device.
+2. Drift zone : this section also contains 28 slots. It is the same casing as the desolvation zone and has the same purpose.
+3. Target (also named ”cible”) : this section contains a slot to insert the Faraday plate and a pocket to hold the amplifier PCB. It’s important to keep the distance between the amplifier and the PCB as short as possible to limit noise.
+4. Extension : this section contains 2 slots in order to increase the number of electrode if needed.
+
+The parts containing the electrodes have a through-hole in the middle, revealing only the conductive part of the electrode. And they are attached to each other by a complementary design to ensure a good grip between them.
 
 ## Mounted IMS
 

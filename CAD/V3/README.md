@@ -58,7 +58,7 @@ The target ("Cible") is mounted at the end of the IMS, and has a hole on its bac
 
 ## CAD designed device
 
-Below are pictures of the CAD simulated IMS device.
+Here is shown the model of the V3 version of the CAD casing. It is a revised version with room to accommodate for the 3-grid on shutter, the aperture grid and the gas chamber for the target. The desolvation and drift regions have here 29 electrode slots each (the extension is thus not needed here and the ESI needle can be put in front directly).
 
 
 <p align="center">
